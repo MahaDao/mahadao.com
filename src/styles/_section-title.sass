@@ -4,6 +4,9 @@
   padding: 0 30px
   margin-bottom: 250px
 
+  @media (max-width: 600px)      
+    margin-bottom: 60px  
+
   .main-title
     font-family: $font-family-heading
     font-style: normal
@@ -13,7 +16,10 @@
     letter-spacing: 1px
     color: #000
     // text-shadow: 0 0 1px #fff
-    -webkit-text-stroke: 0.5px #fff
+    -webkit-text-stroke: 1px #a1a1a1
+
+    @media (max-width: 600px)
+      font-size: 24px    
 
   .title-head
     color: #ffffff
@@ -24,6 +30,12 @@
     font-style: normal
     font-family: $font-family-heading
 
+    @media (max-width: 600px)
+      font-size: 24px 
+      line-height: 28px  
+      margin: 0
+              
+
   .title-down-text
     color: #A2A2A2
     // margin-left: 165px
@@ -32,12 +44,34 @@
     font-family: $font-family-heading
     line-height: 21px
     display: flex
+    max-width: 400px
+  
+  @media screen and (max-width: 600px)
+    .title-down-text
+      width: auto
 
   .line
     border: 2px solid rgba(216, 55, 71, 1)
     width: 1px
     display: flex
     margin-right: 19px
-    height: auto
+    height: 63px
     margin-top: 0
     margin-bottom: 0
+
+  .text-slide-right
+    overflow: hidden
+    width: 450px
+
+    p
+      animation: 3s text-slide-right
+      margin-bottom: 0      
+
+  @keyframes text-slide-right
+    from
+      margin-left: -100%
+      width: 100%
+
+  to
+      padding-left: 20px
+      width: 100%  

@@ -1,3 +1,12 @@
+@media (max-width: 500px)
+  .fixed_header .header  
+    background: rgba(0, 0, 0, 0.8)
+    top: 0
+    z-index: 100
+    position: fixed
+    width: 100%
+    height: 100px
+
 .header
   position: relative
   z-index: 1
@@ -7,12 +16,14 @@
   // max-width: 1180
 
   .mahadao-logo
+    z-index: 1
 
     @media (min-width: 400px)
       flex: 1
       height: 54.4px
+      z-index: 1
 
-    @media (max-width: 400px)
+    // @media (max-width: 400px)
       text-align: center
 
       img
@@ -70,27 +81,83 @@
     justify-content: center
     align-items: center
 
-  @media (max-width: 768px)
-    nav
-      background: #000
+  @media (max-width: 500px)
+    flex-direction: column
 
-      .mainMenu
-        /* height: 100vh;
+    nav
+      position: relative
+
+      .nav-icon  
+        width: 20px
+        height: 12px
+        border-top: 2px solid #fff
+        border-bottom: 2px solid #fff    
+        display: inline-block  
+        position: relative;    
         position: fixed
-        padding-top: 100px
-        margin-bottom: 20px
-        right: 0
-        left: 0
-        z-index: -1
+        right: 30px
+        top: 46px
+        transition: all .25s ease-in-out 
+        z-index: 1
+
+      .nav-icon:after, .nav-icon:before
+        content: '';
+        display: block;
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        top: 4px;
+        left: 50%; 
+        background: #fff;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        transition: -webkit-transform .25s ease-in-out;
+        transition: transform .25s ease-in-out; 
+        -webkit-transform .25s ease-in-out   
+
+      .nav-icon.toggler:after 
+		        -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+		        transform: translate(-50%, -50%) rotate(-45deg)
+
+      .nav-icon.toggler:before 
+		        -webkit-transform: translate(-50%, -50%) rotate(45deg);
+		        transform: translate(-50%, -50%) rotate(45deg)
+
+      .nav-icon.toggler 
+		        border-color: transparent
+                           
+      .mainMenu
+        /* height: 100vh;        
+        padding-top: 130px
+        padding-bottom: 10px
+        margin-bottom: 0;       
         list-style: none
         text-decoration: none
         font-size: 16px
         flex-direction: column
         justify-content: center
-        align-items: center
-        background: #000
+        align-items: center 
+        background: #1E1D1D
+        position: relative
+        border-radius: 16px
+        margin-top: -37%
+        cursor: text
+        left: -10%            
+        width: 119.6%
+        overflow: hidden            
         transition: top 1s ease
         display: none
+
+         
+      .mainMenu a.button1
+        color: #fff
+        display: inline-block
+        line-height: 47px
+        font-size: 16px
+        margin: 0px 0px 16px 0px
+        min-width: 170px        
+
+
 
         .closeMenu
           display: none
