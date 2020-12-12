@@ -1,66 +1,74 @@
 <section id="section-timer" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
-	<div class="main-title">
-		MAHA Initial DEX Offering In		
-	</div>
-	
-	<div class="timer_row">
-		 <div class="timer_box"><div class="timer_number" id="timerDays"></div> <span class="timer_text">Days</span></div>
-		 <div class="timer_box"><div class="timer_number" id="timerHours"></div> <span class="timer_text">Hours</span></div>
-		 <div class="timer_box"><div class="timer_number" id="timerMinutes"></div> <span class="timer_text">Minutes</span></div>
-		 <div class="timer_box"><div class="timer_number" id="timerSeconds"></div> <span class="timer_text">Seconds</span></div>
-	</div>
-	
-	<div class="button1">
-		<a id="no-txt-decoration" class="button1" href="https://t.me/MahadaoAnnouncements">Notify Me</a>
-	</div>	
-</section>	
-	
-	
+  <div class="main-title">
+    MAHA Initial DEX Offering In
+  </div>
+
+  <div class="timer_row">
+    <div class="timer_box">
+      <div class="timer_number" id="timerDays"></div> <span class="timer_text">Days</span>
+    </div>
+    <div class="timer_box">
+      <div class="timer_number" id="timerHours"></div> <span class="timer_text">Hours</span>
+    </div>
+    <div class="timer_box">
+      <div class="timer_number" id="timerMinutes"></div> <span class="timer_text">Minutes</span>
+    </div>
+    <div class="timer_box">
+      <div class="timer_number" id="timerSeconds"></div> <span class="timer_text">Seconds</span>
+    </div>
+  </div>
+
+  <div class="button1">
+    <a id="no-txt-decoration" class="button1" target="_blank"
+      href="https://medium.com/mahadao/mahadao-ido-on-the-17th-dec-with-polkastarter-exclusive-details-9153e606c648">Learn
+      More</a>
+  </div>
+</section>
+
+
 
 <script type="text/javascript">
-var timer;
-function settimer()
-{
-	currentTime = new Date();
-	clearInterval(timer);
-	var timer_month=12;
-	var timer_day=17;
-	var timer_year=currentTime.getFullYear();
-	var timer_hour=15;
-	if(timer_hour=="")timer_hour=0;
-	var timer_min=00;
-	if(timer_min=="")timer_min=0;
-	 
-	var timer_date=timer_year+"/"+timer_month+"/"+timer_day+" "+timer_hour+":"+timer_min+":00 UTC";
-	var end = new Date(timer_date); // Arrange values in Date Time Format
-	var now = new Date().toLocaleString(); // Get Current date time
-	var second = 1000; // Total Millisecond In One Sec
-	var minute = second * 60; // Total Sec In One Min
-	var hour = minute * 60; // Total Min In One Hour
-	var day = hour * 24; // Total Hour In One Day
- 
-	function showtimer() {
-		var now = new Date();
-		var remain = end - Date.parse(now); // Get The Difference Between Current and entered date time
-		if(remain < 0)
-		{
-			clearInterval(timer);
-			document.getElementById("timerDays").innerHTML = 0;
-			document.getElementById("timerHours").innerHTML = 0;
-			document.getElementById("timerMinutes").innerHTML = 0;
-			document.getElementById("timerSeconds").innerHTML = 0;
-			return;
-		}
-		var days = Math.floor(remain / day); // Get Remaining Days
-		var hours = Math.floor((remain % day) / hour); // Get Remaining Hours
-		var minutes = Math.floor((remain % hour) / minute); // Get Remaining Min
-		var seconds = Math.floor((remain % minute) / second); // Get Remaining Sec
-		document.getElementById("timerDays").innerHTML = days;
-		document.getElementById("timerHours").innerHTML = hours;
-		document.getElementById("timerMinutes").innerHTML = minutes;
-		document.getElementById("timerSeconds").innerHTML = seconds;
-	}
-	timer = setInterval(showtimer, 1000); // Display Timer In Every 1 Sec
-}
-settimer();
+  var timer;
+  function settimer() {
+    currentTime = new Date();
+    clearInterval(timer);
+    var timer_month = 12;
+    var timer_day = 17;
+    var timer_year = currentTime.getFullYear();
+    var timer_hour = 15;
+    if (timer_hour == "") timer_hour = 0;
+    var timer_min = 00;
+    if (timer_min == "") timer_min = 0;
+
+    var timer_date = timer_year + "/" + timer_month + "/" + timer_day + " " + timer_hour + ":" + timer_min + ":00 UTC";
+    var end = new Date(timer_date); // Arrange values in Date Time Format
+    var now = new Date().toLocaleString(); // Get Current date time
+    var second = 1000; // Total Millisecond In One Sec
+    var minute = second * 60; // Total Sec In One Min
+    var hour = minute * 60; // Total Min In One Hour
+    var day = hour * 24; // Total Hour In One Day
+
+    function showtimer() {
+      var now = new Date();
+      var remain = end - Date.parse(now); // Get The Difference Between Current and entered date time
+      if (remain < 0) {
+        clearInterval(timer);
+        document.getElementById("timerDays").innerHTML = 0;
+        document.getElementById("timerHours").innerHTML = 0;
+        document.getElementById("timerMinutes").innerHTML = 0;
+        document.getElementById("timerSeconds").innerHTML = 0;
+        return;
+      }
+      var days = Math.floor(remain / day); // Get Remaining Days
+      var hours = Math.floor((remain % day) / hour); // Get Remaining Hours
+      var minutes = Math.floor((remain % hour) / minute); // Get Remaining Min
+      var seconds = Math.floor((remain % minute) / second); // Get Remaining Sec
+      document.getElementById("timerDays").innerHTML = days;
+      document.getElementById("timerHours").innerHTML = hours;
+      document.getElementById("timerMinutes").innerHTML = minutes;
+      document.getElementById("timerSeconds").innerHTML = seconds;
+    }
+    timer = setInterval(showtimer, 1000); // Display Timer In Every 1 Sec
+  }
+  settimer();
 </script>
