@@ -1,31 +1,31 @@
 <section id="section-timer" data-aos="" data-aos-duration="1000" data-aos-once="true" style="display:none">
 	<div class="main-title">
-		MAHA Uniswap Listing In	
-		<p style="font-size: 18px">17th Dec 2020 6 PM GMT</p>	
+		MAHA Uniswap Listing In
+		<p style="font-size: 18px">17th Dec 2020 6 PM GMT</p>
 	</div>
-	
+
 	<div class="timer_row">
 		 <div class="timer_box"><div class="timer_number" id="timerDays"></div> <span class="timer_text">Days</span></div>
 		 <div class="timer_box"><div class="timer_number" id="timerHours"></div> <span class="timer_text">Hours</span></div>
 		 <div class="timer_box"><div class="timer_number" id="timerMinutes"></div> <span class="timer_text">Minutes</span></div>
 		 <div class="timer_box"><div class="timer_number" id="timerSeconds"></div> <span class="timer_text">Seconds</span></div>
 	</div>
-	
+
 	<div class="button1">
 		<!--<a id="no-txt-decoration" class="button1" href="https://t.me/MahadaoAnnouncements">Notify Me</a>-->
-		<a id="no-txt-decoration" class="button1" href="https://uniswap.org/">Visit Uniswap</a>
-	</div>	
-</section>	
+		<a id="no-txt-decoration" class="button1" href="https://info.uniswap.org/token/0xb4d930279552397bba2ee473229f89ec245bc365">Visit Uniswap</a>
+	</div>
+</section>
 
 <section id="section-timer-height" data-aos="" data-aos-duration="1000" data-aos-once="true" style="display:none">
 	<div class="main-title">
 		MAHA Uniswap Listing Is Live
 	</div>
 	<div class="button1">
-		<a id="no-txt-decoration" class="button1" href="https://uniswap.org/">Visit Uniswap</a>
-	</div>	
-</section>		
-	
+		<a id="no-txt-decoration" class="button1" href="https://info.uniswap.org/token/0xb4d930279552397bba2ee473229f89ec245bc365">Visit Uniswap</a>
+	</div>
+</section>
+
 
 <script type="text/javascript">
 var timer;
@@ -40,7 +40,7 @@ function settimer()
 	if(timer_hour=="")timer_hour=0;
 	var timer_min=30;
 	if(timer_min=="")timer_min=0;
-	 
+
 	var timer_date=timer_year+"/"+timer_month+"/"+timer_day+" "+timer_hour+":"+timer_min+":00 UTC";
 	var end = new Date(timer_date); // Arrange values in Date Time Format
 	var now = new Date().toLocaleString(); // Get Current date time
@@ -48,7 +48,7 @@ function settimer()
 	var minute = second * 60; // Total Sec In One Min
 	var hour = minute * 60; // Total Min In One Hour
 	var day = hour * 24; // Total Hour In One Day
- 
+
 	function showtimer() {
 		var now = new Date();
 		var remain = end - Date.parse(now); // Get The Difference Between Current and entered date time
@@ -65,7 +65,7 @@ function settimer()
 			document.getElementById("timerSeconds").innerHTML = seconds;
 		}
 		else
-		{   
+		{
 			document.getElementById("section-timer").setAttribute("class", "hideclass");
 			document.getElementById("section-timer-height").setAttribute("class", "showclass");
 			clearInterval(timer);
