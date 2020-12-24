@@ -1,0 +1,133 @@
+#section-diamond-stak
+  font-family: $font-family-heading
+  color: #fff
+  padding: 190px 0
+
+  .main-section
+    background: linear-gradient(180deg, #2D2D2D 0%, #242424 100%)
+    border-radius: 16px
+    padding: 64px
+
+  .main-title
+    font-size: 36px
+    padding-bottom: 32px
+    font-weight: 700
+
+  .percent-box-left
+    .small-text
+      color: #969696
+      font-size: 16px
+    .big-text
+      font-size: 30px  
+      font-family: Inter
+      font-weight: 700    
+
+  .percent-box
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+  .box
+    background: #3C3C3C
+    border-radius: 12px
+    width: 220px
+    height: 103px
+    display: flex;
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    margin-top: 30px
+  
+    .parcent
+      font-size: 36px
+      font-weight: 600
+      line-height: 55px
+      font-family: Inter
+
+    .parcent-text
+      font-size: 16px
+      color: #969696
+      line-height: 19px 
+      font-weight: 700 
+      text-align: center
+
+  .progress-bars-outer
+    width: 100%
+    margin-top: 30px
+   
+
+    .status
+      display: inline-block
+      background: #121212
+      border-radius: 30px
+      width: 18%    
+      text-align: center
+      padding: 5px 16px 
+      font-size: 24px
+      margin-left: 29px
+    
+  .progress-bars   
+    background: #121212
+    border-radius: 30px
+    height: 46px
+    padding: 2px
+    width: 78%
+    display: inline-block 
+
+
+    .progress-meter 
+      background: linear-gradient(135deg, #FF8B71 14.65%, #C33F50 64.42%, #A81E41 85.36%);
+      border-radius: 30px
+      height: 42px
+      text-align: right
+      font-size: 16px
+      line-height: 42px
+      font-family: Inter
+      padding-right: 10px
+             
+  @media (max-width: 600px) 
+    .main-section
+      padding: 18px 15px  
+
+    .main-title
+      padding-bottom: 15px
+      
+    .percent-box-left .big-text
+      font-size: 24px 
+      padding-bottom: 25px 
+
+    .box
+      margin: 0px 5px
+      width: 80px
+      height: 54px
+
+      .parcent
+        font-size: 13px 
+        line-height: 13px
+
+      .parcent-text
+        font-size: 8px
+        line-height: 9px  
+        padding: 0px 10px      
+
+    .progress-bars
+      width: 100%  
+      height: 30px
+    .progress-bars-outer
+      margin-top: 20px
+      .progress-meter
+        height: 26px
+        line-height: 26px
+
+    .progress-bars-outer .status
+      margin: 10px auto 0 auto
+      width: 50%
+      display: inherit
+      font-size: 18px 
+      height: 30px
+      line-height: 30px
+      padding: 0
+
+@media (max-width: 600px) 
+  #section-diamond-stak  
+    padding: 50px 0                    

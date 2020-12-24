@@ -32,6 +32,11 @@ module.exports = {
       filename: "arth.html",
       // template: "!!ejs-compiled-loader!./src/index.ejs"
     }),
+	new HtmlWebpackPlugin({
+      template: Path.resolve(__dirname, '../src/html/pages/arthFerrum/index.hbs'),
+      filename: "staking.html",
+      // template: "!!ejs-compiled-loader!./src/index.ejs"
+    }),
   ],
   resolve: {
     alias: {
