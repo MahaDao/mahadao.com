@@ -46,8 +46,13 @@
             i = i + 1;
             $(".progress-meter").css("width", i + "%").text( i + "%");
         }
+		else
+		{
+            i = 0;
+            $(".progress-meter").css("width", i + "%").text( i + "%");
+        }
         // Wait for sometime before running this script again
         setTimeout("makeProgress()", 100);
     }
     makeProgress();
- </script>
+</script>
