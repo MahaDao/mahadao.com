@@ -29,28 +29,28 @@
 
 .maha-coin-box
   display: flex
-  align-items: center
   justify-content: center
   padding-top: 30px
-  
+
+  .maha-coin img.coin-img
+    width: 165px
+
   .arrow
-    padding: 0 30px 0 6px 
+    padding: 0 30px 0 30px 
+    position: relative
+    top: 129px
 
     img 
       position: relative
-      top: -33px
+      top: -56px
 
   .maha-coin p 
     line-height: 26px
     font-weight: 700
     font-size: 22px
     letter-spacing: 4px 
-    letter-spacing: 7px
-
-  .maha-coin.ferrum-network p 
-    position: relative
-    top: 23px
-        
+    letter-spacing: 7px    
+    padding-top: 15px   
 
 @media (max-width: 600px) 
   #section-staking-program
@@ -61,18 +61,14 @@
 
     .maha-coin-box .arrow
       padding: 0 10px 
-
-    .maha-coin-box .arrow img
-      top: -20px
+      top: 101px
+      left: 5px
 
     .maha-coin img
       width: 105px
 
-    .maha-coin.ferrum-network img
-      width: 97px 
-
     .maha-coin.arrow img
-      width: 39px 
+      width: 40px 
 
     .maha-coin p
       font-size: 12px
@@ -80,5 +76,3 @@
 
     .maha-coin.ferrum-network p 
       top: 14px               
-    
-       
