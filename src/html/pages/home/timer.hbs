@@ -7,9 +7,7 @@
 		 <div class="timer_box"><div class="timer_number" id="timerSeconds"></div> <span class="timer_text">Seconds</span></div>
 	</div>
 	
-	<div class="button1" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
-		<a id="no-txt-decoration" class="button1" href="staking.html">STAKE NOW</a>
-	</div>	
+	<div class="button1" id="timer-1-button" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"></div>	
 </section>
 
 <script type="text/javascript">
@@ -61,10 +59,12 @@ function settimer(days,months,years,hours,mins)
 	
 		if (timesec == 1){
 			document.getElementById("timer-1").innerHTML = 'MAHA Staking Going Live on<p style="font-size: 18px">25th Dec 2020 3:00PM GMT</p>';
+			document.getElementById("timer-1-button").innerHTML = '<a id="no-txt-decoration" class="button1" href="staking.html">STAKE NOW</a>';
 		}
 		else
 		{
-			document.getElementById("timer-1").innerHTML = 'MAHA Staking is Live now <p style="font-size: 18px">Staking Window closes on 2nd Jan 2021 4:00 PM GMT</p>';
+			document.getElementById("timer-1").innerHTML = 'MAHA Staking Deposits is Live<p style="font-size: 18px">Deposit Window closes on 1st Jan 2021 3:00 PM GMT</p>';
+			document.getElementById("timer-1-button").innerHTML = '<a id="no-txt-decoration" target="_blank" class="button1" href="https://stake.unifyre.io/maha/info/0xa00e619fcddb7375192e21fbc4e1d00fd0963395">STAKE NOW</a>';
 		}
 	}
 	timer = setInterval(showtimer, 1000); // Display Timer In Every 1 Sec
