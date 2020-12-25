@@ -15,11 +15,13 @@
 				else {
 					$("body").removeClass("fixed_header");
 				}
-				});</script></header><div id="header-gradient"></div><div class="chakra"></div><div class="gradient-red-1"></div><div class="gradient-red-2"></div><div class="gradient-black-1"></div><section id="section-title"><div class="title-head" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true"><span class="main-title">Timeless value.</span><br/>World's first non-depreciating currency</div><div class="title-down-text"><div class="line"></div><div class="text-slide-right"><p>Introducing ARTH coin. A new kind of money that maintains it's buying power irrespective of which direction the market moves.</p></div></div></section><section id="section-timer" data-aos="" data-aos-duration="1000" data-aos-once="true"><div class="main-title">MAHA Staking Going Live on<p style="font-size: 18px">25th Dec 2020 3:00PM GMT</p></div><div class="timer_row"><div class="timer_box"><div class="timer_number" id="timerDays"></div><span class="timer_text">Days</span></div><div class="timer_box"><div class="timer_number" id="timerHours"></div><span class="timer_text">Hours</span></div><div class="timer_box"><div class="timer_number" id="timerMinutes"></div><span class="timer_text">Minutes</span></div><div class="timer_box"><div class="timer_number" id="timerSeconds"></div><span class="timer_text">Seconds</span></div></div><div class="button1"><a id="no-txt-decoration" class="button1" href="staking.html">STAKE NOW</a></div></section><section id="section-timer-second" data-aos="" data-aos-duration="1000" data-aos-once="true" style="display:none"><div class="main-title">MAHA Staking is Live now<p style="font-size: 18px">Staking Window closes on 2nd Jan 2021 4:00 PM GMT</p></div><div class="timer_row"><div class="timer_box"><div class="timer_number" id="timerDays"></div><span class="timer_text">Days</span></div><div class="timer_box"><div class="timer_number" id="timerHours"></div><span class="timer_text">Hours</span></div><div class="timer_box"><div class="timer_number" id="timerMinutes"></div><span class="timer_text">Minutes</span></div><div class="timer_box"><div class="timer_number" id="timerSeconds"></div><span class="timer_text">Seconds</span></div></div><div class="button1"><a id="no-txt-decoration" class="button1" href="staking.html">STAKE NOW</a></div></section><script>var timer;
+				});</script></header><div id="header-gradient"></div><div class="chakra"></div><div class="gradient-red-1"></div><div class="gradient-red-2"></div><div class="gradient-black-1"></div><section id="section-title"><div class="title-head" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true"><span class="main-title">Timeless value.</span><br/>World's first non-depreciating currency</div><div class="title-down-text"><div class="line"></div><div class="text-slide-right"><p>Introducing ARTH coin. A new kind of money that maintains it's buying power irrespective of which direction the market moves.</p></div></div></section><section id="section-timer" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"><div class="main-title" id="timer-1"></div><div class="timer_row" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"><div class="timer_box"><div class="timer_number" id="timerDays"></div><span class="timer_text">Days</span></div><div class="timer_box"><div class="timer_number" id="timerHours"></div><span class="timer_text">Hours</span></div><div class="timer_box"><div class="timer_number" id="timerMinutes"></div><span class="timer_text">Minutes</span></div><div class="timer_box"><div class="timer_number" id="timerSeconds"></div><span class="timer_text">Seconds</span></div></div><div class="button1" id="timer-1-button" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"></div></section><script>var timer;
+		var timesec = 1;
+		
 		function settimer(days,months,years,hours,mins)
 		{
 			currentTime = new Date();
-		
+			
 			clearInterval(timer);
 			var timer_month=months;
 			var timer_day=days;
@@ -28,7 +30,7 @@
 			if(timer_hour=="")timer_hour=0;
 			var timer_min=mins;
 			if(timer_min=="")timer_min=0;
-		
+			 
 			var timer_date=timer_year+"/"+timer_month+"/"+timer_day+" "+timer_hour+":"+timer_min+":00 UTC";
 			var end = new Date(timer_date); // Arrange values in Date Time Format
 			var now = new Date().toLocaleString(); // Get Current date time
@@ -36,13 +38,13 @@
 			var minute = second * 60; // Total Sec In One Min
 			var hour = minute * 60; // Total Min In One Hour
 			var day = hour * 24; // Total Hour In One Day
-		
+		 
 		
 			function showtimer() {
 				var now = new Date();
 				var remain = end - Date.parse(now); // Get The Difference Between Current and entered date time
 				if(remain > 0)
-				{
+				{	
 					var days = Math.floor(remain / day); // Get Remaining Days
 					var hours = Math.floor((remain % day) / hour); // Get Remaining Hours
 					var minutes = Math.floor((remain % hour) / minute); // Get Remaining Min
@@ -53,12 +55,20 @@
 					document.getElementById("timerSeconds").innerHTML = seconds;
 				}
 				else
-				{
-					clearInterval(timer);
+				{  
+					timesec = 2;
 					settimer(1,1,2021,15,00);
-					document.getElementById("section-timer-second").setAttribute("class", "showclass");
-					document.getElementById("section-timer").setAttribute("class", "hideclass");
 					return;
+				}
+			
+				if (timesec == 1){
+					document.getElementById("timer-1").innerHTML = 'MAHA Staking Going Live on<p style="font-size: 18px">25th Dec 2020 3:00PM GMT</p>';
+					document.getElementById("timer-1-button").innerHTML = '<a id="no-txt-decoration" class="button1" href="staking.html">STAKE NOW</a>';
+				}
+				else
+				{
+					document.getElementById("timer-1").innerHTML = 'MAHA Staking Deposits is Live<p style="font-size: 18px">Deposit Window closes on 1st Jan 2021 3:00 PM GMT</p>';
+					document.getElementById("timer-1-button").innerHTML = '<a id="no-txt-decoration" target="_blank" class="button1" href="https://stake.unifyre.io/maha/info/0xa00e619fcddb7375192e21fbc4e1d00fd0963395">STAKE NOW</a>';
 				}
 			}
 			timer = setInterval(showtimer, 1000); // Display Timer In Every 1 Sec
