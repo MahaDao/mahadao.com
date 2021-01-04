@@ -1,0 +1,523 @@
+/***  MahaDAO Protocol  Usage ***/  
+.arth-maha-dao-ring
+  background-image: url("../images/mahadao-protocol/mahadao-ring.svg")
+  width: 1042px
+  height: 1181px
+  margin: -165px auto 0 auto
+  background-repeat: no-repeat
+  background-size: cover 
+  position: relative
+  color: #fff
+
+
+  .number 
+    font-size: 26px 
+    background: -webkit-linear-gradient(90deg, #FD5656, #F48057 100%)  
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+
+  .box  
+    position: absolute
+    left: 0px
+    top: 0px
+
+    .description  
+      left: 0px 
+      font-size: 14px
+      max-width: 160px
+      line-height: 18px  
+
+    .icon
+      display: inline-block
+      margin: 0px 7px          
+      padding-top: 62px
+      text-transform: uppercase
+      vertical-align: top
+      font-size: 14px
+
+    .gold-biscuit-icon  
+      background-image: url("../images/mahadao-protocol/gold-biscuit-icon.svg")
+      background-repeat: no-repeat
+      background-position: 0px 7px
+      width: 122px
+      height: 124px
+      background-position: center top
+      
+    .currency-icon  
+      background-image: url("../images/mahadao-protocol/currency-icon.svg")
+      background-repeat: no-repeat
+      background-position: center top
+      width: 78px
+      height: 49px   
+
+    .line
+      height: 2px	
+      width: 157px
+      border-top: 2px solid #fff
+      display: inline-block
+      position: relative     
+      
+
+    .ani-start    
+      animation: line-ani 3s linear  
+
+      @keyframes line-ani 
+        from 
+          width: 0px
+        to 
+          width: 157px
+
+    .line:after
+      position: absolute
+      right: 0px
+      top: -6px
+      content: ''
+      display: inline-block
+      border: solid #fff
+      border-width: 0 2px 2px 0      
+      padding: 4px
+      transform: rotate(-45deg)
+      -webkit-transform: rotate(-45deg)
+
+    .line-reverse
+      width: 227px
+      border-top: 2px dotted #fff
+      top: -17px 
+      animation: line-ani-reverse 3s linear
+
+    .slide-2
+      width: 227px
+      top: -17px   
+
+    .slide-2:after
+      right: auto
+      left: 0px  
+      transform: rotate(145deg)
+      -webkit-transform: rotate(145deg)         
+
+    .ani-none
+      animation-name: none!important 
+      
+    .line-reverse:after
+      right: auto
+      left: 0px  
+      transform: rotate(145deg)
+      -webkit-transform: rotate(145deg)
+
+      @keyframes line-ani-reverse 
+        from 
+          width: 0px
+        to 
+          width: 227px  
+
+    .fill-line
+      border-top: 2px solid #fff  
+      position: absolute
+      right: -229px
+      top: 17px
+
+    .doted-line    
+      border-top: 2px dotted #fff   
+
+    .line-127
+      width: 127px  
+      animation-name: line-ani-115 
+      position: absolute
+      left: -129px    
+
+      @keyframes line-ani-115 
+        from 
+          width: 0px
+        to 
+          width: 127px                                        
+
+    .logo-icon   
+      background-image: url("../images/mahadao-protocol/logo-icon.svg")
+      background-repeat: no-repeat
+      width: 102px
+      height: 102px
+      display: inline-block 
+
+  .box-1          
+    top: 333px
+    left: -29px                   
+
+  .box-2      
+    right: 24px
+    top: 325px
+    left: auto  
+
+  .box-3          
+    top: 518px
+    left: -12px
+    width: 160px
+    font-size: 14px
+    text-align: left  
+
+  .box-4          
+    top: 512px
+    right: -53px
+    left: auto
+    width: 160px
+    font-size: 14px
+    text-align: left   
+
+  .box-5          
+    top: 704px
+    left: -17px        
+
+  .box-6          
+    top: 714px
+    right: -53px    
+    left: auto          
+        
+.arth-vault  
+  background-image: url("../images/mahadao-protocol/arth-vault-box.svg")
+  width: 630px
+  height: 709px
+  margin: 234px auto 0 auto
+  text-align: center
+  background-repeat: no-repeat
+  background-size: cover 
+  color: #fff
+
+  .arth-vault-title
+    padding-top: 30px
+    text-transform: uppercase
+    font-size: 14px
+    font-weight: 700
+    height: 64px
+
+  .arth-vault-des 
+    color: #fff
+    max-width: 177px
+    margin: 0 auto
+    
+  .arth-vault-des p
+    line-height: 18px
+    font-size: 16px
+
+  .arth-vault-des p.des-text-1
+    width: 160px
+    margin: -7px auto 0 auto   
+    padding-bottom: 15px
+
+  .arth-vault-des p.des-text-2
+    width: 180px
+    margin: -7px auto 0 auto     
+
+  .center-text     
+    max-width: 326px
+    margin: 0 auto 15px auto
+    font-size: 18px
+    line-height: 21px
+
+/*line-timer start*/
+.line-timer 
+  width: 120px
+  height: 120px
+  display: inline-block  
+  margin-bottom: 15px
+   
+.timer 
+  width: 120px
+  height: 120px
+  position: relative
+  margin: auto
+
+.timer:after
+  background: #404040
+  content: ''
+  width: 1px
+  height: 99%
+  position: absolute
+  top: 50%
+  left: 49%
+  z-index: 1
+  transform: translate(-50%, -50%)
+
+.timer .pie 
+  width: 50%
+  height: 100%
+  transform-origin: 100% 50%
+  position: absolute
+  background: transparent
+  border: 1px solid #fff
+
+.timer .spinner:before
+  position: absolute
+  content: ''
+  display: block
+  z-index: 100
+  left: 55px
+  top: -8px
+  width: 0
+  height: 0
+  border-top: 8px solid transparent
+  border-left: 10px solid #fff
+  border-bottom: 8px solid transparent
+
+.timer .spinner 
+  border-radius: 100% 0 0 100% / 50% 0 0 50%
+  z-index: 0
+  border-right: none
+  -webkit-animation: rota 8s linear infinite
+
+.timer .filler 
+  border-radius: 0 100% 100% 0 / 0 50% 50% 0
+  left: 50%
+  opacity: 0
+  -webkit-animation: opa 8s steps(1, end) infinite reverse
+  border-left: none
+  background: #1E1E1E
+
+.timer .mask 
+  width: 50%
+  height: 100%
+  position: absolute
+  background: inherit
+  opacity: 1
+  left: -1px
+  background: #1F1F1F
+  -webkit-animation: opa 8s steps(1, end) infinite
+
+@-webkit-keyframes rota 
+  0% 
+    transform: rotate(0deg)
+
+  100%
+    transform: rotate(360deg)
+    to: z-index 0
+
+@-webkit-keyframes opa 
+  0% 
+    opacity: 1
+
+  50%, 100%
+    opacity: 0
+
+.numb
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  z-index: 10
+  font-size: 18px
+  font-weight: 500
+  color: #fff
+  background: radial-gradient(50% 50% at 50% 50%, #565555 0%, #212020 100%)
+  width: 43px
+  height: 43px
+  border-radius: 43px
+  line-height: 43px
+  z-index: 101
+  text-align: center
+  font-weight: 700
+
+.line-timer-reverse .timer .mask
+  background: #1B1B1B  
+.line-timer-reverse .timer .filler
+  background: #1B1B1B    
+
+.line-timer-reverse .timer .mask  
+  -webkit-animation: opa-reverse 8s steps(1, end) infinite
+
+.line-timer-reverse .timer .filler  
+  -webkit-animation: opa-reverse 8s steps(1, end) infinite reverse
+
+.line-timer-reverse .timer .spinner   
+  -webkit-animation: rota-reverse 8s linear infinite
+
+@-webkit-keyframes opa-reverse 
+  0% 
+    opacity: 0
+
+  50%, 100%
+    opacity: 1  
+
+@-webkit-keyframes rota-reverse 
+  0% 
+    transform: rotate(0deg)
+
+  100%
+    transform: rotate(-360deg)
+    to: z-index 0 
+    
+@media screen and (max-width: 500px)
+  .arth-maha-dao-ring
+    background-image: url("../images/mahadao-protocol/mahadao-ring-small.svg")
+    width: 267px
+    height: 354px
+    margin: -100px auto 0 auto
+
+    .number
+      font-size: 14px
+      background: -webkit-linear-gradient(90deg, #a1a1a1, #a1a1a1 100%)
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
+
+    .box
+      .logo-icon
+        width: 35px
+        background-size: 100%
+
+      .description
+        font-size: 8px
+        line-height: 8px
+        max-width: 90px
+
+        .number
+          font-size: 12px
+
+      .line-reverse  
+        width: 80px
+        border-top: 1px solid #fff
+        top: -82px
+
+      .line-127  
+        left: -33px
+        top: 18px
+
+      .line  
+        width: 35px
+        margin: 0px
+        border-width: 1px 
+        animation: line-ani 3s linear 
+
+      @keyframes line-ani 
+        from 
+          width: 0px
+        to 
+          width: 35px 
+
+      .line:after
+        border-width: 0 1px 1px 0
+        padding: 2px
+        top: -3px  
+              
+      .line-reverse
+        width: 75px
+
+      .slide-1
+        left: -8px
+
+      .slide-2 
+        right: -93px
+        top: 18px 
+        width: 90px   
+        animation: line-ani-reverse 3s linear
+
+      @keyframes line-ani-reverse 
+        from 
+          width: 0px
+        to 
+          width: 90px 
+                
+    .box-1
+      top: 90px
+      left: -45px
+
+    .box .icon 
+      font-size: 11px
+      padding-top: 20px
+
+    .box-2
+      top: 90px
+      right: -26px  
+
+    .box-3
+      top: 155px
+      left: -37px   
+
+    .box-4
+      top: 155px
+      right: -120px  
+
+    .box-5
+      top: 234px 
+      left: -38px  
+
+    .box-6
+      top: 234px  
+      right: -43px 
+
+    .box .gold-biscuit-icon 
+        width: 42px
+        background-size: 100% 
+        height: auto
+
+    .box .currency-icon 
+        width: 42px
+        background-size: 65%  
+        margin: 0       
+      
+    .arth-vault
+      background-image: url("../images/mahadao-protocol/arth-vault-box-small.svg")
+      width: 180px
+      height: 232px
+      margin: 60px auto 0 auto
+
+      .arth-vault-title
+        font-size: 8px 
+        padding-top: 10px 
+        height: auto
+        margin-bottom: 0
+
+      .arth-vault-des.arth-vault-des-2 
+        margin: -10px auto 0 auto
+
+      .arth-vault-des
+        margin: 0 auto
+        p
+          font-size: 8px
+          line-height: 9px
+
+        p.des-text-1
+          width: 68px
+          padding-bottom: 5px
+          margin: 0 auto
+
+        p.des-text-2
+          width: 80px
+          padding-bottom: 5px
+          margin: 0 auto       
+
+      .number
+        font-size: 12px  
+
+      .center-text
+        font-size: 16px 
+        line-height: 8px 
+        max-width: 160px  
+        margin-bottom: 5px    
+        background: -webkit-linear-gradient(90deg, #FD5656, #F48057  100%)
+        background-clip: border-box
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent                   
+          
+  .line-timer 
+    width: 35px 
+    height: 35px
+    margin-bottom: 0px
+
+  .timer 
+    width: 35px 
+    height: 35px
+
+  .timer:after
+    width: 0
+
+  .timer .spinner:before
+    left: 16px
+    top: -4px
+    border-top: 4px solid transparent
+    border-left: 5px solid #fff
+    border-bottom: 4px solid transparent
+
+  .numb
+    width: 26px
+    height: 26px
+    line-height: 26px
+    font-size: 10px
+
+/*line-timer end*/ 
