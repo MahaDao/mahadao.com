@@ -1,0 +1,134 @@
+<section id="arth-maha-dao-overview" class="arth-section" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
+	<div class="arth-maha-dao-ring">
+		<div class="box box-1">
+			<span class="icon gold-biscuit-icon">ASSET A</span>
+			<span class="icon currency-icon">ASSET B</span>
+			<span class="line-animation line slide-1"></span>
+		</div>
+
+		<div class="box box-2">				
+			<span class="line line-reverse ani-none"></span>
+			<span class="logo-icon"></span>
+		</div>	
+
+		<div class="box box-3">				
+			<span class="number">01.</span>
+			<p class="description">Generate Arth by locking colletarals into smart </p>
+		</div>	
+
+		<div class="box box-4">				
+			<span class="number">03.</span>
+			<p class="description">Releasing collateral  by paying back Arth</p>
+		</div>	
+
+		<div class="box box-5">						
+			<span class="logo-icon"></span>
+			<span class="line-animation line  fill-line slide-2"></span>
+		</div>
+
+		<div class="box box-6">
+			<span class="line doted-line line-127 ani-none"></span>
+			<span class="icon gold-biscuit-icon">ASSET A</span>
+			<span class="icon currency-icon">ASSET B</span>		
+		</div>	
+
+		<div class="arth-vault">
+			<p class="arth-vault-title">ARTH VAULT</p>
+			
+			<div  class="arth-vault-des">
+				<span class="number">02.a</span>
+				<p class="des-text-1"> If A appreciates, then buy B and sell off A</p>
+			</div>
+
+			<div class="line-timer">
+				<div class="timer">
+				<div class="numb">+0</div>
+				<div class="pie spinner"></div>
+				<div class="pie filler"></div>
+				<div class="mask"></div>
+				</div>
+			</div>
+	
+			<div class="number center-text d-none d-md-block"> Innovative rebalancing logic maintains a ratio of 1:1 to preserve purchasing power. </div>
+			<div class="number center-text d-block d-md-none"> 1:1 </div>
+
+
+			<div class="line-timer line-timer-reverse">
+				<div class="timer">
+				<div class="numb numb-reverse">+0</div>
+				<div class="pie spinner"></div>
+				<div class="pie filler"></div>
+				<div class="mask"></div>
+				</div>
+			</div>
+
+			<div  class="arth-vault-des arth-vault-des-2">
+				<span class="number">02.b</span>
+				<p class="des-text-2"> If B depreciates, then we sell off A in order to buy B</p>
+			</div>
+		</div>
+	</div>			
+</section>
+<script type="text/javascript">
+ $('.slide-2').hide();  
+setInterval(function(){ 
+  		$('.line-animation').removeClass('ani-start'); 
+$('.line-animation').removeClass('line-reverse'); 		  				  
+		show_process();
+		$('.slide-1').hide(); 
+		$('.slide-2').hide(); 
+ },8300);
+ 
+ function show_process(){
+	 setTimeout(function(){
+		  $('.slide-1').show(); 
+			 $('.slide-1').addClass('ani-start');  
+		 },1000);
+		setTimeout(function(){
+			 $('.slide-2').show(); 
+			 $('.slide-2').addClass('line-reverse');  
+			
+		 },5000);
+ }
+  show_process();
+</script>
+
+<script type="text/javascript">
+setInterval(function(){ 
+		timer_process();
+ },7500);
+ function timer_process(){
+      const numb = document.querySelector(".numb");
+      let counter = 0;
+      setInterval(()=>{
+        if(counter == 10){
+          clearInterval();
+        }else{
+          counter+=1;
+          numb.textContent =  "+" + counter;
+        }
+      }, 800);
+
+}
+  timer_process();
+</script>
+
+<script>
+setInterval(function(){ 
+		timer_process_reverse();
+ },8000);
+ 
+ function timer_process_reverse(){
+      const numb = document.querySelector(".numb-reverse");
+      let counter = 10;
+      setInterval(()=>{
+        if(counter == 0){
+          clearInterval();
+        }else{
+          counter+= -1;
+          numb.textContent =  "-" + counter;
+        }
+      }, 800);  
+}
+timer_process_reverse();
+</script>
