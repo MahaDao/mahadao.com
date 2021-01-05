@@ -1,6 +1,6 @@
 #section-arth-backed
   max-width: 1086px
-  margin: 100px auto
+  margin: 200px auto
   text-align: center
   padding: 0px 15px
   font-family: $font-family-heading
@@ -19,29 +19,71 @@
     justify-content: center
     padding-top: 30px
     align-items: center
-  .chart-angle-img
+    color: #fff
+
+  .arrow-icon
+    padding: 0px   90px  
+
+
+  .logo-icon
+    position: relative
+
+  .logo-icon p
+    margin: 0px 
+    position: absolute
+    padding-top: 22px  
+    left: 50%
+    transform: translate(-50%, -50%)
+    margin-top: 20px
+
+  .arrow-icon p  
+    margin-top: -15px     
+    font-size: 18px
    
   .chart-circle
-    width: 345px
-    height: 345px
-    background-image: url("../images/chart-circle.svg")
-    background-repeat: no-repeat
-    background-size: cover 
+    width: 244px
+    height: 245px 
+
+  .chart-circle p
+    padding: 25px 20px 
 
   .chart-text
-    font-size: 26px
-    font-weight: 700
+    font-family: Inter
+    font-weight: 500
     color: #fff
-    padding-left: 180px
+    padding-left: 55px
     text-align: left
     margin: 0px
+    position: relative
+
+    li
+      list-style: none
+      position: relative
+      padding: 3px 20px
+
+  .chart-text li:after
+    content: ''
+    background: #3DB549
+    width: 8px
+    height: 8px
+    display: inline-block
+    border-radius: 8px
+    position: absolute
+    left: 0px
+    top: 12px 
+
+  .chart-text li:nth-child(2):after   
+    background: #FCCD12  
+
+  .chart-text li:nth-child(3):after   
+    background: #F7931A        
 
 
   @media screen and (max-width: 600px)
-    .chart-circle
-      background-size: 100%
-      height: 150px
-      width: 150px
+    .backed-circle
+      display: inline-block
+    .logo-icon p
+      position: inherit  
       
     .chart-text
       font-size: 20px
