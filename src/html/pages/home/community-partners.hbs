@@ -4,7 +4,7 @@
 			Partners
 		</div>
 
-		<div class="tab-section">
+		<div class="tab-section" onscroll="myFunction()">
 			<ul class="tab">
 				<li class="tab-link current" data-tab="tab-1">Investors</li>
 				<li class="tab-link" data-tab="tab-2">Blockchain & Tech</li>
@@ -315,3 +315,15 @@
 
 	})
 </script>
+
+ <script> 
+  function myFunction() {
+    var scrollbar = $('.tab-section').scrollLeft();
+      if(scrollbar > 10){
+	    $('.tab-section').addClass('scroll');
+	  }
+	  else{
+	  $('.tab-section').removeClass('scroll');
+	  }
+ 	}	
+   </script>
