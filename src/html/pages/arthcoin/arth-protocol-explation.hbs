@@ -40,27 +40,13 @@
 				<p class="des-text-1"> If A appreciates, then buy B and sell off A</p>
 			</div>
 
-			<div class="line-timer">
-				<div class="timer">
-				<div class="numb">+0</div>
-				<div class="pie spinner"></div>
-				<div class="pie filler"></div>
-				<div class="mask"></div>
-				</div>
-			</div>
+			<div class="line-timer"></div>
 	
 			<div class="number center-text d-none d-md-block"> Innovative rebalancing logic maintains a ratio of 1:1 to preserve purchasing power. </div>
 			<div class="number center-text d-block d-md-none"> 1:1 </div>
 
 
-			<div class="line-timer line-timer-reverse">
-				<div class="timer">
-				<div class="numb numb-reverse">+0</div>
-				<div class="pie spinner"></div>
-				<div class="pie filler"></div>
-				<div class="mask"></div>
-				</div>
-			</div>
+			<div class="line-timer line-timer-reverse"></div>
 
 			<div  class="arth-vault-des arth-vault-des-2">
 				<span class="number">02.b</span>
@@ -91,44 +77,4 @@ $('.line-animation').removeClass('line-reverse');
 		 },5000);
  }
   show_process();
-</script>
-
-<script type="text/javascript">
-setInterval(function(){ 
-		timer_process();
- },7500);
- function timer_process(){
-      const numb = document.querySelector(".numb");
-      let counter = 0;
-      setInterval(()=>{
-        if(counter == 10){
-          clearInterval();
-        }else{
-          counter+=1;
-          numb.textContent =  "+" + counter;
-        }
-      }, 800);
-
-}
-  timer_process();
-</script>
-
-<script>
-setInterval(function(){ 
-		timer_process_reverse();
- },8000);
- 
- function timer_process_reverse(){
-      const numb = document.querySelector(".numb-reverse");
-      let counter = 10;
-      setInterval(()=>{
-        if(counter == 0){
-          clearInterval();
-        }else{
-          counter+= -1;
-          numb.textContent =  "-" + counter;
-        }
-      }, 800);  
-}
-timer_process_reverse();
 </script>

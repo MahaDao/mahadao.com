@@ -214,134 +214,15 @@
 
 /*line-timer start*/
 .line-timer 
-  width: 120px
-  height: 120px
+  background-image: url("../images/mahadao-protocol/timer-icon.svg")
+  background-repeat: no-repeat
+  width: 131px
+  height: 139px
   display: inline-block  
   margin-bottom: 15px
    
-.timer 
-  width: 120px
-  height: 120px
-  position: relative
-  margin: auto
-
-.timer:after
-  background: #404040
-  content: ''
-  width: 1px
-  height: 99%
-  position: absolute
-  top: 50%
-  left: 49%
-  z-index: 1
-  transform: translate(-50%, -50%)
-
-.timer .pie 
-  width: 50%
-  height: 100%
-  transform-origin: 100% 50%
-  position: absolute
-  background: transparent
-  border: 1px solid #fff
-
-.timer .spinner:before
-  position: absolute
-  content: ''
-  display: block
-  z-index: 100
-  left: 55px
-  top: -8px
-  width: 0
-  height: 0
-  border-top: 8px solid transparent
-  border-left: 10px solid #fff
-  border-bottom: 8px solid transparent
-
-.timer .spinner 
-  border-radius: 100% 0 0 100% / 50% 0 0 50%
-  z-index: 0
-  border-right: none
-  -webkit-animation: rota 8s linear infinite
-
-.timer .filler 
-  border-radius: 0 100% 100% 0 / 0 50% 50% 0
-  left: 50%
-  opacity: 0
-  -webkit-animation: opa 8s steps(1, end) infinite reverse
-  border-left: none
-  background: #1E1E1E
-
-.timer .mask 
-  width: 50%
-  height: 100%
-  position: absolute
-  background: inherit
-  opacity: 1
-  left: -1px
-  background: #1F1F1F
-  -webkit-animation: opa 8s steps(1, end) infinite
-
-@-webkit-keyframes rota 
-  0% 
-    transform: rotate(0deg)
-
-  100%
-    transform: rotate(360deg)
-    to: z-index 0
-
-@-webkit-keyframes opa 
-  0% 
-    opacity: 1
-
-  50%, 100%
-    opacity: 0
-
-.numb
-  position: absolute
-  top: 50%
-  left: 50%
-  transform: translate(-50%, -50%)
-  z-index: 10
-  font-size: 18px
-  font-weight: 500
-  color: #fff
-  background: radial-gradient(50% 50% at 50% 50%, #565555 0%, #212020 100%)
-  width: 43px
-  height: 43px
-  border-radius: 43px
-  line-height: 43px
-  z-index: 101
-  text-align: center
-  font-weight: 700
-
-.line-timer-reverse .timer .mask
-  background: #1B1B1B  
-.line-timer-reverse .timer .filler
-  background: #1B1B1B    
-
-.line-timer-reverse .timer .mask  
-  -webkit-animation: opa-reverse 8s steps(1, end) infinite
-
-.line-timer-reverse .timer .filler  
-  -webkit-animation: opa-reverse 8s steps(1, end) infinite reverse
-
-.line-timer-reverse .timer .spinner   
-  -webkit-animation: rota-reverse 8s linear infinite
-
-@-webkit-keyframes opa-reverse 
-  0% 
-    opacity: 0
-
-  50%, 100%
-    opacity: 1  
-
-@-webkit-keyframes rota-reverse 
-  0% 
-    transform: rotate(0deg)
-
-  100%
-    transform: rotate(-360deg)
-    to: z-index 0 
+.line-timer-reverse  
+  background-image: url("../images/mahadao-protocol/timer-icon-reverse.svg") 
     
 @media screen and (max-width: 500px)
   .arth-maha-dao-ring
@@ -499,6 +380,7 @@
     width: 35px 
     height: 35px
     margin-bottom: 0px
+    background-size: 90%
 
   .timer 
     width: 35px 
