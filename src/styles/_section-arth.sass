@@ -7,7 +7,7 @@
 	
 .dis-flex-center
   display: flex
-  justify-content: center 
+  justify-content: center  
 	
 .arth-section
   // margin: 120px auto 0px
@@ -78,7 +78,7 @@
     width: 300px
     margin-top: -70px
     top: 0
- 
+
   
 /*** Arth Maha Dao section ***/
 #arth-maha-dao
@@ -140,7 +140,7 @@
       letter-spacing: 0em
       text-align: center
       color: #A1A1A1
-	  
+
 	    
 /*** Arth Section above footer/partner ***/
 #arth-section-title
@@ -208,8 +208,8 @@
   height: 4px	
   background: -webkit-linear-gradient(180deg, #000000 0%, #515151 91.87%)
   display: block
- 
- 
+
+
 #arth-road-map
   display: inherit
   padding: 0px
@@ -237,7 +237,7 @@
   .arth-tech-card-col
      border-radius: 30px
      background: -webkit-linear-gradient(180deg, #2D2D2D 0%, #1C1C1C 100%)
-	 
+
 
 #arth-cross-border
   background: linear-gradient(180deg, #2B2B2B 0%, #1F1F1F 60.94%)
@@ -261,17 +261,124 @@
   background-size: contain
   background-position: center top
   @media screen and (max-width: 500px)
-   height: 125px
+   height: 325px
 	
 #arth-cross-border-img
     background-image: url(../images/technology/cross-border-transactions.png)
 	
+#arth-cross-border-img.arth-cross-border-img-none
+  background: none	
+  
 #arth-cross-chain-img
     background-image: url(../images/technology/cross-chain-liquidity.png)
+
+/*** Ring Animations Start ***/	
+
+.ring
+  position: absolute
+  width: 281px
+  height: 270px
+  margin: 0 auto
+.ring-place
+  left: 0
+  right: 0
+  top: 0
+  bottom: 0  
+
+.ring-center
+  width: 150px
+  height: 151px
+  position: absolute
+  left: 0
+  top: 0
+  margin: auto
+  right: 0
+  bottom: 0
+
+.ring-pos
+  position: absolute
+  left: 0
+  top: 0
+  margin: auto
+  right: 0
+  bottom: 0
+
+.ring-1
+  width: 80px
+  height: 261px
 	
+.ring-2
+  width: 223px
+  height: 223px
+
+.ring-3
+  width: 281px
+  height: 74px
+
+.ring-4
+  width: 207px
+  height: 207px
+
+.path, path2, path3, path4
+  display:none 
+
+.ring-start1.path
+  stroke-dasharray: 1020
+  stroke-dashoffset: 0
+  animation: line-1 3s linear infinite
+  display: block
+
+@keyframes line-1 
+  from 
+    stroke-dashoffset: 1024
+  to 
+    stroke-dashoffset: 0
+
+.ring-start2.path2 
+  stroke-dasharray: 1020
+  stroke-dashoffset: 0 
+  animation: line-2 3s linear infinite
+  display: block
+
+@keyframes line-2 
+  from 
+    stroke-dashoffset: 1024
+  to 
+    stroke-dashoffset: 0
+
+.ring-start3.path3
+  stroke-dasharray: 1020
+  stroke-dashoffset: 0
+  animation: line-3 3s linear infinite
+  display: block
+
+
+@keyframes line-3 
+  from 
+    stroke-dashoffset: 1024
+  to 
+    stroke-dashoffset: 0
+  
+.ring-start4.path4
+  stroke-dasharray: 1020
+  stroke-dashoffset: 0
+  animation: line-4 3s linear infinite
+  display: block
+
+@keyframes line-4 
+  from 
+    stroke-dashoffset: 1024
+  to 
+    stroke-dashoffset: 0
+
+@media screen and (max-width: 500px)
+  .ring-place
+    left: -16px
+
+/*** Ring Animations End ***/	
 #arth-cross-border-title
   font-size: 25px
-  
+
 #arth-cross-border-para
   padding: 15px 10%
   min-height: 200px
@@ -303,15 +410,20 @@
   
   @media screen and (min-width: 767px)
     display: none
-	 
+
 /*** Application & Usage ***/
+#arth-app-usage
+  #arth-red-text
+    padding: 20px 0
+    
 .app-usage-img-container
   margin: 2% 8%
   display: flex
-  
+.center-box
+  justify-content: center  
   @media screen and (max-width: 500px)
     display: block
-  
+
 .app-usage-title
   font-size: 24px
   font-weight: 700
@@ -326,6 +438,8 @@
   height: 300px
   width: 385px
   display: inline-flex
+  justify-content: center
+  align-items: center
   background-size: 100%
   background-position: center
   background-image: url('../images/Vector.png')
@@ -333,23 +447,25 @@
   
   @media screen and (max-width: 500px)
     background-size: 100%
-    width: 270px
-    margin-left: -12%
+    width: 100%
+    margin-left: 0
 
 .app-usage-image-title
   font-size: 22px
   line-height: 36px
+  margin-top: 0
   color: #FE5D73
-  margin-top: 25%
   display: flex
   width: 100%
   height: auto
   justify-content: center
+  font-weight: 400
   text-transform: uppercase
+
   
   @media screen and (max-width: 500px)
     font-size: 12px
-    margin-top: 32%
+
 	
 /** Arth Roadmap **/
 .arth-roadmap-q-container
@@ -415,4 +531,9 @@
   background-color: #555
   display: block
   width: 100%
-  margin: 30px auto      
+  margin: 30px auto     
+
+@media only screen and ( min-width:1000px) and ( max-width:1200px ) 
+  .col-xs-4 
+    flex: 0 0 50%
+    max-width: 50%
