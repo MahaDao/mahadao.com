@@ -32,7 +32,7 @@
     		<div class="progress-bars">
 				<div class="progress-meter"></div>
 			</div>
-			<div class="status">Status: Good</div>
+			<div class="status">Status: Closed</div>
 		</div>
 	</div>
 </section>
@@ -42,13 +42,8 @@
 <script>
     var i = 0;
     function makeProgress(){
-        if(i < 0){
+        if(i < 82){
             i = i + 1;
-            $(".progress-meter").css("width", i + "%").text( i + "%");
-        }
-		else
-		{
-            i = 0;
             $(".progress-meter").css("width", i + "%").text( i + "%");
         }
         // Wait for sometime before running this script again
