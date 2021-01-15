@@ -37,7 +37,14 @@
     font-family: $font-family-heading
     border: 0
     outline: none
-
+    cursor: pointer
+    
+  .text-change
+    display: block
+    width: 184px
+    height: 47px
+    line-height: 47px
+ 
   .button1
     width: 184px
     height: 47px
@@ -45,12 +52,23 @@
     border-radius: 45px
     background-color: #333333
     color: #ffffff
-    border: 1px solid #f95921
+    border: 1px solid #F47F57
+
+  .disabled-btn
+    background-color: #333
+    color: #B6B6B6
+    border: 1px solid #747474   
+
+  .disabled-btn:hover    
+    color: #fff 
+    border: 1px solid #F47F57   
+
+
     @media (max-width:600px)
       text-align: center
 
   .button1:hover
-    background: linear-gradient(#f47f57, #fd5656)
+    background: linear-gradient(38.44deg, #F47F57 15.81%, #FD5656 87.57%)
 
   #two_buttons
     margin: auto
@@ -60,12 +78,14 @@
 
   .two_buttons
     display: flex
-    flex-direction: row
+    flex-direction: row   
 
     li
       // display: inline-block
       margin: 0 10px 10px
       list-style: none
+  .two_buttons li:last-child
+    margin: 0       
 
   .button2
     width: 47px
@@ -81,56 +101,60 @@
     justify-content: center
     align-items: center
 
+  .icon-btn
+    background: #E5E5E5
+    color: #000
+  .icon-btn:hover
+    background: #fff       
+
   @media (max-width: 500px)
     flex-direction: column
 
     nav
-      position: relative
-
       .nav-icon  
         width: 20px
         height: 12px
         border-top: 2px solid #fff
         border-bottom: 2px solid #fff    
         display: inline-block  
-        position: relative;    
-        position: fixed
+        position: relative   
+        position: absolute
         right: 30px
         top: 46px
         transition: all .25s ease-in-out 
         z-index: 1
 
       .nav-icon:after, .nav-icon:before
-        content: '';
-        display: block;
-        width: 100%;
-        height: 2px;
-        position: absolute;
-        top: 4px;
-        left: 50%; 
-        background: #fff;
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        transition: -webkit-transform .25s ease-in-out;
-        transition: transform .25s ease-in-out; 
-        -webkit-transform .25s ease-in-out   
+        content: ''
+        display: block
+        width: 100%
+        height: 2px
+        position: absolute
+        top: 4px
+        left: 50%
+        background: #fff
+        -webkit-transform: translate(-50%, -50%)
+        transform: translate(-50%, -50%)
+        transition: -webkit-transform .25s ease-in-out
+        transition: transform .25s ease-in-out
+        transition: -webkit-transform .25s ease-in-out
 
       .nav-icon.toggler:after 
-		        -webkit-transform: translate(-50%, -50%) rotate(-45deg);
-		        transform: translate(-50%, -50%) rotate(-45deg)
+        -webkit-transform: translate(-50%, -50%) rotate(-45deg)
+        transform: translate(-50%, -50%) rotate(-45deg)
 
       .nav-icon.toggler:before 
-		        -webkit-transform: translate(-50%, -50%) rotate(45deg);
-		        transform: translate(-50%, -50%) rotate(45deg)
+        -webkit-transform: translate(-50%, -50%) rotate(45deg)
+        transform: translate(-50%, -50%) rotate(45deg)
 
       .nav-icon.toggler 
-		        border-color: transparent
+        border-color: transparent
                            
       .mainMenu
-        /* height: 100vh;        
+        /* height: 100vh        
         padding-top: 130px
         padding-bottom: 10px
-        margin-bottom: 0;       
+        margin-bottom: 0      
         list-style: none
         text-decoration: none
         font-size: 16px
@@ -148,7 +172,6 @@
         transition: top 1s ease
         display: none
 
-         
       .mainMenu a.button1
         color: #fff
         display: inline-block
@@ -156,8 +179,6 @@
         font-size: 16px
         margin: 0px 0px 16px 0px
         min-width: 170px        
-
-
 
         .closeMenu
           display: none

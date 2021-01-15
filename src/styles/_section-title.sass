@@ -5,7 +5,9 @@
   margin-bottom: 250px
 
   @media (max-width: 600px)      
-    margin-bottom: 60px  
+    margin-bottom: 60px
+    .btn-space
+      margin-left: 10px   
 
   .main-title
     font-family: $font-family-heading
@@ -19,7 +21,8 @@
     -webkit-text-stroke: 1px #a1a1a1
 
     @media (max-width: 600px)
-      font-size: 24px    
+      font-size: 24px 
+    
 
   .title-head
     color: #ffffff
@@ -45,27 +48,30 @@
     line-height: 21px
     display: flex
     max-width: 400px
+    position: relative
+    margin-bottom: 40px
   
   @media screen and (max-width: 600px)
     .title-down-text
-      width: auto
+      width: auto      
 
   .line
     border: 2px solid rgba(216, 55, 71, 1)
     width: 1px
     display: flex
-    margin-right: 19px
-    height: 63px
+    position: absolute    
+    height: 100%
     margin-top: 0
     margin-bottom: 0
 
   .text-slide-right
     overflow: hidden
     width: 450px
+    padding-left: 20px
 
     p
       animation: 3s text-slide-right
-      margin-bottom: 0      
+      margin-bottom: 0     
 
   @keyframes text-slide-right
     from
@@ -74,4 +80,4 @@
 
   to
       padding-left: 20px
-      width: 100%  
+      width: 100%
