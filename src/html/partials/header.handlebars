@@ -12,16 +12,6 @@
 
 	<ul class="two_buttons">
 		<li>
-			<!--<a
-				target="_blank"
-				href="/ARTH Whitepaper - 1.1.0 Draft.pdf"
-				class="d-none d-md-block"
-				id="whitepaper-main"
-			>
-				<button class="button1" clickid="whitepaper-main">
-					White Paper
-				</button>
-			</a>-->
 			<a
 				target="_blank"
 				href="https://etherscan.io/token/0xb4d930279552397bba2ee473229f89ec245bc365"
@@ -29,22 +19,16 @@
 				id="whitepaper-main"
 			>
 				<button class="button1" clickid="whitepaper-main">
-					Etherscan
+					MAHA Uniswap
 				</button>
 			</a>
 		</li>
-		<li>
-			<a
-				target="_blank"
-				href="https://discord.gg/V6sr3fe"
-				class="d-none d-md-block d-sm-block"
-				id="discord-main"
-			>
-				<button class="button2">
-					<i class="fab fa-discord" style=" margin-right: 3px;"></i>
-				</button>
-			</a>
-		</li>
+
+			<li>			
+				<button class="d-none d-md-block d-sm-block button1" clickid="whitepaper-main" disabled>
+					<font class="text-change">ARTH Uniswap</font>
+				</button>		
+			</li>
 		<li>
 			<a
 				target="_blank"
@@ -52,7 +36,7 @@
 				class="d-none d-md-block d-sm-block"
 				id="telegram-main"
 			>
-				<button class="button2">
+				<button class="button2 icon-btn">
 					<i class="fab fa-telegram-plane" style=" margin-right: 3px;"></i>
 				</button>
 			</a>
@@ -80,22 +64,20 @@
 				</li>
 				<li>
 					<a
-						target="_blank"
-						href="https://etherscan.io/token/0xb4d930279552397bba2ee473229f89ec245bc365"
 						class="menulist button1"
 						id="whitepaper-main"
 					>
-						Etherscan
+						ARTH-Uniswap
 					</a>
 				</li>
 				<li>
 					<a
-						target=""
-						href="arth.html"
+						target="_blank"
+						href="https://t.me/mahadao"
 						class="menulist button1"
 						id="telegram-main"
 					>
-						ARTH
+						Join Telegram
 					</a>
 				</li>
 			</ul>
@@ -103,6 +85,14 @@
 	</nav>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script>
+	$('.text-change').hover(function(){
+		$(this).text("Coming Soon");
+	}, function() {
+		$(this).text("ARTH Uniswap");
+	});	
+	</script>
 
 	<script>
 		 $(".nav-icon").click(function(){
