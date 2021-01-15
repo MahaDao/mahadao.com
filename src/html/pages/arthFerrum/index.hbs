@@ -2,7 +2,7 @@
 <html lang="en">
 
 	<head>
-		{{> ../home/header-tags.hbs }}
+		{{> ./header-tags.hbs }}
 		{{> ../../partials/head }}
 
 		<!--<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
@@ -38,11 +38,14 @@
 		{{!-- Background and chakras  --}}
 		<div id="header-gradient"></div>
 		<div class="gradient-red-1"></div>
+		<div class="gradient-red-2"></div>
 		<div class="gradient-black-1"></div>
-
-		{{> ./arth-header.hbs }}
-		{{> ./arth-detail.hbs }}
-		{{> ../home/community-partners.hbs }}
+	
+		{{> ./arthFerrum-stak-intro.hbs }}
+		{{> ../home/timer.hbs }}
+		{{> ./arthFerrum-rewards.hbs }}
+		{{> ./arthFerrum-diamond-stak.hbs }}
+	
 		{{> ../../partials/footer }}
 
 		<script src="http://localhost:35729/livereload.js"></script>

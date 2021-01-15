@@ -1,13 +1,18 @@
 {{! Header }}
+<a class="tokenadd" href="https://etherscan.io/token/0xb4d930279552397bba2ee473229f89ec245bc365" target="_blank">
+	<p>MAHA Token is live: 0xb4d930279552397bba2ee473229f89ec245bc365 </p>
+</a>
+
 <header class="nav-row header">
 	<div class="mahadao-logo" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
 		<a href="/">
 			<img src="../../images/mainlogo.svg" alt="mahadao-logo" />
 		</a>
 	</div>
+
 	<ul class="two_buttons">
 		<li>
-			<a
+			<!--<a
 				target="_blank"
 				href="/ARTH Whitepaper - 1.1.0 Draft.pdf"
 				class="d-none d-md-block"
@@ -15,6 +20,16 @@
 			>
 				<button class="button1" clickid="whitepaper-main">
 					White Paper
+				</button>
+			</a>-->
+			<a
+				target="_blank"
+				href="https://etherscan.io/token/0xb4d930279552397bba2ee473229f89ec245bc365"
+				class="d-none d-md-block"
+				id="whitepaper-main"
+			>
+				<button class="button1" clickid="whitepaper-main">
+					Etherscan
 				</button>
 			</a>
 		</li>
@@ -54,13 +69,21 @@
 			<span class="nav-icon"></span>
 			<ul class="mainMenu text-center" id="h-menu">
 				<li>
-					<a
+					<!--<a
 						target="_blank"
 						href="/ARTH Whitepaper - 1.1.0 Draft.pdf"
 						class="menulist button1"
 						id="whitepaper-main"
 					>
 						White Paper
+					</a>-->
+					<a
+						target="_blank"
+						href="https://etherscan.io/token/0xb4d930279552397bba2ee473229f89ec245bc365"
+						class="menulist button1"
+						id="whitepaper-main"
+					>
+						Etherscan
 					</a>
 				</li>
 				<li>
@@ -82,7 +105,7 @@
 					>
 						Join Telegram
 					</a>
-				</li>			
+				</li>
 			</ul>
 		</div>
 	</nav>
@@ -92,11 +115,11 @@
 	<script>
 		 $(".nav-icon").click(function(){
 			 $('.mainMenu').slideToggle();
-			 $('.nav-icon').toggleClass('toggler');	
-  		});				
+			 $('.nav-icon').toggleClass('toggler');
+  		});
 	</script>
 
-	<script>	
+	<script>
 		$(document).on("scroll", function(){
 		if
       ($(document).scrollTop() > 50){

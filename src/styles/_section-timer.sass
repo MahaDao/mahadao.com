@@ -1,14 +1,16 @@
 #section-timer
   max-width: $max-width
-  min-height: 524px
-  margin: 50px auto
+  min-height: 224px
+  margin: -140px auto 50px auto
   padding: 0 10px  
   text-align: center     
   font-family: $font-family-heading  
   font-weight: bold
+  @media (max-width: 600px)
+    margin: 50px auto
 
   .main-title        
-    font-size: 46px
+    font-size: 26px
     line-height: 1.2
     text-align: center
     color: rgba(255, 255, 255, 1)
@@ -78,4 +80,10 @@
 
     &:hover	  
       background: linear-gradient(#f47f57, #fd5656)
-      
+
+#section-timer-second
+  @extend #section-timer
+  
+#section-timer-height
+  @extend #section-timer
+  min-height: 230px!important
