@@ -123,6 +123,15 @@
   .flip-back
     transform: rotateY(180deg)
     background: #212121
+  .flip-card-inner:hover img
+    visibility: hidden
+
+
+  .flip-card-inner .f-card-body
+    position: absolute
+    bottom: 0
+    width: 100%
+    left: 0
 
   .f-card-body-1
     position: absolute
@@ -136,7 +145,8 @@
 
   .social-link
     list-style: none
-    padding: 0
+    padding: 48px 0 0 0 
+    min-height: 153px
     margin: 0
     margin-bottom: 15px
     display: flex
@@ -159,4 +169,9 @@
     @media (max-width:1100px)
       width: 45px
 
-  /*===== END UB-OCT-1====*/
+  @media (max-width:600px)
+    .flip-card-inner .f-card-body
+      bottom: auto 
+
+    .flip-card-inner .social-link
+      min-height: 175px    

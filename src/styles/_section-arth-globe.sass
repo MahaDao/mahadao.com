@@ -1,0 +1,945 @@
+
+#arth-sec-overview .arth-rings
+  // $size: 1036px
+  $size: 100%
+  background-image: url("../img/arthborderlines.svg")
+  background-size: cover
+  height: $size
+  width: $size
+  margin: auto
+	
+#arth-overview-title
+  height: 48px
+  // left: 188px
+  // top: 350px
+  
+#arth-nrml-txt
+  // font-size: 22px
+  // display: flex
+  // padding: 20px 35
+  // justify-content: center
+
+  @media screen and (max-width: 500px)
+    // padding: 20px 5%
+
+/*** Arth Everything section ***/
+#arth-everything
+  background: linear-gradient(180deg, #2B2B2B 0%, #1F1F1F 60.94%)
+  border-radius: 55px 55px 0 0
+  padding: 30px
+  margin-bottom: 0
+  margin-top: -80px
+
+#arth-coin-container
+  width: 100%
+  height: 50px
+
+#arth-coin-img
+  background-image: url("../img/arth-coin-1.svg")
+  background-size: cover
+  height: 56px
+  width: 51px
+  margin: auto
+  display: flex
+  margin-bottom: 20px
+
+
+// start artcoin-animation // 
+#arth-overview-image 
+  margin: 0 auto
+  display: flex
+  margin-top: -150px
+  z-index: -1
+  position: relative
+
+  .icon-section
+    color: #fff 
+    position: relative
+    width: 1102px
+    height: 1102px
+    margin-top: -2px
+
+    @media screen and (max-width: 500px) 
+       margin-top: 0px
+       margin-bottom: 40px
+       width: 400px
+       height: 400px
+
+       .rightpara-leftfig-img 
+         width: 400px
+         height: 400px
+
+       .black-ring-ring 
+         width: 150px
+         height: 150px  
+         top: 126px                
+         left: 125px
+
+       .globe-horizontal-ring 
+         width: 150px
+         height: 150px  
+         top: 126px                
+         left: 125px  
+
+       .globe-vertical-ring 
+         width: 150px
+         height: 150px  
+         top: 126px                
+         left: 125px  
+
+       .coin-gradient-red 
+         width: 40px
+         height: 40px  
+         top: 181px                
+         left: 179px  
+         border-radius: 60px                
+
+         img 
+           width: 60px
+           height: 60px  
+           top: -10px                
+           left: -8px 
+
+       .triangle  
+         background-size: 7px           
+       
+       .arth-desc-box-1  
+         width: 148px    
+         height: 87px
+         left: 148px
+         top: 83px        
+
+       .arth-desc-box-2  
+         width: 122px       
+         height: 90px
+         right: 50px
+         top: 159px  
+
+       .arth-desc-box-3  
+         width: 164px       
+         height: 85px
+         left: 148px
+         bottom: 87px 
+
+       .arth-desc-box-4  
+         width: 120px       
+         height: 83px
+         left: 62px
+         top: 160px          
+
+       .economy-icon, .commodities-icon, .markets-icon, .assets-icon                                                                  
+         background-size: 50%
+                            
+       .pulse1
+         width: 180px
+         height: 180px   
+       .pulse2
+         width: 200px
+         height: 200px 
+       .pulse3
+         width: 220px
+         height: 220px 
+       .pulse4
+         width: 240px
+         height: 240px 
+       .pulse5
+         width: 260px
+         height: 260px 
+       .pulse6
+         width: 280px
+         height: 280px 
+       .pulse7
+         width: 300px
+         height: 300px                                                             
+      
+  .black-ring-ring
+      position: absolute
+      top: 320px
+      left: 320px
+
+  .globe-horizontal-ring
+      position: absolute
+      top: 468px
+      left: 326px
+
+  .globe-vertical-ring
+      position: absolute
+      top: 322px
+      left: 471px              
+
+  .rightpara-leftfig-img  
+    width: 1100px
+    height: 1100px
+
+  .coin-gradient-red
+    position: absolute
+    border-radius: 100px
+    -webkit-animation: glow 1.5s ease-in-out infinite alternate
+    -moz-animation: glow 1.5s ease-in-out infinite alternate
+    animation: glow 1.5s ease-in-out infinite alternate    
+    width: 100px
+    height: 100px
+    left: 500px
+    top: 500px 
+
+    @keyframes glow
+        from 
+            box-shadow: 0 0 10px #422020, 0 0 20px #422020, 0 0 30px #422020, 0 0 40px #593131, 0 0 50px #593131, 0 0 60px #593131, 0 0 70px #593131
+        to  
+            box-shadow: 0 0 20px #422020, 0 0 30px #422020, 0 0 40px #422020, 0 0 50px #843434, 0 0 60px #843434, 0 0 70px #843434, 0 0 80px #843434
+                      
+    img
+      width: 169px
+      height: 168px
+      position: absolute
+      left: -31px
+      top: -32px         
+
+  .arth-desc    
+    position: absolute 
+    z-index: 10
+
+    .arth-desc-content   
+      position: relative
+      text-transform: uppercase
+      
+      @media screen and (max-width: 500px)             
+
+        .txt   
+          font-size: 8px 
+
+        .txt-1
+          top: -13px
+          left: 40px 
+          .triangle
+            left: 8px
+            top: 13px
+
+        .txt-2
+          top: 28px
+          right: 2px                           
+          line-height: 9px
+          .triangle
+            left: -15px
+            top: 8px          
+          
+        .txt-3
+          top: 33px
+          left: -17px  
+          .triangle
+            left: 17px
+            top: -2px            
+
+        .txt-4
+          top: -16px
+          left: 47px 
+          line-height: 9px   
+          .triangle
+            left: 11px
+            top: 19px 
+
+        .txt-5
+          top: 35px
+          right: -3px  
+          .triangle
+            left: -13px
+            top: 5px           
+
+        .txt-6
+          top: 80px
+          left: 51px 
+          .triangle
+            left: 1px
+            top: -8px           
+
+        .txt-7
+          top: 42px
+          right: 28px  
+          line-height: 9px 
+          .triangle
+            left: -17px
+            top: 8px           
+
+        .txt-8
+          bottom: 82px
+          left: 23px 
+          .triangle
+            left: 19px
+            top: -10px           
+
+        .txt-9
+          top: 44px
+          left: -28px   
+          line-height: 9px
+          .triangle
+            left: 28px
+            top: 0px             
+
+        .txt-10
+          top: -10px
+          left: 22px 
+          .triangle
+            left: 23px
+            top: 14px              
+
+        .txt-11
+          bottom: 75px
+          left: 14px  
+          line-height: 9px 
+          .triangle
+            left: 25px
+            top: -11px           
+
+        .txt-12
+          top: 37px
+          left: -41px  
+          line-height: 9px  
+          .triangle
+            left: 39px
+            top: -3px                                    
+
+      .inner-text    
+        font-size: 12px   
+        position: absolute 
+        background: -webkit-linear-gradient(90deg, #FD5656, #F48057 100%)  
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+
+      .inner-text-1
+        left: 78px
+        top: 175px 
+
+      .inner-text-2
+        right: 205px
+        top: 73px   
+
+      .inner-text-3
+        left: 74px
+        bottom: 181px  
+
+      .inner-text-4
+        right: -61px
+        top: 60px
+        line-height: 13px                                            
+
+ 
+
+    .txt
+      font-size: 12px
+      position: absolute
+      color: #898686
+      line-height: 12px   
+      text-transform: uppercase  
+      text-align: center 
+
+    .triangle
+      background-image: url("../images/arth-globe/white-triangle.svg")    
+      background-repeat: no-repeat
+      width: 13px
+      height: 9px  
+      display: inline-block
+      position: absolute           
+      
+    .txt-1
+      top: -18px
+      left: 86px
+      .triangle  
+        left: 11px
+        top: 18px
+
+    .txt-2
+      top: 62px
+      right: -69px  
+      .triangle  
+        left: -22px
+        top: 8px  
+        transform: rotate(90deg)              
+
+    .txt-3
+      top: 72px
+      left: -23px
+      .triangle  
+        left: 26px
+        top: -1px  
+        transform: rotate(270deg)       
+
+    .txt-4
+      top: -21px
+      left: 101px  
+      .triangle  
+        left: 15px
+        top: 28px
+      
+    .txt-5
+      top: 77px
+      right: -23px
+      .triangle  
+        left: -13px
+        top: 2px  
+        transform: rotate(90deg)       
+
+    .txt-6
+      top: 163px
+      left: 108px             
+      .triangle  
+        left: 8px
+        top: -9px  
+        transform: rotate(180deg) 
+
+    .txt-7
+      top: 91px
+      right: -47px
+      .triangle  
+        left: -17px
+        top: 6px  
+        transform: rotate(90deg)       
+
+    .txt-8
+      bottom: -9px
+      left: 60px  
+      .triangle  
+        left: 37px
+        top: -13px  
+        transform: rotate(180deg)             
+
+    .txt-9
+      top: 95px
+      left: -40px  
+      .triangle  
+        left: 42px
+        top: 2px  
+        transform: rotate(270deg)         
+
+    .txt-10
+      top: -8px
+      left: 58px    
+      .triangle  
+        left: 31px
+        top: 17px        
+
+    .txt-11
+      bottom: -13px
+      left: 43px 
+      .triangle  
+        left: 46px
+        top: -14px  
+        transform: rotate(180deg)       
+
+    .txt-12
+      top: 70px
+      left: -83px 
+      .triangle  
+        left: 81px
+        top: 8px  
+        transform: rotate(270deg)                                                 
+         
+  .arth-desc-box-1 
+    width: 204px
+    height: 181px
+    top: 236px
+    left: 449px 
+
+  .wobble-effect      
+    animation-name: wobble-ani
+    animation-iteration-count: infinite
+    transform-origin: 50% 10%
+    animation-duration: 1.5s     
+    z-index: 10  
+
+
+
+    @keyframes wobble-ani 
+      0% 
+        transform: rotate(0deg) 
+        animation-timing-function: ease-in           
+      
+      50% 
+        transform: rotate(-1deg)  
+        animation-timing-function: ease-out     
+
+      50% 
+        transform: rotate(-2deg)  
+        animation-timing-function: ease-out               
+
+  .economy-icon
+    background-image: url("../images/arth-globe/Economy-Polygram.svg")    
+    background-repeat: no-repeat
+    width: 204px
+    height: 181px  
+    display: inline-block    
+
+  .arth-desc-box-2     
+    width: 217px
+    height: 168px
+    top: 467px
+    right: 185px
+
+  .commodities-icon  
+    background-image: url("../images/arth-globe/Commodities.svg")
+    background-repeat: no-repeat     
+    width: 217px
+    height: 168px  
+    display: inline-block      
+   
+  .arth-desc-box-3  
+    width: 204px
+    height: 177px
+    bottom: 239px
+    left: 447px 
+
+  .markets-icon  
+    background-image: url("../images/arth-globe/Markets.svg")
+    background-size: cover
+    background-repeat: no-repeat      
+    width: 204px
+    height: 177px 
+    display: inline-block      
+
+
+  .arth-desc-box-4  
+    width: 217px
+    height: 168px
+    top: 468px
+    left: 188px    
+
+  .assets-icon  
+    background-image: url("../images/arth-globe/Assets.svg")
+    background-size: cover 
+    background-repeat: no-repeat     
+    width: 217px
+    height: 168px 
+    display: inline-block          
+                      
+
+  //.rightpara-leftfig-img-inner
+    position: absolute
+    width: 169px
+    height: 168px
+    top: 22%
+    left: 25%
+    z-index: 1
+
+  //.coin-gradient-red:after  
+    position: absolute  
+    content: ''
+    width: 118px
+    height: 118px
+    background: #232222
+    border-radius: 169px
+    left: 97px
+    top: 88px 
+    
+// start - water ripple
+.pulse1
+      position: absolute
+      width: 450px
+      height: 450px
+      margin: auto 
+      top: 0
+      left: 0
+      bottom: 0
+      right: 0
+      z-index: 3
+      opacity: 0
+      border: 1px solid #FD3947
+      -webkit-animation: pulsejg3 5s linear infinite
+      -moz-animation: pulsejg3 5s linear infinite
+      animation: pulsejg3 5s linear infinite
+      -webkit-border-radius: 999px
+      -moz-border-radius: 999px
+      border-radius: 999px
+      -webkit-box-shadow: inset 0px 0px 12px 5px rgba(0, 0, 0, 1.6)
+      -moz-box-shadow: inset 0px 0px 12px 5px rgba(0, 0, 0, 1.6)
+      box-shadow: inset 0px 0px 12px 5px rgba(0, 0, 0, 1.6)
+      -moz-box-sizing: border-box
+      -webkit-box-sizing: border-box
+      box-sizing: border-box
+
+.pulse2 
+      position: absolute
+      width: 500px
+      height: 500px
+      margin: auto 
+      top: 0
+      left: 0
+      bottom: 0
+      right: 0
+      z-index: 2
+      opacity: 0
+      border: 1px solid #FD3947
+      -webkit-animation: pulsejg2 5s linear infinite
+      -moz-animation: pulsejg2 5s linear infinite
+      animation: pulsejg2 5s linear infinite
+      -webkit-border-radius: 999px
+      -moz-border-radius: 999px
+      border-radius: 999px
+      -webkit-box-shadow: inset 0px 0px 12px 5px rgba(0, 0, 0, 1.4)
+      -moz-box-shadow: inset 0px 0px 12px 5px rgba(255, 255, 0, 1.4)
+      box-shadow: inset 0px 0px 12px 5px rgba(0, 0, 0, 1.4)
+      -moz-box-sizing: border-box
+      -webkit-box-sizing: border-box
+      box-sizing: border-box
+
+.pulse3
+      position: absolute  
+      width: 550px
+      height: 550px
+      margin: auto 
+      top: 0
+      left: 0
+      bottom: 0
+      right: 0
+      z-index: 1
+      opacity: 0
+      border: 1px solid #FD3947
+      -webkit-animation: pulsejg1 5s linear infinite
+      -moz-animation: pulsejg1 5s linear infinite
+      animation: pulsejg1 5s linear infinite
+      -webkit-border-radius: 999px
+      -moz-border-radius: 999px
+      border-radius: 999px
+      -webkit-box-shadow: inset 0px 0px 15px 10px rgba(0, 0, 0, 1.2)
+      -moz-box-shadow: inset 0px 0px 15px 10px rgba(0, 0, 0, 1.2)
+      box-shadow: inset 0px 0px 15px 10px rgba(0, 0, 0, 1.2)
+      -moz-box-sizing: border-box
+      -webkit-box-sizing: border-box
+      box-sizing: border-box
+
+.pulse4
+      position: absolute  
+      width: 600px
+      height: 600px
+      margin: auto 
+      top: 0
+      left: 0
+      bottom: 0
+      right: 0
+      z-index: 1
+      opacity: 0
+      border: 1px solid #FB0078
+      -webkit-animation: pulsejg1 5s linear infinite
+      -moz-animation: pulsejg1 5s linear infinite
+      animation: pulsejg1 5s linear infinite
+      -webkit-border-radius: 999px
+      -moz-border-radius: 999px
+      border-radius: 999px
+      -webkit-box-shadow: inset 0px 0px 15px 10px rgba(0, 0, 0, 1)
+      -moz-box-shadow: inset 0px 0px 15px 10px rgba(0, 0, 0, 1)
+      box-shadow: inset 0px 0px 15px 10px rgba(0, 0, 0, .6)
+      -moz-box-sizing: border-box
+      -webkit-box-sizing: border-box
+      box-sizing: border-box
+
+.pulse5
+      position: absolute  
+      width: 650px
+      height: 650px
+      margin: auto 
+      top: 0
+      left: 0
+      bottom: 0
+      right: 0
+      z-index: 1
+      opacity: 0
+      border: 1px solid #FB0078
+      -webkit-animation: pulsejg1 5s linear infinite
+      -moz-animation: pulsejg1 5s linear infinite
+      animation: pulsejg1 5s linear infinite
+      -webkit-border-radius: 999px
+      -moz-border-radius: 999px
+      border-radius: 999px
+      -webkit-box-shadow: inset 0px 0px 15px 10px rgba(0, 0, 0, .8)
+      -moz-box-shadow: inset 0px 0px 15px 10px rgba(0, 0, 0, .8)
+      box-shadow: inset 0px 0px 15px 10px rgba(0, 0, 0, .8)
+      -moz-box-sizing: border-box
+      -webkit-box-sizing: border-box
+      box-sizing: border-box
+
+.pulse6
+      position: absolute  
+      width: 700px
+      height: 700px
+      margin: auto 
+      top: 0
+      left: 0
+      bottom: 0
+      right: 0
+      z-index: 1
+      opacity: 0
+      border: 1px solid #FB0078
+      -webkit-animation: pulsejg1 5s linear infinite
+      -moz-animation: pulsejg1 5s linear infinite
+      animation: pulsejg1 5s linear infinite
+      -webkit-border-radius: 999px
+      -moz-border-radius: 999px
+      border-radius: 999px
+      -webkit-box-shadow: inset 0px 0px 15px 10px rgba(0, 0, 0, .6)
+      -moz-box-shadow: inset 0px 0px 15px 10px rgba(0, 0, 0, .6)
+      box-shadow: inset 0px 0px 15px 10px rgba(0, 0, 0, .6)
+      -moz-box-sizing: border-box
+      -webkit-box-sizing: border-box
+      box-sizing: border-box
+
+.pulse7
+      position: absolute  
+      width: 750px
+      height: 750px
+      margin: auto 
+      top: 0
+      left: 0
+      bottom: 0
+      right: 0
+      z-index: 1
+      opacity: 0
+      border: 1px solid #FB0078
+      -webkit-animation: pulsejg1 5s linear infinite
+      -moz-animation: pulsejg1 5s linear infinite
+      animation: pulsejg1 5s linear infinite
+      -webkit-border-radius: 999px
+      -moz-border-radius: 999px
+      border-radius: 999px
+      -webkit-box-shadow: inset 0px 0px 15px 10px rgba(0, 0, 0, .4)
+      -moz-box-shadow: inset 0px 0px 15px 10px rgba(0, 0, 0, .4)
+      box-shadow: inset 0px 0px 15px 10px rgba(0, 0, 0, .4)
+      -moz-box-sizing: border-box
+      -webkit-box-sizing: border-box
+      box-sizing: border-box
+
+@-webkit-keyframes pulsejg1 
+      0% 
+          -webkit-transform: scale(.6)
+          opacity: 0
+      
+
+      50% 
+          -webkit-transform: scale(.6)
+          opacity: 0
+      
+
+      60% 
+          -webkit-transform: scale(.9)
+          opacity: .2
+      
+
+      70% 
+          -webkit-transform: scale(1.1)
+          opacity: .35
+      
+
+      80% 
+          -webkit-transform: scale(1.25)
+          opacity: .2
+      
+
+      100% 
+          -webkit-transform: scale(1.4)
+          opacity: 0
+      
+
+@-moz-keyframes pulsejg1 
+      0% 
+          -moz-transform: scale(.6)
+          opacity: 0
+      
+
+      50% 
+          -moz-transform: scale(.6)
+          opacity: 0
+      
+
+      60% 
+          -moz-transform: scale(.9)
+          opacity: .2
+      
+
+      70% 
+          -moz-transform: scale(1.1)
+          opacity: .35
+      
+
+      80% 
+          -moz-transform: scale(1.25)
+          opacity: .2
+      
+
+      100% 
+          -moz-transform: scale(1.4)
+          opacity: 0
+      
+@keyframes pulsejg1 
+      0% 
+          transform: scale(.6)
+          opacity: 0
+      
+
+      50% 
+          transform: scale(.6)
+          opacity: 0
+      
+
+      60% 
+          transform: scale(.9)
+          opacity: .1
+      
+
+      70% 
+          transform: scale(1.1)
+          opacity: .25
+      
+
+      80% 
+          transform: scale(1.25)
+          opacity: .1
+      
+
+      100% 
+          transform: scale(1.4)
+          opacity: 0
+      
+
+@-webkit-keyframes pulsejg2 
+      0% 
+          -webkit-transform: scale(.6)
+          opacity: 0
+      
+
+      40% 
+          -webkit-transform: scale(.8)
+          opacity: .05
+      
+
+      50% 
+          -webkit-transform: scale(1)
+          opacity: .1
+      
+
+      60% 
+          -webkit-transform: scale(1.1)
+          opacity: .3
+      
+
+      80% 
+          -webkit-transform: scale(1.2)
+          opacity: .1
+      
+
+      100% 
+          -webkit-transform: scale(1.3)
+          opacity: 0
+      
+
+@-moz-keyframes pulsejg2 
+      0% 
+          -moz-transform: scale(.6)
+          opacity: 0
+      
+
+      40% 
+          -moz-transform: scale(.8)
+          opacity: .05
+      
+
+      50% 
+          -moz-transform: scale(1)
+          opacity: .1
+      
+
+      60% 
+          -moz-transform: scale(1.1)
+          opacity: .3
+      
+
+      80% 
+          -moz-transform: scale(1.2)
+          opacity: .1
+      
+
+      100% 
+          -moz-transform: scale(1.3)
+          opacity: 0
+      
+
+@keyframes pulsejg2 
+      
+      0% 
+          transform: scale(.6)
+          opacity: 0
+      
+
+      40% 
+          transform: scale(.8)
+          opacity: .05
+      
+
+      50% 
+          transform: scale(1)
+          opacity: .1
+      
+
+      60% 
+          transform: scale(1.1)
+          opacity: .3
+      
+
+      80% 
+          transform: scale(1.2)
+          opacity: .1
+      
+
+      100% 
+          transform: scale(1.3)
+          opacity: 0
+    
+    
+@keyframes pulsejg3 
+      
+      0% 
+          transform: scale(.6)
+          opacity: 0
+      
+
+      40% 
+          transform: scale(1)
+          opacity: .05
+      
+
+      50% 
+          transform: scale(.9)
+          opacity: .1
+      
+
+      60% 
+          transform: scale(1.1)
+          opacity: .3
+      
+
+      80% 
+          transform: scale(1.2)
+          opacity: .1
+      
+
+      100% 
+          transform: scale(1.3)
+          opacity: 0      
+
+// end - water ripple
+
+// end artcoin-animation // 
+
+  @media screen and (max-width: 500px)
+    margin-top: -20px
+    height: 400px
+    width: 400px
+
+@media screen and (max-width: 500px)
+  #arth-overview-image
+    margin-top: -140px 
+
+  #arth-sec-overview .button1
+    font-size: 15px
+    margin-top: 15px
+
+  #arth-overview-title 
+    height: auto 
+    position: relative
+    z-index: 10

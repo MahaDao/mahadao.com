@@ -12,7 +12,7 @@
  
   .arth-heading  
     padding-bottom: 35px
-
+	
   .main-section  
     max-width: $max-width
     margin: 0 auto    
@@ -33,6 +33,7 @@
   
     .main-section
       padding: 0 15px
+      position: relative      
 
     .tab-section
       overflow: scroll  
@@ -42,7 +43,7 @@
       width: 58px
       height: 58px
 
-    .tab-content .partner-box  
+    .tab-content .partner-box:nth-child(4n)  
       padding: 17px
       font-size: 12px
       min-height: inherit
@@ -110,7 +111,7 @@
    font-size: 16px
    color: #fff
    display: inline-block
-   padding-right: 14px
+   padding-right: 30px
    cursor: pointer
 
   .current:after
@@ -119,7 +120,35 @@
     content: ''
     width: 100%
     display: block
-    margin-top: 8px     
+    margin-top: 8px 
+
+.tab-section.scroll:before
+  right: 0
+  width: 70px
+  background: linear-gradient(90deg,hsla(0,0%,100%,0) 0,#171717 80%,#171717)
+  opacity: 1
+  content: ""
+  display: block
+  position: absolute
+  top: 55px
+  height: 20px
+  bottom: 0
+  z-index: 1
+  right: 0      
+
+.tab-section.scroll:after
+  left: 0
+  width: 70px
+  background: linear-gradient(270deg,hsla(0,0%,100%,0) 0,#171717 60%,#171717)
+  opacity: 1
+  content: ""
+  display: block
+  position: absolute
+  top: 55px
+  height: 20px
+  bottom: 0
+  z-index: 1
+  right: 0 
 
 .tab-content.current  
   display: block

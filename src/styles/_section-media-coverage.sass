@@ -1,6 +1,6 @@
 #section-media-coverage
-  max-width: 1086px;
-  margin: 70px auto
+  max-width: 1086px
+  margin: 80px auto
   text-align: center
   padding: 0px 15px
   font-family: $font-family-heading
@@ -77,3 +77,25 @@
     span
       font-size: 20px
       line-height: 18px
+
+ 
+
+
+/*slider css*/
+.carousel-indicators li
+  width: 18px
+  height: 18px
+  border-radius: 18px
+  border: none
+  background: #333
+.carousel-indicators li.active
+  background: #FF8B71
+.carousel-indicators
+  bottom: -90px    
+
+@media (min-width: 500px) and (max-width: 740px)
+  #section-media-coverage .card
+    margin: 64px 5px 0 5px
+
+  #section-media-coverage .card img
+    width: 80%

@@ -1,4 +1,6 @@
 /*** Generic/Common styles ***/
+li
+  list-style: none
 
 #no-txt-decoration
   text-decoration: none
@@ -66,13 +68,13 @@
 
 .text-gradient
   background: linear-gradient(81.26deg, #F47F57 14.65%, #FD5656 83.88%)
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;  
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent 
 
 .main-section
   max-width: $max-width
   margin: 0 auto
-  padding: 0 30px;
+  padding: 0 30px
 
 @media (max-width: 600px)
   .main-title
@@ -85,3 +87,30 @@
 
   .sm-padding-top-55
     padding-top: 54px!important
+
+.disabled-btn    
+  background-color: #333
+  color: #B6B6B6
+  border: 1px solid #747474
+
+.button1   
+  width: 184px
+  height: 47px
+  line-height: 45px
+  text-align: center
+  font-size: 18px
+  border-radius: 45px
+  background-color: #333333
+  color: #ffffff
+  border: 1px solid #F47F57
+  display: inline-block
+  cursor: pointer
+
+.button1:hover
+  background: linear-gradient(38.44deg, #F47F57 15.81%, #FD5656 87.57%)  
+  border: 1px solid #F47F57
+  color: #fff
+  text-decoration: none
+.space-between
+  justify-content: space-between
+  display: flex  

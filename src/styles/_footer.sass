@@ -2,19 +2,60 @@ footer
   background: #171717
   z-index: 0
 
+  .footer-btn li
+    display: inline-block
+    padding-bottom: 5px
+
+  .button3  
+    margin-left: 0
+    margin-right: 28px
+
+  .white-line
+    margin: 70px auto
+
+  .footer-link li
+    list-style: none
+    padding-bottom: 10px
+    a
+      color: #969699
+      
+    a:hover
+      color: #fff      
+
+  a:hover
+    text-decoration: none  
+    outline: none
+    color: #fff
+              
+  .button3
+    background: #969696 
+    width: 44px
+    height: 44px
+
+  .button3:hover   
+    background: #fff  
+    outline: none
+    text-decoration: none
+
   .footer-content
     overflow: hidden
     margin: 0 auto
-    padding: 30px 90px
+    padding: 0px 90px 30px 90px
     position: relative
+  
+    .button1  
+      width: 167px
+      height: 46px  
+      line-height: 46px
+      padding-left: 15px
+      padding-right: 15px      
 
-    @media (max-width: 100%)
-      padding: 30px
 
   .footer-title
     // width: 580px
     font-family: $font-family-heading
-    font-size: 36px
+    padding-bottom: 30px
+    font-size: 24px
     font-style: normal
     font-weight: 700
     line-height: 1.2
@@ -22,21 +63,6 @@ footer
     text-align: left
     color: #ffffff
     // float: left
-
-    @media (max-width: 500px)
-      margin-bottom: 15px
-      text-align: center
-
-  .footer-side
-    margin-bottom: 30px
-    // display: flex
-    // align-items: center
-
-    @media (min-width: 400px)
-      display: flex
-      align-items: center
-
-      margin-bottom: 0
 
   .footer-flex
     // width: 1300px
@@ -46,78 +72,22 @@ footer
   .footer-text
     color: rgba(150, 150, 150, 1)
     font-family: $font-family-body
-    font-size: 16px
+    font-size: 18px
     font-style: normal
+    padding-bottom: 30px
     font-weight: 400
     line-height: 25px
-    letter-spacing: 0em
-
-  .footer-text2
-    color: #ffffff
-    margin-left: 500px
-    margin-top: 40px
-
-  .powered-by
-    color: #fff
-    display: flex
-    justify-content: flex-end
-    align-items: center
-    flex-direction: row
-    margin-top: 30px
-
-    @media (max-width: 500px)
-      margin-top: 30px
-      justify-content: center
-
-    @media (min-width: 500px)
-      margin-top: 30px
-      margin-bottom: 30px
-      justify-content: center
-
-  .footer-text3
-    margin-top: 0px
-    padding: 10px
-    font-size: 16px
-    line-height: 21px
-    letter-spacing: 0px
-    text-align: left
-
-  .footerlogo
-    width: 140px
-    height: 50px
-    border-radius: 10px
-
-  .footer-end
-    float: right
-    color: #ffffff
-    // margin-right: 80px
-    // margin-top: 40px
+    letter-spacing: 0em       
 
   .social-items
-    // display: inline
     color: #ffffff
-    // width: 36.83px
-    // height: 27.27px
-    // margin-left: 100px
-    margin-top: 40px
-    text-align:left
-
-    @media (min-width: 400px)
-      text-align: center
-
-  
-
+    margin-top: 0px
+    text-align:left 
 
   .fab
-    color: #ffffff
-    font-size: 30px
+    color: #000
+    font-size: 23px
     margin: 0 50px 25px 0
-
-    @media (max-width: 500px)
-      margin: 12.5px
-
-  .middle-post
-    margin: 30px 0
 
   .button1
     width: 200px
@@ -127,50 +97,43 @@ footer
     background-color: #333333
     color: #ffffff
     border: 1px solid #f95921
-    margin-left: 20px
+    margin-left: 24px
 
     &:hover
-       background: linear-gradient(#f47f57, #fd5656)
+       background: linear-gradient(38.44deg, #F47F57 15.81%, #FD5656 87.57%)
 
   .twobuttons
     // float: right
     display: flex
     flex-wrap: wrap
     justify-content: flex-end
-    margin-top: 25px
-
-    @media (min-width: 500px)
-      justify-content: center
+    margin-top: 0px
 
     li
       // display: inline-block
       list-style: none
 
-      @media (min-width: 500px)
-        margin-bottom: 15px
+  @media (max-width: 768px)
+    .white-line
+      margin: 0px 0px 30px 0px
 
-      @media (max-width: 500px)
-        // margin-bottom: 15px
-        margin: auto
-        text-align: center
+    .footer-content
+      padding: 15px
+      .footer-btn .button1
+        width: auto 
+        font-size: 16px
+  
+    .button1
+      margin: 0       
 
-  .button2
-    width: 200px
-    height: 56px
-    font-family: $font-family-body
-    border: 0
-    font-style: normal
-    font-weight: bold
-    font-size: 18px
-    margin-left: 50px
-    border-radius: 45px
-    color: #ffffff
-    background: linear-gradient(#f47f57, #fd5656)
+  @media (max-width: 600px)
+    .equal-btn-mobile
+      justify-content: space-around  
+      display: flex  
 
-    @media (max-width: 400px)
-      margin-left: 0
-  .button2:focus
-    outline: none	  
+    .social-items a
+      width: 25%
+      display: inline-block  
 
   #footer-gradient
     background: #212121
@@ -183,3 +146,16 @@ footer
     height: 900px
     width: 900px
     z-index: -1
+
+@media (min-width: 500px) and (max-width: 740px)
+  footer .footer-content .footer-btn .button1
+    font-size: 15px
+    width: auto
+    font-size: 14px
+    height: auto
+    line-height: 15px
+    padding: 10px 10px   
+
+  .social-items a
+    width: 25%
+    display: inline-block
