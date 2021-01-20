@@ -1,20 +1,34 @@
 /***  MahaDAO Protocol  Usage ***/  
+#arth-maha-dao-overview
+  height: 1181px
+  margin: 0 auto
+
+.arth-vault
+  width: 630px
+  height: 709px
+
+@media screen and (min-width: 1200px)
+  .container
+    max-width: 1042px 
+  
+  
 .arth-maha-dao-ring
   background-image: url("../images/mahadao-protocol/mahadao-ring.svg")
-  width: 1042px
-  height: 1181px
-  margin: -165px auto 0 auto
   background-repeat: no-repeat
-  background-size: cover 
+  background-size: contain
+  background-position: center top
+  width: 100%
+  height: 100%   
+  margin: -165px auto 0 auto
   position: relative
   color: #fff
-
 
   .number 
     font-size: 26px 
     background: -webkit-linear-gradient(90deg, #FD5656, #F48057 100%)  
     -webkit-background-clip: text
     -webkit-text-fill-color: transparent
+    margin: 0
 
   .box  
     position: absolute
@@ -23,9 +37,13 @@
 
     .description  
       left: 0px 
-      font-size: 14px
-      max-width: 160px
-      line-height: 18px  
+      font-size: 16px
+      max-width: 205px
+      line-height: 18px 
+
+    .description strong
+      padding-bottom: 10px
+      display: block     
 
     .icon
       display: inline-block
@@ -52,7 +70,7 @@
 
     .line
       height: 2px	
-      width: 157px
+      width: 265px
       border-top: 2px solid #fff
       display: inline-block
       position: relative     
@@ -65,7 +83,7 @@
         from 
           width: 0px
         to 
-          width: 157px
+          width: 265px
 
     .line:after
       position: absolute
@@ -79,6 +97,27 @@
       transform: rotate(-45deg)
       -webkit-transform: rotate(-45deg)
 
+    .line:before
+      position: absolute
+      left: 0px
+      top: -6px
+      content: ''
+      display: inline-block
+      border: solid #fff
+      border-width: 0 2px 2px 0      
+      padding: 4px
+      transform: rotate(-220deg)
+      -webkit-transform: rotate(-220deg)    
+
+    .line.slide-2:before
+      position: absolute
+      right: 0px
+      left: auto
+      top: -6px
+      transform: rotate(-45deg)
+      -webkit-transform: rotate(-45deg) 
+           
+
     .line-reverse
       width: 227px
       border-top: 2px dotted #fff
@@ -86,8 +125,10 @@
       animation: line-ani-reverse 3s linear
 
     .slide-2
-      width: 227px
-      top: -17px   
+      width: 265px
+      position: relative
+      top: 21px
+      display: inline-block   
 
     .slide-2:after
       right: auto
@@ -108,22 +149,14 @@
         from 
           width: 0px
         to 
-          width: 227px  
+          width: 265px  
 
     .fill-line
       border-top: 2px solid #fff  
-      position: absolute
-      right: -229px
-      top: 17px
 
     .doted-line    
       border-top: 2px dotted #fff   
-
-    .line-127
-      width: 127px  
-      animation-name: line-ani-115 
-      position: absolute
-      left: -129px    
+  
 
       @keyframes line-ani-115 
         from 
@@ -135,50 +168,111 @@
       background-image: url("../images/mahadao-protocol/logo-icon.svg")
       background-repeat: no-repeat
       width: 102px
-      height: 102px
-      display: inline-block 
+      height: 102px      
+      display: inline-block
+      float: left   
+
+
+    .arth-bond-logo  
+      background-image: url("../images/mahadao-protocol/arth-bond-logo.svg")
+      background-repeat: no-repeat     
 
   .box-1          
     top: 333px
-    left: -29px                   
-
-  .box-2      
-    right: 24px
-    top: 325px
-    left: auto  
+    left: -70px  
+    width: 375px 
+     
+  .box-1 
+    .slide-1
+      margin-top: 52px                     
 
   .box-3          
-    top: 518px
-    left: -12px
-    width: 160px
+    top: 460px
+    left: -70px
+    width: 205px
     font-size: 14px
     text-align: left  
 
   .box-4          
-    top: 512px
-    right: -53px
+    top: 435px
+    right: -64px
     left: auto
     width: 160px
     font-size: 14px
-    text-align: left   
 
   .box-5          
-    top: 704px
-    left: -17px        
+    top: 672px
+    left: -70px  
+    width: 375px 
 
-  .box-6          
-    top: 714px
-    right: -53px    
-    left: auto          
+  .description-arth-bond 
+    float: left
+    clear: both
+    text-align: left  
+    padding-top: 25px  
+
+  .arrow-icon
+    position: relative 
+    padding: 0px 15px
+
+  .arrow-icon p
+    position: absolute
+    padding-top: 22px
+    left: 50%
+    transform: translate(-50%, -50%)  
+    margin-top: -15px
+    font-size: 18px  
+    margin: 0 
+   
+
+  .chart-circle
+    width: 217px
+    height: 216px
+
+  .chart-circle p  
+    padding: 22px 20px
+    margin: 0
+
+  .chart-text  
+    font-family: Inter
+    font-weight: 500
+    color: #fff
+    padding-left: 55px
+    text-align: left
+    margin: 0px
+    position: relative
+    font-size: 16px
+
+  .chart-text li
+    list-style: none
+    position: relative
+    padding: 3px 20px
+
+  .chart-text li:after
+    content: ''
+    background: #3DB549
+    width: 8px
+    height: 8px
+    display: inline-block
+    border-radius: 8px
+    position: absolute
+    left: 0px
+    top: 12px
+
+  .chart-text li:nth-child(2):after 
+    background: #FCCD12
+
+  .chart-text li:nth-child(3):after 
+    background: #F7931A
+                       
         
 .arth-vault  
   background-image: url("../images/mahadao-protocol/arth-vault-box.svg")
-  width: 630px
-  height: 709px
-  margin: 234px auto 0 auto
-  text-align: center
-  background-repeat: no-repeat
-  background-size: cover 
+  background-repeat: no-repeat  
+  background-position: center top
+  background-size: 95%  
+  margin: 23px auto 0 auto
+  text-align: center 
   color: #fff
 
   .arth-vault-title
@@ -198,17 +292,16 @@
     font-size: 16px
 
   .arth-vault-des p.des-text-1
-    width: 160px
+    width: 175px
     margin: -7px auto 0 auto   
-    padding-bottom: 15px
 
   .arth-vault-des p.des-text-2
-    width: 180px
+    width: 170px
     margin: -7px auto 0 auto     
 
   .center-text     
-    max-width: 326px
-    margin: 0 auto 15px auto
+    max-width: 390px
+    margin: 10px auto 15px auto
     font-size: 18px
     line-height: 21px
 
@@ -218,13 +311,24 @@
   background-repeat: no-repeat
   width: 131px
   height: 139px
-  display: inline-block  
-  margin-bottom: 15px
+  display: inline-block   
+  position: relative
+  background-position: center top
+
+  .timer-sml-text 
+    position: absolute
+    top: 47%
+    left: -40px
+    font-size: 10px
    
 .line-timer-reverse  
-  background-image: url("../images/mahadao-protocol/timer-icon-reverse.svg") 
+  background-image: url("../images/mahadao-protocol/timer-icon-reverse.svg")
+  .timer-sml-text 
+    right: -40px
+    left: auto  
+  
     
-@media screen and (max-width: 500px)
+@media screen and (max-width: 740px)
   .arth-maha-dao-ring
     background-image: url("../images/mahadao-protocol/mahadao-ring-small.svg")
     width: 267px
@@ -232,15 +336,16 @@
     margin: -100px auto 0 auto
 
     .number
-      font-size: 14px
-      background: -webkit-linear-gradient(90deg, #a1a1a1, #a1a1a1 100%)
-      -webkit-background-clip: text
-      -webkit-text-fill-color: transparent
+      font-size: 14px   
 
     .box
       .logo-icon
         width: 35px
+        height: 37px
         background-size: 100%
+
+      .description-arth-bond
+        padding-top: 0px
 
       .description
         font-size: 8px
@@ -260,7 +365,7 @@
         top: 18px
 
       .line  
-        width: 35px
+        width: 96px
         margin: 0px
         border-width: 1px 
         animation: line-ani 3s linear 
@@ -269,23 +374,32 @@
         from 
           width: 0px
         to 
-          width: 35px 
+          width: 90px 
 
       .line:after
         border-width: 0 1px 1px 0
         padding: 2px
         top: -3px  
+
+      .line:before
+        border-width: 0 1px 1px 0
+        padding: 2px
+        top: -3px   
+        
+      .line.slide-2:before
+        top: -3px               
+
               
       .line-reverse
         width: 75px
 
       .slide-1
-        left: -8px
+        left: 0px
 
       .slide-2 
-        right: -93px
-        top: 18px 
-        width: 90px   
+        right: -4px
+        top: 3px 
+        width: 94px   
         animation: line-ani-reverse 3s linear
 
       @keyframes line-ani-reverse 
@@ -297,46 +411,59 @@
     .box-1
       top: 90px
       left: -45px
+      width: 145px
 
     .box .icon 
       font-size: 11px
       padding-top: 20px
 
-    .box-2
-      top: 90px
-      right: -26px  
-
     .box-3
-      top: 155px
+      top: 125px
       left: -37px   
 
     .box-4
-      top: 155px
-      right: -120px  
+      top: 123px
+      right: -131px  
 
     .box-5
+      width: 135px
       top: 234px 
       left: -38px  
 
-    .box-6
-      top: 234px  
-      right: -43px 
+    .arrow-icon
+      left: -36px
+      top: 35px
+      position: absolute
+      
+    .arrow-icon p
+      font-size: 8px
+      padding-top: 14px
 
-    .box .gold-biscuit-icon 
-        width: 42px
-        background-size: 100% 
-        height: auto
+    .chart-circle
+      font-size: 8px
 
-    .box .currency-icon 
-        width: 42px
-        background-size: 65%  
-        margin: 0       
+    .chart-circle p  
+      max-width: 82px
+      padding: 0px
+
+    .chart-text
+      font-size: 8px 
+      padding-left: 12px
+      padding-top: 20px
+
+    .chart-text li:after
+      top: 6px      
+
+    .arrow-icon img
+      width: 50px
+     
       
     .arth-vault
       background-image: url("../images/mahadao-protocol/arth-vault-box-small.svg")
       width: 180px
       height: 232px
-      margin: 60px auto 0 auto
+      margin: 17px auto 0 auto
+      background-size: 92%
 
       .arth-vault-title
         font-size: 8px 
@@ -360,13 +487,13 @@
 
         p.des-text-2
           width: 80px
-          padding-bottom: 5px
           margin: 0 auto       
 
       .number
         font-size: 12px  
 
       .center-text
+        margin-top: -3px
         font-size: 16px 
         line-height: 8px 
         max-width: 160px  
@@ -403,3 +530,181 @@
     font-size: 10px
 
 /*line-timer end*/ 
+
+/*multi screen arth-vault*/ 
+@media screen and (min-width: 768px)
+  .arth-vault
+    margin: -128px auto 0 auto
+    background-size: 65%
+
+  .arth-maha-dao-ring .box-1
+    left: -30px  
+    top: 165px
+    width: 270px
+
+  .arth-maha-dao-ring .box-3   
+    left: -30px 
+    top: 275px
+    width: 175px
+
+  .arth-maha-dao-ring .box-4
+    top: 250px
+    right: 0
+    font-size: 11px
+
+  .arth-maha-dao-ring .box-5   
+    left: -30px 
+    top: 445px
+    width: 242px
+
+  .arth-maha-dao-ring .box .line  
+    width: 160px  
+
+    @keyframes line-ani 
+      from 
+        width: 0px
+      to 
+        width: 160px  
+
+    @keyframes line-ani-reverse 
+      from 
+        width: 0px
+      to 
+        width: 130px          
+         
+
+  .arth-maha-dao-ring .box .fill-line  
+    width: 130px  
+
+  .arth-maha-dao-ring .description-arth-bond
+    padding-top: 10px  
+
+  .line-timer  
+    width: 60px
+    height: 60px
+    background-size: 95%
+
+  .arth-maha-dao-ring
+    .box .description
+      font-size: 14px
+
+    .arrow-icon img
+      width: 80px
+
+    .chart-circle img
+      width: 110px
+      display: inline-block !important
+
+    .arrow-icon
+      top: 7px
+      left: 59px
+
+    .arrow-icon p  
+      font-size: 12px
+      padding-top: 15px
+
+    .chart-text 
+      padding-left: 25px
+      font-size: 12px   
+      
+
+/*768 end*/          
+
+@media screen and (min-width: 992px)
+  .arth-vault
+    margin: -27px auto 0 auto
+    background-size: 89%
+
+  .arth-maha-dao-ring .box-1
+    top: 285px
+    left: 20px  
+
+  .arth-maha-dao-ring .box-3
+    top: 420px
+    left: 20px 
+
+  .arth-maha-dao-ring .box-4
+    top: 386px
+    right: 46px
+
+  .arth-maha-dao-ring .box-5
+    top: 595px
+    left: 20px    
+
+  .line-timer  
+   width: 131px
+   height: 139px
+   background-size: 100%     
+/*992 end*/  
+
+@media screen and (min-width: 1200px)
+  .arth-vault
+    margin: 23px auto 0 auto
+    background-size: 95%  
+
+  .arth-maha-dao-ring .box-1
+    top: 333px
+    left: -70px
+    width: 375px
+
+  .arth-maha-dao-ring .box-3
+    top: 460px
+    left: -70px
+    width: 205px 
+
+  .arth-maha-dao-ring .box-4
+    top: 435px
+    right: -64px
+    width: 160px 
+    font-size: 14px
+
+  .arth-maha-dao-ring .box-5
+    top: 672px
+    left: -70px
+    width: 375px 
+
+  .arth-maha-dao-ring .box .line  
+    width: 265px  
+
+    @keyframes line-ani 
+      from 
+        width: 0px
+      to 
+        width: 265px    
+
+    @keyframes line-ani-reverse 
+      from 
+        width: 0px
+      to 
+        width: 265px         
+
+  .line-timer  
+   width: 131px
+   height: 139px
+   background-size: 100%
+
+  .arth-maha-dao-ring
+
+    .box .description
+      font-size: 16px
+
+    .arrow-icon img
+      width: auto
+
+    .chart-circle img
+      width: auto
+      display: inline-block !important
+
+    .arrow-icon
+      top: 0
+      left: 0
+
+    .arrow-icon p  
+      font-size: 18px
+      padding-top: 22px
+
+    .chart-text 
+      padding-left: 55px
+      font-size: 16px 
+
+/*1200 end*/
