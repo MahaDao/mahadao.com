@@ -1,14 +1,15 @@
-<!--<section id="section-timer" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+<section id="section-timer" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
 	<div class="main-title" id="timer-1"></div>
-	<div class="timer_row" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+	<div id="timer_row" class="timer_row" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
 		 <div class="timer_box"><div class="timer_number" id="timerDays">   </div> <span class="timer_text">Days   </span></div>
 		 <div class="timer_box"><div class="timer_number" id="timerHours">  </div> <span class="timer_text">Hours  </span></div>
 		 <div class="timer_box"><div class="timer_number" id="timerMinutes"></div> <span class="timer_text">Minutes</span></div>
 		 <div class="timer_box"><div class="timer_number" id="timerSeconds"></div> <span class="timer_text">Seconds</span></div>
 	</div>
 
-	<div class="button1" id="timer-1-button" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"></div>
+	<div  id="timer-1-button" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"></div>
 </section>
+
 
 <script type="text/javascript">
 var timer;
@@ -52,28 +53,27 @@ function settimer(days,months,years,hours,mins)
 		}
 		else
 		{
-			timesec = 2;
-			settimer(1,1,2021,15,00);
-			return;
+			timesec = 2;	
+			$('#timer_row').hide();
+			
 		}
 
 		if (timesec == 1){
-			document.getElementById("timer-1").innerHTML = 'MAHA Staking Going Live on<p style="font-size: 18px">25th Dec 2020 3:00PM GMT</p>';
-			document.getElementById("timer-1-button").innerHTML = '<a id="no-txt-decoration" class="button1" href="staking.html">Learn More</a>';
+			document.getElementById("timer-1").innerHTML = '<p>ARTH Valuecoin Mainnet Launch</p>';
+			document.getElementById("timer-1-button").innerHTML = '<a id="no-txt-decoration" class="button1"><font class="text-change">arthcoin.com</font></a>';
 		}
 		else
 		{
-			document.getElementById("timer-1").innerHTML = 'MAHA Staking Deposits is Live<p style="font-size: 18px">Deposit Window closes on 1st Jan 2021 3:00 PM GMT</p>';
-			document.getElementById("timer-1-button").innerHTML = '<a id="no-txt-decoration" target="_blank" class="button1" href="https://stake.unifyre.io/maha/info/0xa00e619fcddb7375192e21fbc4e1d00fd0963395">STAKE NOW</a>';
+			document.getElementById("timer-1").innerHTML = '<p>ARTH Valuecoin is Now Live</p>';
+			document.getElementById("timer-1-button").innerHTML = '<a id="no-txt-decoration" target="_blank" class="button1" href="https://arthcoin.com">arthcoin.com</a>';
 		}
 	}
 	timer = setInterval(showtimer, 1000); // Display Timer In Every 1 Sec
 }
-settimer(25,12,2020,15,00);
-</script>-->
-<section id="section-timer" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
-	<div class="main-title">MAHA Staking Window has been closed.</div>
-	<div class="button1" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
-		<a id="no-txt-decoration" target="_blank" class="button1" href="https://stake.unifyre.io/maha/info/0xa00e619fcddb7375192e21fbc4e1d00fd0963395">View Status </a>
-	</div>
-</section>
+settimer(22,01,2021,15,00);
+
+$(document).on('mouseenter', '.text-change', function() { 
+		$(this).text("Coming Soon");
+	});	
+	$(this).text("arthcoin.com");
+</script>
