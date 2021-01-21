@@ -57,17 +57,17 @@ function settimer(days,months,years,hours,mins)
 			$('#timer_row').hide();
 			
 		}
-
-		if (timesec == 1){
-			document.getElementById("timer-1").innerHTML = '<p>ARTH Valuecoin Mainnet Launch</p>';
-			document.getElementById("timer-1-button").innerHTML = '<a id="no-txt-decoration" class="button1"><font class="text-change">arthcoin.com</font></a>';
-		}
-		else
-		{
-			document.getElementById("timer-1").innerHTML = '<p>ARTH Valuecoin is Now Live</p>';
-			document.getElementById("timer-1-button").innerHTML = '<a id="no-txt-decoration" target="_blank" class="button1" href="https://arthcoin.com">arthcoin.com</a>';
-		}
 	}
+	
+	if (timesec == 1){
+		document.getElementById("timer-1").innerHTML = '<p>ARTH Valuecoin Mainnet Launch</p>';
+		document.getElementById("timer-1-button").innerHTML = '<a id="no-txt-decoration" class="button1"><font class="text-change">arthcoin.com</font></a>';
+	}
+	else
+	{
+		document.getElementById("timer-1").innerHTML = '<p>ARTH Valuecoin is Now Live</p>';
+		document.getElementById("timer-1-button").innerHTML = '<a id="no-txt-decoration" target="_blank" class="button1" href="https://arthcoin.com">arthcoin.com</a>';
+	}	
 	timer = setInterval(showtimer, 1000); // Display Timer In Every 1 Sec
 }
 settimer(22,01,2021,15,00);
