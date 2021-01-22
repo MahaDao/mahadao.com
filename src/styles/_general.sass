@@ -43,7 +43,8 @@ li
   text-align: center
   font-size: 14px
   text-decoration: underline
-  &, &:focus, &:visited
+
+  &, &:focus, &:visited, &:hover
     color: #fff
   @media (max-width: 600px)
     margin-left: 0px
@@ -91,7 +92,7 @@ li
 .disabled-btn    
   background-color: #333
   color: #B6B6B6
-  border: 1px solid #747474
+  border: 1px solid #747474!important
 
 .button1   
   width: 184px
@@ -100,16 +101,43 @@ li
   text-align: center
   font-size: 18px
   border-radius: 45px
-  background-color: #333333
+  background-color: #333
   color: #ffffff
   border: 1px solid #F47F57
   display: inline-block
+  cursor: pointer
 
 .button1:hover
   background: linear-gradient(38.44deg, #F47F57 15.81%, #FD5656 87.57%)  
   border: 1px solid #F47F57
   color: #fff
   text-decoration: none
+
+.button-flexible   
+  height: 47px
+  line-height: 45px
+  padding: 0px 20px
+  text-align: center
+  font-size: 18px
+  border-radius: 45px
+  background-color: #333
+  color: #fff
+  border: 1px solid #F47F57
+  display: inline-block
+  cursor: pointer
+
+.button-flexible:hover
+  background: linear-gradient(38.44deg, #F47F57 15.81%, #FD5656 87.57%)  
+  border: 1px solid #F47F57
+  color: #fff
+  text-decoration: none
+
+
+.content-center
+  display: flex
+  justify-content: center
+  align-items: center  
+
 .space-between
   justify-content: space-between
-  display: flex  
+  display: flex

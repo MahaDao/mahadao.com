@@ -131,6 +131,10 @@ footer
       justify-content: space-around  
       display: flex  
 
+    .social-items a
+      width: 25%
+      display: inline-block  
+
   #footer-gradient
     background: #212121
     background: radial-gradient(circle, rgba(84,41,41,1) 0%, #212121 50%)
@@ -142,3 +146,16 @@ footer
     height: 900px
     width: 900px
     z-index: -1
+
+@media (min-width: 500px) and (max-width: 740px)
+  footer .footer-content .footer-btn .button1
+    font-size: 15px
+    width: auto
+    font-size: 14px
+    height: auto
+    line-height: 15px
+    padding: 10px 10px   
+
+  .social-items a
+    width: 25%
+    display: inline-block

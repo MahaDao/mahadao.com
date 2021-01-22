@@ -1,80 +1,83 @@
-<!--<section id="section-timer" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
-	<div class="main-title" id="timer-1"></div>
-	<div class="timer_row" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
-		 <div class="timer_box"><div class="timer_number" id="timerDays">   </div> <span class="timer_text">Days   </span></div>
-		 <div class="timer_box"><div class="timer_number" id="timerHours">  </div> <span class="timer_text">Hours  </span></div>
-		 <div class="timer_box"><div class="timer_number" id="timerMinutes"></div> <span class="timer_text">Minutes</span></div>
-		 <div class="timer_box"><div class="timer_number" id="timerSeconds"></div> <span class="timer_text">Seconds</span></div>
-	</div>
+<section id="section-timer" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+  <div class="main-title" id="timer-1"></div>
+  <div id="timer_row" class="timer_row" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+    <div class="timer_box">
+      <div class="timer_number" id="timerDays"> </div> <span class="timer_text">Days </span>
+    </div>
+    <div class="timer_box">
+      <div class="timer_number" id="timerHours"> </div> <span class="timer_text">Hours </span>
+    </div>
+    <div class="timer_box">
+      <div class="timer_number" id="timerMinutes"></div> <span class="timer_text">Minutes</span>
+    </div>
+    <div class="timer_box">
+      <div class="timer_number" id="timerSeconds"></div> <span class="timer_text">Seconds</span>
+    </div>
+  </div>
 
-	<div class="button1" id="timer-1-button" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"></div>
+  <div id="timer-1-button" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"></div>
 </section>
+
 
 <script type="text/javascript">
-var timer;
-var timesec = 1;
+  var timer;
+  var timesec = 1;
 
-function settimer(days,months,years,hours,mins)
-{
-	currentTime = new Date();
+  function settimer(days, months, years, hours, mins) {
+    currentTime = new Date();
 
-	clearInterval(timer);
-	var timer_month=months;
-	var timer_day=days;
-	var timer_year=years;
-	var timer_hour=hours;
-	if(timer_hour=="")timer_hour=0;
-	var timer_min=mins;
-	if(timer_min=="")timer_min=0;
+    clearInterval(timer);
+    var timer_month = months;
+    var timer_day = days;
+    var timer_year = years;
+    var timer_hour = hours;
+    if (timer_hour == "") timer_hour = 0;
+    var timer_min = mins;
+    if (timer_min == "") timer_min = 0;
 
-	var timer_date=timer_year+"/"+timer_month+"/"+timer_day+" "+timer_hour+":"+timer_min+":00 UTC";
-	var end = new Date(timer_date); // Arrange values in Date Time Format
-	var now = new Date().toLocaleString(); // Get Current date time
-	var second = 1000; // Total Millisecond In One Sec
-	var minute = second * 60; // Total Sec In One Min
-	var hour = minute * 60; // Total Min In One Hour
-	var day = hour * 24; // Total Hour In One Day
+    var timer_date = timer_year + "/" + timer_month + "/" + timer_day + " " + timer_hour + ":" + timer_min + ":00 UTC";
+    var end = new Date(timer_date); // Arrange values in Date Time Format
+    var now = new Date().toLocaleString(); // Get Current date time
+    var second = 1000; // Total Millisecond In One Sec
+    var minute = second * 60; // Total Sec In One Min
+    var hour = minute * 60; // Total Min In One Hour
+    var day = hour * 24; // Total Hour In One Day
 
 
-	function showtimer() {
-		var now = new Date();
-		var remain = end - Date.parse(now); // Get The Difference Between Current and entered date time
-		if(remain > 0)
-		{
-			var days = Math.floor(remain / day); // Get Remaining Days
-			var hours = Math.floor((remain % day) / hour); // Get Remaining Hours
-			var minutes = Math.floor((remain % hour) / minute); // Get Remaining Min
-			var seconds = Math.floor((remain % minute) / second); // Get Remaining Sec
-			document.getElementById("timerDays").innerHTML = days;
-			document.getElementById("timerHours").innerHTML = hours;
-			document.getElementById("timerMinutes").innerHTML = minutes;
-			document.getElementById("timerSeconds").innerHTML = seconds;
-		}
-		else
-		{
-			timesec = 2;
-			settimer(1,1,2021,15,00);
-			return;
-		}
+    function showtimer() {
+      var now = new Date();
+      var remain = end - Date.parse(now); // Get The Difference Between Current and entered date time
+      if (remain > 0) {
+        var days = Math.floor(remain / day); // Get Remaining Days
+        var hours = Math.floor((remain % day) / hour); // Get Remaining Hours
+        var minutes = Math.floor((remain % hour) / minute); // Get Remaining Min
+        var seconds = Math.floor((remain % minute) / second); // Get Remaining Sec
+        document.getElementById("timerDays").innerHTML = days;
+        document.getElementById("timerHours").innerHTML = hours;
+        document.getElementById("timerMinutes").innerHTML = minutes;
+        document.getElementById("timerSeconds").innerHTML = seconds;
+      }
+      else {
+        timesec = 2;
+        $('#timer_row').hide();
 
-		if (timesec == 1){
-			document.getElementById("timer-1").innerHTML = 'MAHA Staking Going Live on<p style="font-size: 18px">25th Dec 2020 3:00PM GMT</p>';
-			document.getElementById("timer-1-button").innerHTML = '<a id="no-txt-decoration" class="button1" href="staking.html">Learn More</a>';
-		}
-		else
-		{
-			document.getElementById("timer-1").innerHTML = 'MAHA Staking Deposits is Live<p style="font-size: 18px">Deposit Window closes on 1st Jan 2021 3:00 PM GMT</p>';
-			document.getElementById("timer-1-button").innerHTML = '<a id="no-txt-decoration" target="_blank" class="button1" href="https://stake.unifyre.io/maha/info/0xa00e619fcddb7375192e21fbc4e1d00fd0963395">STAKE NOW</a>';
-		}
-	}
-	timer = setInterval(showtimer, 1000); // Display Timer In Every 1 Sec
-}
-settimer(25,12,2020,15,00);
-</script>-->
-<section id="section-timer" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
-  <div class="main-title">MAHA Staking Window has been closed.</div>
-  <div class="button1" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
-    <a id="no-txt-decoration" target="_blank" class="button1"
-      href="https://stake.unifyre.io/maha/info/0xa00e619fcddb7375192e21fbc4e1d00fd0963395">View Status </a>
-  </div>
-</section>
+      }
+
+      if (timesec == 1) {
+        document.getElementById("timer-1").innerHTML = '<p>ARTH Valuecoin Mainnet Launch</p>';
+        document.getElementById("timer-1-button").innerHTML = '<a id="no-txt-decoration" class="button1"><font class="text-change">arthcoin.com</font></a>';
+      }
+      else {
+        document.getElementById("timer-1").innerHTML = '<p>ARTH Valuecoin is Now Live</p>';
+        document.getElementById("timer-1-button").innerHTML = '<a id="no-txt-decoration" target="_blank" class="button1" href="https://arthcoin.com">arthcoin.com</a>';
+      }
+    }
+    timer = setInterval(showtimer, 1000); // Display Timer In Every 1 Sec
+  }
+  settimer(22, 01, 2021, 15, 00);
+
+  $(document).on('mouseenter', '.text-change', function () {
+    $(this).text("Coming Soon");
+  });
+  $(this).text("arthcoin.com");
+</script>
