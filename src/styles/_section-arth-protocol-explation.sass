@@ -127,7 +127,7 @@
     .slide-2
       width: 265px
       position: relative
-      top: 21px
+      top: 35px
       display: inline-block   
 
     .slide-2:after
@@ -317,14 +317,15 @@
 
   .timer-sml-text 
     position: absolute
-    top: 47%
-    left: -40px
+    top: 50%
+    left: -30px
     font-size: 10px
+    transform: translate(-50%, -50%)
    
 .line-timer-reverse  
   background-image: url("../images/mahadao-protocol/timer-icon-reverse.svg")
   .timer-sml-text 
-    right: -40px
+    right: -60px
     left: auto  
   
     
@@ -509,6 +510,14 @@
     margin-bottom: 0px
     background-size: 90%
 
+    .timer-sml-text
+      left: -18px 
+
+  .line-timer-reverse        
+    .timer-sml-text
+      right: -44px 
+      left: auto          
+
   .timer 
     width: 35px 
     height: 35px
@@ -571,7 +580,6 @@
         width: 0px
       to 
         width: 130px          
-         
 
   .arth-maha-dao-ring .box .fill-line  
     width: 130px  
@@ -607,9 +615,7 @@
       padding-left: 25px
       font-size: 12px   
       
-
 /*768 end*/          
-
 @media screen and (min-width: 992px)
   .arth-vault
     margin: -27px auto 0 auto
@@ -706,5 +712,16 @@
     .chart-text 
       padding-left: 55px
       font-size: 16px 
+/*1200 end*/    
 
-/*1200 end*/
+@media screen and (min-width: 1200px) and (max-width: 1300px)
+  .arth-maha-dao-ring .chart-circle img
+    width: 115px
+
+  .arth-maha-dao-ring .box-4
+    right: -30px  
+
+  .arth-maha-dao-ring .chart-text  
+    padding-left: 26px
+    font-size: 14px
+/*1200-1300 end*/
