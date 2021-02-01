@@ -127,7 +127,7 @@
     .slide-2
       width: 265px
       position: relative
-      top: 21px
+      top: 35px
       display: inline-block   
 
     .slide-2:after
@@ -172,38 +172,21 @@
       display: inline-block
       float: left   
 
-
     .arth-bond-logo  
       background-image: url("../images/mahadao-protocol/arth-bond-logo.svg")
       background-repeat: no-repeat     
-
-  .box-1          
-    top: 333px
-    left: -70px  
-    width: 375px 
      
   .box-1 
     .slide-1
       margin-top: 52px                     
 
   .box-3          
-    top: 460px
-    left: -70px
-    width: 205px
     font-size: 14px
     text-align: left  
 
   .box-4          
-    top: 435px
-    right: -64px
     left: auto
     width: 160px
-    font-size: 14px
-
-  .box-5          
-    top: 672px
-    left: -70px  
-    width: 375px 
 
   .description-arth-bond 
     float: left
@@ -307,28 +290,266 @@
 
 /*line-timer start*/
 .line-timer 
-  background-image: url("../images/mahadao-protocol/timer-icon.svg")
-  background-repeat: no-repeat
   width: 131px
   height: 139px
   display: inline-block   
   position: relative
-  background-position: center top
+  padding-top: 5px
 
+  .count font 
+    position: absolute
+    top: 50%
+    left: 40%
+    transform: translate(-50%, -50%)
+    z-index: 10
+    font-size: 15px
+    color: #fff
+    z-index: 1000 
+    line-height: 37px
+    height: 34px
+
+  .count:after 
+    content: counter(count)
+    animation: counter 30s linear infinite 
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    z-index: 10
+    font-size: 18px
+    font-weight: 500
+    color: #fff
+    background: radial-gradient(50% 50% at 50% 50%, #565555 0%, #212020 100%)
+    width: 43px
+    height: 43px
+    border-radius: 43px
+    line-height: 43px
+    text-align: center 
+
+  @keyframes counter 
+    0% 
+      counter-increment: count 0		
+    1% 
+      counter-increment: count 1		
+    5% 
+      counter-increment: count 2		
+    10% 
+      counter-increment: count 3		
+    15% 
+      counter-increment: count 4		
+    20% 
+      counter-increment: count 5		
+    25% 
+      counter-increment: count 6		
+    30% 
+      counter-increment: count 7		
+    35% 
+      counter-increment: count 8		
+    40% 
+      counter-increment: count 9		
+    45% 
+      counter-increment: count 10	
+    48% 
+      counter-increment: count 11	      	
+    50% 
+      counter-increment: count 12    
+    100% 
+      counter-increment: count 12           
+
+  .count-reverse:after
+    animation: count-reverse 30s linear infinite
+    animation-delay: 15s
+
+  @keyframes count-reverse 
+    100% 
+      counter-increment: count 0		
+    51% 
+      counter-increment: count 0     		
+    50%     
+      counter-increment: count 1		
+    45% 
+      counter-increment: count 2		
+    40% 
+      counter-increment: count 3		
+    35% 
+      counter-increment: count 4		
+    30% 
+      counter-increment: count 5		
+    25% 
+      counter-increment: count 6		
+    20% 
+      counter-increment: count 7		
+    15% 
+      counter-increment: count 8		
+    10% 
+      counter-increment: count 9		
+    7% 
+      counter-increment: count 10		
+    3% 
+      counter-increment: count 11
+    0% 
+      counter-increment: count 12      
+
+  .timer 
+    width: 120px
+    height: 120px
+    position: relative
+    background: linear-gradient(180deg, #202020 0%, #1D1D1D 100%)
+    margin: auto
+
+  .revers-timer .timer 
+    background: linear-gradient(180deg, #1B1B1B 0%, #191919 100%)
+
+  .timer:after
+    content: ''
+    background: #404040
+    width: 1px
+    height: 99%
+    position: absolute
+    top: 50%
+    left: 49%
+    z-index: 1
+    transform: translate(-50%, -50%)
+
+  .timer, .timer * 
+    -moz-box-sizing: border-box
+    -webkit-box-sizing: border-box
+    box-sizing: border-box
+
+  .timer .pie 
+    width: 50%
+    height: 100%
+    transform-origin: 100% 50%
+    position: absolute
+    background: transparent
+    border: 1px solid #fff
+
+  .timer .pie-rev 
+    transform-origin: 0% 50%
+    right: 0%    
+
+  .timer .spinner:before
+    content: ''
+    position: absolute
+    display: block
+    z-index: 100
+    left: 55px
+    top: -8px
+    width: 0
+    height: 0
+    border-top: 8px solid transparent
+    border-left: 10px solid #fff
+    border-bottom: 8px solid transparent
+
+  .timer .spinner-rev:before
+    content: ''
+    position: absolute
+    display: block
+    z-index: 100
+    left: 0px
+    top: -8px
+    width: 0
+    height: 0
+    border-top: 8px solid transparent
+    border-left: 10px solid #fff
+    border-bottom: 8px solid transparent
+    transform: rotate(180deg)
+
+  .timer .spinner 
+    border-radius: 100% 0 0 100% / 50% 0 0 50%
+    z-index: 0
+    border-right: none
+    -webkit-animation: rota 30s linear infinite
+
+  .timer .spinner-rev 
+    border-radius: 0% 100% 100% 0% / 0% 50% 50% 0%
+    z-index: 0
+    border-left: none
+    -webkit-animation: rota-rev 30s linear infinite
+    animation-delay: 15s
+
+  .timer .filler 
+    border-radius: 0 100% 100% 0 / 0 50% 50% 0
+    left: 50%
+    opacity: 0
+    -webkit-animation: opa-filler 30s steps(7, end) infinite
+    border-left: none
+
+  .timer .filler-rev 
+    border-radius: 100% 0 0 100% / 50% 0 0 50%
+    left: 0%
+    opacity: 1
+    -webkit-animation: opa-filler 30s steps(7, end) infinite
+    animation-delay: 15s
+    border-right: none    
+
+  .timer .mask 
+    width: 52%
+    height: 100%
+    position: absolute
+    background: inherit
+    opacity: 1
+    left: -1px
+    -webkit-animation: opa 30s steps(7, end) infinite
+
+  .timer .mask-rev 
+    opacity: 0
+    left: 60px
+    -webkit-animation: opa 30s steps(7, end) infinite
+    animation-delay: 15s
+	
+  @-webkit-keyframes rota 
+    0% 
+      transform: rotate(0deg)
+    50% 
+      transform: rotate(360deg)
+      z-index: 0
+    100% 
+      transform: rotate(360deg)
+      z-index: 100      
+
+  @-webkit-keyframes rota-rev 
+    100% 
+      transform: rotate(0deg)
+    50% 
+      transform: rotate(0deg)
+      z-index: 0
+    0% 
+      transform: rotate(360deg)
+      z-index: 0      
+
+  @-webkit-keyframes opa 
+    0%, 10%, 20%, 23% 
+      opacity: 1
+    27%, 75%, 100% 
+      opacity: 0
+
+  @-webkit-keyframes opa-filler 
+    0%, 10%, 25% 
+      opacity: 0
+    26%, 40%, 70%, 100% 
+      opacity: 1         
+	
   .timer-sml-text 
     position: absolute
-    top: 47%
-    left: -40px
+    top: 50%
+    left: -30px
     font-size: 10px
+    transform: translate(-50%, -50%)
    
 .line-timer-reverse  
-  background-image: url("../images/mahadao-protocol/timer-icon-reverse.svg")
   .timer-sml-text 
-    right: -40px
-    left: auto  
-  
+    right: -60px
+    left: auto 
+
+    
+     
+/*line-timer end*/  
     
 @media screen and (max-width: 740px)
+  #arth-maha-dao-overview
+    height: auto
+
   .arth-maha-dao-ring
     background-image: url("../images/mahadao-protocol/mahadao-ring-small.svg")
     width: 267px
@@ -478,16 +699,16 @@
         margin: 0 auto
         p
           font-size: 8px
-          line-height: 9px
+          line-height: 8px
 
         p.des-text-1
           width: 68px
-          padding-bottom: 5px
           margin: 0 auto
 
         p.des-text-2
           width: 80px
-          margin: 0 auto       
+          margin: 0 auto 
+          padding-top: 5px      
 
       .number
         font-size: 12px  
@@ -497,41 +718,64 @@
         font-size: 16px 
         line-height: 8px 
         max-width: 160px  
-        margin-bottom: 5px    
+        margin-bottom: 1px    
         background: -webkit-linear-gradient(90deg, #FD5656, #F48057  100%)
         background-clip: border-box
         -webkit-background-clip: text
         -webkit-text-fill-color: transparent                   
           
   .line-timer 
-    width: 35px 
-    height: 35px
+    width: 38px 
+    height: 38px
     margin-bottom: 0px
-    background-size: 90%
 
-  .timer 
-    width: 35px 
-    height: 35px
+    .timer-sml-text
+      left: -18px 
 
-  .timer:after
+  .line-timer-reverse        
+    .timer-sml-text
+      right: -44px 
+      left: auto          
+
+  .line-timer .timer 
+    width: 30px 
+    height: 30px
+
+  .line-timer .timer .mask-rev
+    left: 16px  
+
+  .line-timer .timer:after
     width: 0
 
-  .timer .spinner:before
-    left: 16px
+  .line-timer .timer .spinner:before
+    left: 14px
     top: -4px
     border-top: 4px solid transparent
-    border-left: 5px solid #fff
+    border-left: 4px solid #fff
     border-bottom: 4px solid transparent
 
-  .numb
-    width: 26px
-    height: 26px
-    line-height: 26px
+  .line-timer .timer .spinner-rev:before
+    left: -1px
+    top: -4px
+    border-top: 4px solid transparent
+    border-left: 4px solid #fff
+    border-bottom: 4px solid transparent
+
+  .line-timer .count:after
+    width: 18px
+    height: 18px
+    line-height: 18px
     font-size: 10px
+
+  .line-timer .count font  
+    top: 48%
+    left: 33%
+    font-size: 10px  
 
 /*line-timer end*/ 
 
-/*multi screen arth-vault*/ 
+/*multi screen arth-vault*/
+
 @media screen and (min-width: 768px)
   .arth-vault
     margin: -128px auto 0 auto
@@ -572,7 +816,6 @@
       to 
         width: 130px          
          
-
   .arth-maha-dao-ring .box .fill-line  
     width: 130px  
 
@@ -582,7 +825,6 @@
   .line-timer  
     width: 60px
     height: 60px
-    background-size: 95%
 
   .arth-maha-dao-ring
     .box .description
@@ -607,9 +849,7 @@
       padding-left: 25px
       font-size: 12px   
       
-
 /*768 end*/          
-
 @media screen and (min-width: 992px)
   .arth-vault
     margin: -27px auto 0 auto
@@ -681,7 +921,6 @@
   .line-timer  
    width: 131px
    height: 139px
-   background-size: 100%
 
   .arth-maha-dao-ring
 
@@ -706,5 +945,16 @@
     .chart-text 
       padding-left: 55px
       font-size: 16px 
-
 /*1200 end*/
+
+@media screen and (min-width: 1200px) and (max-width: 1300px)
+  .arth-maha-dao-ring .chart-circle img
+    width: 115px
+
+  .arth-maha-dao-ring .box-4
+    right: -30px  
+
+  .arth-maha-dao-ring .chart-text  
+    padding-left: 26px
+    font-size: 14px
+/*1200-1300 end*/
