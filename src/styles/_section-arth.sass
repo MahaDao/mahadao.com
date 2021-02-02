@@ -95,6 +95,7 @@
   height: 150px
   left: 2.4%
   top: -1%
+  z-index: -1
   background: linear-gradient(180deg, #F48057 0%, rgba(0, 0, 0, 0) 100%)
   border-radius: 30px
   border: 1px solid
@@ -244,6 +245,7 @@
   margin-bottom: 0
   display: inline-flex
   margin: 25px
+  vertical-align: top
   
   @media screen and (max-width: 500px)
     margin: 20px 0 
@@ -269,9 +271,12 @@
 
 #arth-cross-chain-img
     background-image: url(../images/technology/cross-chain-liquidity.png)
+.cross-chain-ring
+  background: none!important
+.cross-chain-ring svg
+  margin: auto  
 
 /*** Ring Animations Start ***/	
-
 .ring
   position: absolute
   width: 281px
@@ -318,13 +323,13 @@
   width: 207px
   height: 207px
 
-.path, path2, path3, path4
+.path1, path2, path3, path4
   display:none 
 
-.ring-start1.path
+.jump-class .ring-start1.path1
   stroke-dasharray: 1020
   stroke-dashoffset: 0
-  animation: line-1 3s linear infinite
+  animation: line-1 7s linear
   display: block
 
 @keyframes line-1 
@@ -333,10 +338,10 @@
   to 
     stroke-dashoffset: 0
 
-.ring-start2.path2 
+.jump-class .ring-start2.path2 
   stroke-dasharray: 1020
   stroke-dashoffset: 0 
-  animation: line-2 3s linear infinite
+  animation: line-2 7s linear 
   display: block
 
 @keyframes line-2 
@@ -345,10 +350,10 @@
   to 
     stroke-dashoffset: 0
 
-.ring-start3.path3
+.jump-class .ring-start3.path3
   stroke-dasharray: 1020
   stroke-dashoffset: 0
-  animation: line-3 3s linear infinite
+  animation: line-3 7s linear 
   display: block
 
 
@@ -358,10 +363,10 @@
   to 
     stroke-dashoffset: 0
   
-.ring-start4.path4
+.jump-class .ring-start4.path4
   stroke-dasharray: 1020
   stroke-dashoffset: 0
-  animation: line-4 3s linear infinite
+  animation: line-4 7s linear 
   display: block
 
 @keyframes line-4 
@@ -375,8 +380,78 @@
     left: -16px
     
 
-
 /*** Ring Animations End ***/	
+
+/*** 	Cross-chain-liquidity Animations Start ***/	
+.cross-chain-animation
+  display: block
+
+.cross-chain-liquidity-ani .cross-chain-animation
+  animation: cross-line-stop 12s linear!important
+  stroke-dasharray: 1024
+  stroke-dashoffset: 0 !important
+
+@keyframes cross-line-stop 
+  0% 
+    stroke-dashoffset: 1024    
+  100% 
+    stroke-dashoffset: 1024
+
+@keyframes cross-line 
+  0% 
+    stroke-dashoffset: 0
+  100% 
+    stroke-dashoffset: 1024   
+  
+.jump-class .cross-chain-animation
+  stroke-dasharray: 1020
+  stroke-dashoffset: 1020
+    
+.jump-class .cross-chain-1    
+  animation: cross-line-1 12s linear 
+  animation-delay: .5s 
+ 
+@keyframes cross-line-1 
+  0% 
+    stroke-dashoffset: 1024    
+  100% 
+    stroke-dashoffset: 0    
+
+.jump-class .cross-chain-2  
+  animation: cross-line-2 12s linear  
+  animation-delay: 1.5s
+ 
+@keyframes cross-line-2 
+  0% 
+    stroke-dashoffset: 1024    
+  100% 
+    stroke-dashoffset: 0   
+
+.jump-class .cross-chain-3  
+  animation: cross-line-3 12s linear  
+  animation-delay: 2.5s
+ 
+@keyframes cross-line-3 
+  0% 
+    stroke-dashoffset: 1024
+  100% 
+    stroke-dashoffset: 0 
+
+.jump-class .cross-chain-4  
+  animation: cross-line-4 12s linear  
+  animation-delay: 3.5s
+ 
+@keyframes cross-line-4 
+  0% 
+    stroke-dashoffset: 1024
+  100% 
+    stroke-dashoffset: 0   
+
+
+
+
+
+/*** Cross-chain-liquidity Animations End ***/	
 
 #arth-cross-border-title
   font-size: 25px
@@ -542,3 +617,6 @@
   .col-xs-4 
     flex: 0 0 50%
     max-width: 50%
+
+#cross-border-transactions  
+  display: block
