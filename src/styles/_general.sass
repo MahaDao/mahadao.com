@@ -1,6 +1,8 @@
 /*** Generic/Common styles ***/
 li
   list-style: none
+a
+  outline: none
 
 #no-txt-decoration
   text-decoration: none
@@ -16,10 +18,8 @@ li
 
 .padding-bottom-30
   padding-bottom: 30px
-
-.txt-center
-  text-align: center  
-
+.container
+  position: relative
 .button-small
   width: 184px
   height: 47px
@@ -37,28 +37,14 @@ li
 .button-small:focus
   outline: none
 
-.tokenadd
-  display: block
-  background: #1F1E1E
-  text-align: center
-  line-height: 45px
-  padding: 0px 10px
-  color: #fff
-  box-shadow: 0px 8px 16px -2px rgba(0, 0, 0, 0.12)
-
-
-.tokenadd a
-  color: #DD5C38   
-  text-decoration: underline
-
 .tokenadd a:hover 
   text-decoration: none 
 
 .showclass
   display: block!important
+
 .hideclass
   display: none!important
-
 
 .outline-title
   font-weight: 700
@@ -80,10 +66,6 @@ li
   padding: 0 30px
 
 @media (max-width: 600px)
-  .tokenadd
-    font-size: 9px
-    line-height: 35px
-
   .main-title
     font-size: 24px!important
     line-height: 28px  
@@ -94,6 +76,11 @@ li
 
   .sm-padding-top-55
     padding-top: 54px!important
+
+.btn-orange
+  background: linear-gradient(38.44deg, #F47F57 15.81%, #FD5656 87.57%)
+  border-radius: 6px
+  text-align: center
 
 .disabled-btn    
   background-color: #333
@@ -122,7 +109,7 @@ li
   border: 1px solid #F47F57
   color: #fff
   text-decoration: none
-
+  
 .button-flexible   
   height: 47px
   line-height: 45px
@@ -141,10 +128,6 @@ li
   border: 1px solid #F47F57
   color: #fff
   text-decoration: none
-
-.text-change  
-  display: block
-
 
 .content-center
   display: flex
