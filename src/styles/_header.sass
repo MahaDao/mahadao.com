@@ -10,17 +10,58 @@
     padding: 0      
 
   .nav-link  
-    padding: 10px 25px
+    padding: 10px 35px
+
+  .nav-item.dropdown:hover 
+    color: #aaa  
+
+  .nav-link.btn-orange  
+    margin-left: 35px       
+
+  .nav-item.dropdown
+    height: 42px  
+    
+  .nav-item.dropdown:hover #navbardrop
+    color: #aaa  
+
+  .nav-item.dropdown:hover .dropdown-menu
+    top: 40px
+    //transform: rotateX(15deg)//
+    visibility: visible
+    opacity: 1
+    top: 140%  
+    visibility: visible  
+      
 
   .dropdown-menu
     font-size: 14px
     background: linear-gradient(180deg, #48423E 0%, #373030 100%)
     box-shadow: 0px 8px 16px -2px rgba(0, 0, 0, 0.12)
     border-radius: 6px
-    min-width: 114px
+    padding: 15px 15px
+    min-width: 146px
     border: none
+    display: block
     left: 50%
+    top: 100px
+    opacity: 0
+    visibility: hidden
     transform: translate(-50%, 0%)
+    transition: all 0.4s ease
+    //transform: rotateX(90deg)//
+
+  .dropdown-menu:after
+    content: ''
+    display: block
+    position: absolute
+    top: -11px
+    left: 45%
+    width: 0
+    height: 0
+    border-left: 9px solid transparent
+    border-right: 9px solid transparent
+    border-bottom: 12px solid #48423E
+  
     
   .dropdown-item  
     opacity: 0.88
@@ -83,6 +124,9 @@
     .mahadao-logo
       padding-left: 18px
 
+    .nav-item.dropdown
+      height: inherit
+      
     .navbar-toggler
       outline: none  
 
@@ -94,9 +138,18 @@
       background: none
       box-shadow: none
       transform: inherit
+      opacity: 1
+      padding: 0 
+      visibility: visible
+
+    .dropdown-menu:after
+      border: none
 
     .nav-link
       font-size: 16px
+
+    .nav-link.btn-orange  
+      margin-left: 0px      
 
     .nav-item  
       border-top: 1px solid rgba(255, 255, 255, 0.08)
@@ -119,6 +172,7 @@
     .dropdown-item 
       opacity: 0.64
       color: #f5f5f5 
+
 
 @media (min-width: 1200px)
   .container
