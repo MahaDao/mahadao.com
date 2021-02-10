@@ -1,10 +1,10 @@
 {{! Footer }}
 <footer>
-	<div class="footer-content">
+	<div class="container footer-content">
 		<div class="white-line"></div>
 		<div class="footer-wrap row" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
 			<div class="col-sm-6 col-md-6">
-				<div class="footer-title">
+				<div class="card-title footer-title">
 					Join  the community
 				</div>
 				<div class="footer-text">
@@ -15,50 +15,45 @@
 				<div class="social-items">
 					<a id="social-twitter" href="https://twitter.com/TheMahaDAO">
 						<button class="button3">
-							<i class="fab fa-twitter" style="margin-top: 12px;margin-left:12px;"></i>
+							<i class="fab fa-twitter"></i>
 						</button>
 					</a>
 					<a id="social-medium" href="https://medium.com/mahadao">
 						<button class="button3">
-							<i class="fab fa-medium" style="margin-top: 12px;margin-left:12px;"></i>
+							<i class="fab fa-medium"></i>
 						</button>
 					</a>
 					<a id="social-telegram" href="https://t.me/MahaDAO">
 						<button class="button3">
-							<i class="fab fa-telegram-plane" style="margin-top: 12px;margin-left:10px;"></i>
+							<i class="fab fa-telegram-plane"></i>
 						</button>
 					</a>
 					<a id="social-github" href="https://github.com/mahadao">
 						<button class="button3">
-							<i class="fab fa-github" style="margin-top: 11.5px;margin-left:11.5px;"></i>
+							<i class="fab fa-github"></i>
 						</button>
 					</a>
 					<a id="social-reddit" href="https://www.reddit.com/r/MahaDAO/">
 						<button class="button3">
-							<i class="fab fa-reddit" style="margin-top: 10.5px;margin-left:10.5px;"></i>
+							<i class="fab fa-reddit"></i>
 						</button>
 					</a>
 					<a id="social-discord" href="https://discord.gg/V6sr3fe">
 						<button class="button3">
-							<i class="fab fa-discord" style="margin-top: 12px;margin-left:12px;"></i>
+							<i class="fab fa-discord"></i>
 						</button>
 					</a>
 				</div>
 			</div>
 			<div class="col-lg-2 col-sm-3 col-md-3">
-				<div class="footer-title">Resources</div>
 				<ul class="footer-link">
-					<li><a href="https://arthcoin.com">arthcoin.com</a></li>
-					<li><a href="/ARTH Whitepaper - 1.1.0 Draft.pdf">Whitepaper</a></li>
-					<li><a href="https://etherscan.io/token/0xb4d930279552397bba2ee473229f89ec245bc365">Etherscan MAHA</a></li>
-					<li><a href="https://etherscan.io/token/0x0E3cC2c4FB9252d17d07C67135E48536071735D9">Etherscan ARTH</a></li>
-					<li><a href="https://docs.arthcoin.com">ARTH GitBook</a></li>
+					<li class="pt-2"><a href="https://arthcoin.com">arthcoin.com</a></li>					
 				</ul>    
 			</div>
 			<div class="col-lg-4 col-sm-3 col-md-3 footer-btn">
 				<ul class="equal-btn-mobile float-lg-right">
 					<li>
-						<a class="button1" target="_blank" href="https://info.uniswap.org/pair/0x35b6f9e6300aa6c722ea189e096b0b073025806f">
+						<a class="button1" target="_blank" href="https://info.uniswap.org/pair/0x5E5aCce4fFb60048BaB967DCADD293dA07093ac3">
 							ARTH Uniswap
 						</a>
 					</li>
@@ -90,46 +85,3 @@
 		else {$('.footer-btn').removeClass('order-first');}
 	});
 </script>
-
-<style>
-  .social-items{
-	float: left;
-  }
-
-  .button3{
-	width: 52px;
-    height: 52px;
-    border-radius: 45px;
-    color: #ffffff;
-    margin:11px;
-    text-align: left;
-    justify-content: left;
-    background: linear-gradient(#f47f57, #fd5656);
-  }
-
-   @media and screen(min-width:600px){
-     .button3{
-       text-align:left;
-     }
-   }
-
-   @media screen( max-width:392px){
-     .button3{
-       display::flex;
-       text-align:center;
-       justify-content:center;
-     }
-   }
-
-    @media and screen( max-width:700px){
-     .footer-title{
-       text-align:center;
-       justify-content:center;
-     }
-   }
-
-    button{
-    border: 0;
-    outline: none;
- }
-</style>

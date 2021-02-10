@@ -6,14 +6,8 @@
   margin-top: 0px
   padding: 30px 0
 
-  .f-text-title
-    font-family: $font-family-heading
-    font-style: normal
-    font-weight: bold
-    font-size: 46px
-    line-height: 55px
+  .main-heading
     text-align: center
-    color: rgba(255, 255, 255, 1)
     padding: 20px 15px
 
   a
@@ -81,6 +75,8 @@
     text-align: center
     width: 25%
 
+    /*===== START UB-OCT-1====*/
+
   .flip-card
     position: relative
     width: 100%
@@ -104,7 +100,6 @@
     border-radius: 20px
     padding: 15px
     text-align: center
-    z-index: 1  
     @media (max-width:600px)
       padding: 0
 
@@ -122,7 +117,9 @@
   .flip-back
     transform: rotateY(180deg)
     background: #212121
-    z-index: 10
+  .flip-card-inner:hover img
+    visibility: hidden
+
 
   .flip-card-inner .f-card-body
     position: absolute

@@ -4,20 +4,25 @@
   border-radius: 55px
   margin: 0 0 30px 0
   padding: 30px
+  text-center
+  
+  @media (max-width: 740px)
+    padding: 30px 0px  
+  
 
   .product-content
     max-width: $max-width
     margin: 0 auto
 
+  .card-title
+    margin: 40px 0 20px  
+    font-size: 24px
+    min-height: 64px
+    line-height: 32px
+	
+
   .product_title
-    font-family: $font-family-heading
-    font-size: 46px
-    font-style: normal
-    font-weight: 700
-    line-height: 1.2
-    letter-spacing: 0px
     text-align: center
-    color: #ffffff
     margin-top: 30px
     @media (max-width: 400px)
       font-size: 30px
@@ -38,17 +43,15 @@
         font-size: 14px
         padding: 15px
 
-  .product_section_flex_card
-    display: flex
-    margin: 60px 0
+  .card-deck
+    margin-top: 60px
+    margin-bottom: 60px	
+  .card-bg
+    background: linear-gradient(180deg, #2D2D2D 0%, #171717 100%)
+    
 
   .product_card
-    // width: 380px
-    min-height: 427px
-    background: linear-gradient(180deg, #2D2D2D 0%, #171717 100%)
     border-radius: 16px
-    margin-left: 10px
-    margin-right: 10px
     display: flex
     flex-direction: column
     text-align: center

@@ -2,13 +2,23 @@ footer
   background: #171717
   z-index: 0
 
+  .button3
+    width: 52px
+    height: 52px
+    border-radius: 45px
+    color: $color-white
+    margin: 11px
+    text-align: left
+    justify-content: left
+    background: linear-gradient(#f47f57, #fd5656)
+    position: relative
+
+  
+
   .footer-btn li
     display: inline-block
     padding-bottom: 5px
 
-  .button3  
-    margin-left: 0
-    margin-right: 28px
 
   .white-line
     margin: 70px auto
@@ -20,12 +30,12 @@ footer
       color: #969699
       
     a:hover
-      color: #fff      
+      color: $color-white      
 
   a:hover
     text-decoration: none  
     outline: none
-    color: #fff
+    color: $color-white
               
   .button3
     background: #969696 
@@ -33,41 +43,30 @@ footer
     height: 44px
 
   .button3:hover   
-    background: #fff  
+    background: $color-white  
     outline: none
     text-decoration: none
 
   .footer-content
     overflow: hidden
-    margin: 0 auto
-    padding: 0px 90px 30px 90px
+    padding-bottom: 30px
     position: relative
   
     .button1  
-      width: 167px
+      width: 158px
       height: 46px  
       line-height: 46px
-      padding-left: 15px
-      padding-right: 15px      
+      padding-left: 10px
+      padding-right: 10px      
 
 
   .footer-title
-    // width: 580px
-    font-family: $font-family-heading
     padding-bottom: 30px
     font-size: 24px
-    font-style: normal
-    font-weight: 700
-    line-height: 1.2
-    letter-spacing: 0px
-    text-align: left
-    color: #ffffff
-    // float: left
+    margin: 0
 
   .footer-flex
-    // width: 1300px
     display: flex
-    // margin: 30px 0px 0px 131px
 
   .footer-text
     color: rgba(150, 150, 150, 1)
@@ -80,14 +79,18 @@ footer
     letter-spacing: 0em       
 
   .social-items
-    color: #ffffff
+    color: $color-white
     margin-top: 0px
     text-align:left 
 
   .fab
-    color: #000
+    color: $color-black
     font-size: 23px
     margin: 0 50px 25px 0
+    position: absolute
+    top: 50%
+    left: 49%
+    transform: translate(-50%, -50%)
 
   .button1
     width: 200px
@@ -95,23 +98,10 @@ footer
     font-size: 18px
     border-radius: 45px
     background-color: #333333
-    color: #ffffff
+    color: $color-white
     border: 1px solid #f95921
     margin-left: 24px
 
-    &:hover
-       background: linear-gradient(38.44deg, #F47F57 15.81%, #FD5656 87.57%)
-
-  .twobuttons
-    // float: right
-    display: flex
-    flex-wrap: wrap
-    justify-content: flex-end
-    margin-top: 0px
-
-    li
-      // display: inline-block
-      list-style: none
 
   @media (max-width: 768px)
     .white-line
@@ -126,13 +116,13 @@ footer
     .button1
       margin: 0       
 
-  @media (max-width: 600px)
+  @media (max-width: 740px)
     .equal-btn-mobile
       justify-content: space-around  
       display: flex  
 
     .social-items a
-      width: 25%
+      width: 24%
       display: inline-block  
 
   #footer-gradient

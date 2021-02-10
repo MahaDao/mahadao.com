@@ -1,37 +1,9 @@
 /*** Generic/Common styles for Arth page ***/
-.padding-none
-  padding: 0
-
-.margin-none
-  margin: 0
 	
 .dis-flex-center
   display: flex
   justify-content: center  
 	
-.arth-section
-  // margin: 120px auto 0px
-  text-align: center
-  font-style: normal
-  font-family: $font-family-heading
-  display: flex
-  justify-content: center
-  min-height: 150px
-  width: 100%
-  height: 100%
-  margin-bottom: 20px
-  padding: 30px 
-
-.arth-heading
-  color: #FFFFFF
-  font-size: 46px
-  font-weight: 700
-  line-height: 55px
-  width: 100%
-
-  @media screen and (max-width: 500px)
-    font-size: 24px
-    line-height: 18px
 
   &.arth-heading-regular
     font-size: 33px
@@ -212,7 +184,8 @@
 #arth-road-map
   display: inherit
   padding: 0px
- 
+  .main-heading
+    padding-bottom: 10px  
 #arth-red-text
   font-size: 22px
   padding: 0px
@@ -241,7 +214,7 @@
 #arth-cross-border
   background: linear-gradient(180deg, #2B2B2B 0%, #1F1F1F 60.94%)
   border-radius: 55px
-  padding: 30px
+  padding: 60px 30px
   margin-bottom: 0
   display: inline-flex
   margin: 25px
@@ -383,72 +356,67 @@
 /*** Ring Animations End ***/	
 
 /*** 	Cross-chain-liquidity Animations Start ***/	
-.cross-chain-animation
-  display: block
 
-.cross-chain-liquidity-ani .cross-chain-animation
-  animation: cross-line-stop 12s linear!important
-  stroke-dasharray: 1024
-  stroke-dashoffset: 0 !important
+.dot-animation
+  stroke-dasharray: 500
+  stroke-dashoffset: 500
+  animation: dot-animation-stop 4s linear!important
 
-@keyframes cross-line-stop 
-  0% 
-    stroke-dashoffset: 1024    
-  100% 
-    stroke-dashoffset: 1024
+@keyframes dot-animation-stop 
+  from 
+    stroke-dashoffset: 500  
+  to 
+    stroke-dashoffset: 500
 
-@keyframes cross-line 
-  0% 
+.jump-class-chain .dot-animation-1 
+  stroke-dasharray: 500
     stroke-dashoffset: 0
-  100% 
-    stroke-dashoffset: 1024   
-  
-.jump-class .cross-chain-animation
-  stroke-dasharray: 1020
-  stroke-dashoffset: 1020
-    
-.jump-class .cross-chain-1    
-  animation: cross-line-1 12s linear 
-  animation-delay: .5s 
- 
-@keyframes cross-line-1 
+  animation: dot-animation-1 5s linear!important
+
+@keyframes dot-animation-1 
+  from 
+    stroke-dashoffset: 500  
+  to 
+    stroke-dashoffset: 0 
+
+.jump-class-chain .dot-animation-2 
+  stroke-dasharray: 500
+  stroke-dashoffset: 0
+  animation: dot-animation-2 6s linear!important
+
+@keyframes dot-animation-2 
   0% 
-    stroke-dashoffset: 1024    
+    stroke-dashoffset: 500   
+  15% 
+    stroke-dashoffset: 500  
   100% 
     stroke-dashoffset: 0    
 
-.jump-class .cross-chain-2  
-  animation: cross-line-2 12s linear  
-  animation-delay: 1.5s
- 
-@keyframes cross-line-2 
+.jump-class-chain .dot-animation-3
+  stroke-dasharray: 500
+  stroke-dashoffset: 0
+  animation: dot-animation-3 8s linear!important
+
+@keyframes dot-animation-3 
   0% 
-    stroke-dashoffset: 1024    
+    stroke-dashoffset: 500   
+  20% 
+    stroke-dashoffset: 500  
   100% 
     stroke-dashoffset: 0   
 
-.jump-class .cross-chain-3  
-  animation: cross-line-3 12s linear  
-  animation-delay: 2.5s
- 
-@keyframes cross-line-3 
+.jump-class-chain .dot-animation-4
+  stroke-dasharray: 500
+  stroke-dashoffset: 0
+  animation: dot-animation-4 8s linear!important
+
+@keyframes dot-animation-4
   0% 
-    stroke-dashoffset: 1024
+    stroke-dashoffset: 500   
+  30% 
+    stroke-dashoffset: 500  
   100% 
     stroke-dashoffset: 0 
-
-.jump-class .cross-chain-4  
-  animation: cross-line-4 12s linear  
-  animation-delay: 3.5s
- 
-@keyframes cross-line-4 
-  0% 
-    stroke-dashoffset: 1024
-  100% 
-    stroke-dashoffset: 0   
-
-
-
 
 
 /*** Cross-chain-liquidity Animations End ***/	
@@ -549,7 +517,8 @@
 	
 /** Arth Roadmap **/
 .arth-roadmap-q-container
-  margin: 30px 8%
+  margin-top: 30px
+  margin-bottom: 30px
   
 .arth-roadmap-q
   text-align: left

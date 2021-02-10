@@ -357,8 +357,9 @@
       content: '12'          
 
   .count-reverse:after
+    content: '12'
     animation: count-reverse 30s linear infinite
-    animation-delay: 15s
+    animation-delay: 15s    
 
   @keyframes count-reverse 
     100% 
@@ -400,16 +401,6 @@
   .revers-timer .timer 
     background: linear-gradient(180deg, #1B1B1B 0%, #191919 100%)
 
-  .timer:after
-    content: ''
-    background: #404040
-    width: 1px
-    height: 99%
-    position: absolute
-    top: 50%
-    left: 49%
-    z-index: 1
-    transform: translate(-50%, -50%)
 
   .timer, .timer * 
     -moz-box-sizing: border-box
@@ -473,15 +464,17 @@
     left: 50%
     opacity: 0
     -webkit-animation: opa-filler 30s steps(7, end) infinite
-    border-left: none
+    border-left: 1px solid #404040
+
 
   .timer .filler-rev 
     border-radius: 100% 0 0 100% / 50% 0 0 50%
     left: 0%
     opacity: 1
     -webkit-animation: opa-filler 30s steps(7, end) infinite
-    animation-delay: 15s
-    border-right: none    
+    animation-delay: 15s    
+    border-right: 1px solid #404040
+      
 
   .timer .mask 
     width: 52%
@@ -492,11 +485,14 @@
     left: -1px
     -webkit-animation: opa 30s steps(7, end) infinite
 
+
   .timer .mask-rev 
     opacity: 0
     left: 60px
     -webkit-animation: opa 30s steps(7, end) infinite
     animation-delay: 15s
+    border-left: 1px solid #404040
+    border-right: none!important
 	
   @-webkit-keyframes rota 
     0% 
@@ -521,6 +517,7 @@
   @-webkit-keyframes opa 
     0%, 10%, 20%, 23% 
       opacity: 1
+      border-right: 1px solid #404040 
     27%, 75%, 100% 
       opacity: 0
 
@@ -528,7 +525,7 @@
     0%, 10%, 25% 
       opacity: 0
     26%, 40%, 70%, 100% 
-      opacity: 1         
+      opacity: 1       
 	
   .timer-sml-text 
     position: absolute

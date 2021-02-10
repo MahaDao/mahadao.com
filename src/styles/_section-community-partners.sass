@@ -10,13 +10,9 @@
   a:hover
     text-decoration: none
  
-  .arth-heading  
+  .main-heading  
     padding-bottom: 35px
 	
-  .main-section  
-    max-width: $max-width
-    margin: 0 auto    
-    padding: 0 30px
 
   @media (max-width: 500px)
     ::-webkit-scrollbar 
@@ -31,9 +27,6 @@
     ::-webkit-scrollbar-track 
       background: none
   
-    .main-section
-      padding: 0 15px
-      position: relative      
 
     .tab-section
       overflow: scroll  
@@ -57,7 +50,7 @@
       width: 78%!important
       font-size: 12px!important 
 
-    .main-section .btm-space
+    .btm-space
       margin-bottom: 15px
                          
 
@@ -132,13 +125,13 @@
 
 .tab-section.scroll:before
   right: 0
-  width: 70px
+  width: 60px
   background: linear-gradient(90deg,hsla(0,0%,100%,0) 0,#171717 80%,#171717)
   opacity: 1
   content: ""
   display: block
   position: absolute
-  top: 55px
+  top: 65px
   height: 20px
   bottom: 0
   z-index: 1
@@ -146,13 +139,13 @@
 
 .tab-section.scroll:after
   left: 0
-  width: 70px
+  width: 60px
   background: linear-gradient(270deg,hsla(0,0%,100%,0) 0,#171717 60%,#171717)
   opacity: 1
   content: ""
   display: block
   position: absolute
-  top: 55px
+  top: 65px
   height: 20px
   bottom: 0
   z-index: 1

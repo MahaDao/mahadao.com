@@ -10,6 +10,12 @@ a
 #learn-more
   color: rgb(66, 63, 63)
 
+.padding-none
+  padding: 0
+
+.margin-none
+  margin: 0
+
 #margin-27px-less
   margin-top: -27px
 
@@ -17,8 +23,14 @@ a
   padding-top: 30px
 
 a.link-white
-  color: #fff
+  color: $color-white
   font-family: $font-family-heading
+
+a.link-underline
+  text-decoration: underline
+
+a:hover.link-underline
+  text-decoration: none  
   
 .padding-bottom-30
   padding-bottom: 30px
@@ -30,7 +42,7 @@ a.link-white
   font-size: 16px
   border-radius: 45px
   background-color: #333333
-  color: #ffffff
+  color: $color-white
   border: 1px solid #f95921
   @media (max-width:600px)
     text-align: center
@@ -50,27 +62,56 @@ a.link-white
 .hideclass
   display: none!important
 
-.outline-title
+.main-heading
   font-weight: 700
-  font-size: 33px
+  font-style: normal
+  font-size: 46px
+  font-family: $font-family-heading
+  color: $color-white
+  
+.outline-title
+  font-family: $font-family-heading
+  font-weight: 700
+  font-size: 46px
   line-height: 55px
   letter-spacing: 1px
-  color: #000
-  -webkit-text-stroke: 0.5px #fff 
+  color: $color-black
+  -webkit-text-stroke: 0.5px $color-white 
   padding-bottom: 20px 
+
+.card
+  margin-left: 0
+  margin-right: 0
+
+.card-deck .card
+  margin-left: 0
+  margin-right: 0
+
+.card-bg
+  background: linear-gradient(180deg, #2D2D2D 0%, #1C1C1C 100%)
+  border: none
+
+.card-title
+  font-family: $font-family-heading
+  font-style: normal
+  font-weight: bold
+  font-size: 32px
+  line-height: 38px
+  color: $color-white
 
 .text-gradient
   background: linear-gradient(81.26deg, #F47F57 14.65%, #FD5656 83.88%)
   -webkit-background-clip: text
   -webkit-text-fill-color: transparent 
+  font-family: $font-family-heading
 
 .main-section
   max-width: $max-width
   margin: 0 auto
   padding: 0 30px
 
-@media (max-width: 600px)
-  .main-title
+@media (max-width: 740px)
+  .main-title, .main-heading, .card-title
     font-size: 24px!important
     line-height: 28px  
 
@@ -78,8 +119,24 @@ a.link-white
     font-size: 24px!important
     line-height: 28px !important
 
+
   .sm-padding-top-55
     padding-top: 54px!important
+
+.bullet-text
+  position: relative
+  padding-left: 20px
+
+.bullet-text:before
+  content: ''
+  background: linear-gradient(135deg, #FF8B71 14.65%, #C33F50 64.43%, #A81E41 85.37%)
+  width: 11px
+  height: 10px
+  display: inline-block
+  border-radius: 11px
+  margin-top: 7px
+  position: absolute
+  left: 0
 
 .btn-orange
   background: linear-gradient(38.44deg, #F47F57 15.81%, #FD5656 87.57%)
@@ -92,8 +149,12 @@ a.link-white
   border: 1px solid #747474!important
 
 .disabled-btn:hover 
-  color: #fff 
+  color: $color-white 
   border: 1px solid #F47F57
+  
+button
+  border: 0
+  outline: none
 
 .button1   
   width: 184px
@@ -103,7 +164,7 @@ a.link-white
   font-size: 18px
   border-radius: 45px
   background-color: #333
-  color: #ffffff
+  color: $color-white
   border: 1px solid #F47F57
   display: inline-block
   cursor: pointer
@@ -111,7 +172,7 @@ a.link-white
 .button1:hover
   background: linear-gradient(38.44deg, #F47F57 15.81%, #FD5656 87.57%)  
   border: 1px solid #F47F57
-  color: #fff
+  color: $color-white
   text-decoration: none
   
 .button-flexible   
@@ -122,7 +183,7 @@ a.link-white
   font-size: 18px
   border-radius: 45px
   background-color: #333
-  color: #fff
+  color: $color-white
   border: 1px solid #F47F57
   display: inline-block
   cursor: pointer
@@ -130,7 +191,7 @@ a.link-white
 .button-flexible:hover
   background: linear-gradient(38.44deg, #F47F57 15.81%, #FD5656 87.57%)  
   border: 1px solid #F47F57
-  color: #fff
+  color: $color-white
   text-decoration: none
 
 .btn-medium
@@ -144,7 +205,7 @@ a.link-white
   height: 0
   border-top: 8px solid transparent
   border-bottom: 8px solid transparent
-  border-left: 12px solid #fff
+  border-left: 12px solid $color-white 
   display: inline-block
   border-radius: 3px
   vertical-align: middle
