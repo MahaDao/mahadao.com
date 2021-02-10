@@ -10,13 +10,16 @@
     padding: 0      
 
   .nav-link  
-    padding: 10px 35px
+    padding: 10px 16px
+    margin: 0px 4px
 
   .nav-item.dropdown:hover 
     color: #aaa  
 
   .nav-link.btn-orange  
-    margin-left: 35px       
+    margin-left: 4px
+    padding-left: 25px
+    padding-right: 25px       
 
   .nav-item.dropdown
     height: 42px  
@@ -53,14 +56,15 @@
   .dropdown-menu:after
     content: ''
     display: block
+    background: #47413D
     position: absolute
-    top: -11px
+    top: -7px
     left: 45%
-    width: 0
-    height: 0
-    border-left: 9px solid transparent
-    border-right: 9px solid transparent
-    border-bottom: 12px solid #48423E
+    width: 16px
+    height: 16px
+    border-radius: 2px        
+    transform: rotate(45deg)
+
   
     
   .dropdown-item  
@@ -143,7 +147,7 @@
       visibility: visible
 
     .dropdown-menu:after
-      border: none
+      height: 0
 
     .nav-link
       font-size: 16px
@@ -168,6 +172,7 @@
     .nav-link, .dropdown-item
       padding-left: 18px  
       padding-right: 18px 
+      margin: 0      
 
     .dropdown-item 
       opacity: 0.64
