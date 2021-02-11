@@ -4,6 +4,10 @@
   padding: 18px 0px
   font-size: 14px
   font-weight: 600
+  position: fixed
+  left: 0
+  top: 0
+  z-index: 100
   a
     color: #fff  
   nav
@@ -183,6 +187,17 @@
   .container-fluid
     padding-left: 130px
     padding-right: 130px
+
+@media (max-width: 740px)
+  .hero-link a
+    margin-left: 0!important
+
+  .imagine-link    
+    padding-top: 10px
+    display: block
+
+  .sm-center 
+    text-align: center   
 
   .container
     max-width: 1200px!important
