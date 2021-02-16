@@ -1,4 +1,6 @@
 /*** Generic/Common styles for Arth page ***/
+body 
+  background: #171717
 	
 .dis-flex-center
   display: flex
@@ -52,7 +54,8 @@
 
 /*** Arth Maha Dao section ***/
 #arth-maha-dao
-  background: linear-gradient(180deg, #171717 0%, #161616 60.94%)
+  padding: 60px 0px
+  font-family: $font-family-heading
 
 #arth-maha-dao-para
   padding: 15px 15%
@@ -63,9 +66,9 @@
 /*** Arth Lead Revol section ***/
 .arth-gradient-orange-border
   position: absolute
-  width: 95.2%
-  height: 150px
-  left: 2.4%
+  width: 96%
+  height: 170px
+  left: 2%
   top: -1%
   z-index: -1
   background: linear-gradient(180deg, #F48057 0%, rgba(0, 0, 0, 0) 100%)
@@ -75,25 +78,24 @@
   display: flex
   flex-direction: column
   align-items: left
-  @media screen and (max-width: 500px)
-    width: 92.2%
+  @media screen and (max-width: 740px)
+    width: 95%
     height: 200px
-    left: 4%
+    left: 2.5%
 
 #arth-lead-rev
   margin-top: 110px
 	
   .arth_lead_flex
     display: flex
-    margin: 60px 0%
+    margin-top: 60px
+    margin-bottom: 60px	
 
   .arth_lead_flex_card
     height: 100%
     min-height: 203px
     background: linear-gradient(180deg, #2D2D2D 0%, #171717 100%)
     border-radius: 28px
-    margin-left: 10px
-    margin-right: 10px
     display: flex
     flex-direction: column
     text-align: center
@@ -113,17 +115,13 @@
 	    
 /*** Arth Section above footer/partner ***/
 #arth-section-title
-  margin: 0 auto
-  padding: 0 30px
-  min-height: auto
+  margin-top: 142px
+  text-align: center
   
   .main-title
-    font-weight: bold
-    font-size: 33px
+    font-size: 46px
     line-height: 55px
     letter-spacing: 1px
-    color: #000
-    -webkit-text-stroke: 0.5px #fff
 	
 #arth-section-title-sub
   padding: 0px
@@ -199,24 +197,45 @@
     padding: 15px 0
 	
 /*** Arth Technology section ***/	
+#arth-tech
+  padding-top: 20px
+  .main-heading
+    font-size: 33px
+		
+  
+
+  #arth-cross-border-para
+    padding-left: 0
+    padding-right: 0
+	
+  .card-title
+    min-height: 76px
+    text-align: left
+	
+  .img-container
+    margin: 40px 40px 0px 40px
+    position: relative 
+
+#technology-sec
+  text-align: center
+  padding-bottom: 20px
+  
 .arth-tech-card
   margin-top: 60px
   display: flex
   justify-content: center
   
-  .arth-tech-card-col
-    border-radius: 30px
-    background: -webkit-linear-gradient(180deg, #2D2D2D 0%, #1C1C1C 100%)
-	
 
 #arth-cross-border
+  display: inline-flex
+  vertical-align: top
+  margin-top: 40px
+  
+  
+  
+  .card-bg  
   background: linear-gradient(180deg, #2B2B2B 0%, #1F1F1F 60.94%)
   border-radius: 55px
-  padding: 60px 40px
-  margin-bottom: 0
-  display: inline-flex
-  margin: 25px
-  vertical-align: top
   
   @media screen and (max-width: 500px)
     margin: 20px 0 
@@ -228,11 +247,9 @@
   width: 100%
   margin: auto
   display: flex
-  margin-bottom: 20px
   background-size: contain
   background-position: center top
-  @media screen and (max-width: 500px)
-    height: 325px
+
 	
 #arth-cross-border-img
     background-image: url(../images/technology/cross-border-transactions.png)
@@ -346,75 +363,76 @@
   to 
     stroke-dashoffset: 0
 
-@media screen and (max-width: 500px)
-  .ring-place
-    left: -16px
-    
 
 /*** Ring Animations End ***/	
 
 /*** 	Cross-chain-liquidity Animations Start ***/	
+.cross-chain-animation
+  display: block
 
-.dot-animation
-  stroke-dasharray: 500
-  stroke-dashoffset: 500
-  animation: dot-animation-stop 4s linear!important
+.cross-chain-liquidity-ani .cross-chain-animation
+  animation: cross-line-stop 12s linear!important
+  stroke-dasharray: 1024
+  stroke-dashoffset: 0 !important
 
-@keyframes dot-animation-stop 
-  from 
-    stroke-dashoffset: 500  
-  to 
-    stroke-dashoffset: 500
-
-.jump-class-chain .dot-animation-1 
-  stroke-dasharray: 500
-    stroke-dashoffset: 0
-  animation: dot-animation-1 5s linear!important
-
-@keyframes dot-animation-1 
-  from 
-    stroke-dashoffset: 500  
-  to 
-    stroke-dashoffset: 0 
-
-.jump-class-chain .dot-animation-2 
-  stroke-dasharray: 500
-  stroke-dashoffset: 0
-  animation: dot-animation-2 6s linear!important
-
-@keyframes dot-animation-2 
+@keyframes cross-line-stop 
   0% 
-    stroke-dashoffset: 500   
-  15% 
-    stroke-dashoffset: 500  
+    stroke-dashoffset: 1024    
+  100% 
+    stroke-dashoffset: 1024
+
+@keyframes cross-line 
+  0% 
+    stroke-dashoffset: 0
+  100% 
+    stroke-dashoffset: 1024   
+  
+.jump-class-chain .cross-chain-animation
+  stroke-dasharray: 1020
+  stroke-dashoffset: 1020
+    
+.jump-class-chain .cross-chain-1    
+  animation: cross-line-1 12s linear 
+  animation-delay: .5s 
+ 
+@keyframes cross-line-1 
+  0% 
+    stroke-dashoffset: 1024    
   100% 
     stroke-dashoffset: 0    
 
-.jump-class-chain .dot-animation-3
-  stroke-dasharray: 500
-  stroke-dashoffset: 0
-  animation: dot-animation-3 8s linear!important
-
-@keyframes dot-animation-3 
+.jump-class-chain .cross-chain-2  
+  animation: cross-line-2 12s linear  
+  animation-delay: 1.5s
+ 
+@keyframes cross-line-2 
   0% 
-    stroke-dashoffset: 500   
-  20% 
-    stroke-dashoffset: 500  
+    stroke-dashoffset: 1024    
   100% 
     stroke-dashoffset: 0   
 
-.jump-class-chain .dot-animation-4
-  stroke-dasharray: 500
-  stroke-dashoffset: 0
-  animation: dot-animation-4 8s linear!important
-
-@keyframes dot-animation-4
+.jump-class-chain .cross-chain-3  
+  animation: cross-line-3 12s linear  
+  animation-delay: 2.5s
+ 
+@keyframes cross-line-3 
   0% 
-    stroke-dashoffset: 500   
-  30% 
-    stroke-dashoffset: 500  
+    stroke-dashoffset: 1024
   100% 
     stroke-dashoffset: 0 
+
+.jump-class-chain .cross-chain-4  
+  animation: cross-line-4 12s linear  
+  animation-delay: 3.5s
+ 
+@keyframes cross-line-4 
+  0% 
+    stroke-dashoffset: 1024
+  100% 
+    stroke-dashoffset: 0   
+
+
+
 
 
 /*** Cross-chain-liquidity Animations End ***/	
@@ -423,7 +441,7 @@
   font-size: 25px
   
 #arth-cross-border-para
-  padding: 15px 0%
+  padding: 15px 10%
   min-height: 200px
 
 #arth-technology-image
@@ -457,7 +475,7 @@
 /*** Application & Usage ***/
 #arth-app-usage
   text-align: center
-  margin-top: 240px
+  margin-top: 0
   
   #arth-red-text
     padding: 20px 0
@@ -478,6 +496,7 @@
   color: #A1A1A1
   text-transform: uppercase
   font-family: $font-family-heading
+  padding-top: 20px
   padding-bottom: 10px  
   
   @media screen and (max-width: 500px)

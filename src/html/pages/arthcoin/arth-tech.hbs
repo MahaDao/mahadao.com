@@ -3,16 +3,29 @@
 		<div class="arth-heading arth-heading-regular" id="arth-tech-title" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
 			<div id="technology-sec">
 				<div class="main-heading">Technology</div>
-				<div class="arth-para arth-para-regular page-scroll" id="arth-maha-dao-para" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
+		
+		<div class="arth-para arth-para-regular" id="arth-maha-dao-para" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
 					ARTH is backed by a stable basket of assets calculated via a proprietary index called the “Global Measurement Unit” which informs the ARTH target price. Additional robust strategies such as seigniorage shares, automatic rebalancing and trusted oracle price feeds also assist to further stabilise the price of ARTH.
 				</div>
 			</div>
 		
-		<div class="row">
-			<section class="col-12 col-md-5 " id="arth-cross-border">
-				<div class="arth-heading arth-heading-regular" id="arth-cross-border-title" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
+		<!--<div id="arth-technology-image"></div>
+		<div id="arth-technology-image-mb"></div>-->
+		
+		
+		<div class="card-deck row">
+		
+		<section class="col-12 col-md-6  cross-border-transactions " id="arth-cross-border">
+			<div class="arth-heading arth-heading-regular card card-bg" id="arth-cross-border-title" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
+				
+				<div class="img-container">
 					<span id="arth-cross-border-img" class="arth-cross-border-img-none"></span>
+
+
 					<div id="cross-border-transactions" class="ring ring-place">
+
+
+
 						<span class="ring-center"><img src="../images/technology/ring-glow.svg" alt=""></span>
 						<div class="ring-pos ring-1">
 							<svg width="88" height="261" viewBox="0 0 88 261" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -62,21 +75,28 @@
 							</svg>
 						</div>
 					</div>
-
+      </div>
+				<div class="card-body">
 					<div class="card-title">
 					Cross-border transactions
 					</div>
-				
-					<div class="arth-para arth-para-regular" id="arth-cross-border-para" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
-						Deployed on Layer 2 Protocol, ARTH offers transactions speed of less than 3 seconds to cross the border from your wallet to another
-						across the globe. The very near future version of ARTH shall be a cross-chain solution that brings the power of value coin to other
-						blockchains like Ethereum and more
+				<div class="arth-para arth-para-regular text-justify" id="arth-cross-border-para" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
+					Deployed on Layer 2 Protocol, ARTH offers transactions speed of less than 3 seconds to cross the border from your wallet to another across the globe. The very near future version of ARTH shall be a cross-chain solution that brings the power of value coin to other blockchains like Ethereum and more 
 					</div>
+				
+				</div>
+				
+				
 				</div>
 			</section>
-			<section class="col-12 col-md-5 cross-chain-liquidity" id="arth-cross-border">
-				<div class="arth-heading arth-heading-regular" id="arth-cross-border-title" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
+		
+		
+		
+		<section class="col-12 col-md-6" id="arth-cross-border">
+			<div class="arth-heading arth-heading-regular card card-bg cross-chain-liquidity" id="arth-cross-border-title" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
+			<div class="img-container">
 					<div id="arth-cross-chain-img" class="cross-chain-ring">	
+
 						<svg width="351" height="286" viewBox="0 0 351 286" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M172.346 235.707C183.116 235.707 191.846 226.781 191.846 215.771C191.846 204.76 183.116 195.834 172.346 195.834C161.577 195.834 152.846 204.76 152.846 215.771C152.846 226.781 161.577 235.707 172.346 235.707Z" fill="url(#paint0_linear)"/>
 							<path d="M303.192 161.943C313.962 161.943 322.692 153.017 322.692 142.007C322.692 130.996 313.962 122.071 303.192 122.071C292.423 122.071 283.692 130.996 283.692 142.007C283.692 153.017 292.423 161.943 303.192 161.943Z" fill="url(#paint1_linear)"/>
@@ -229,16 +249,20 @@
 								</linearGradient>
 							</defs>
 						</svg>
+		
 					</div>
+</div>
+			<div class="card-body">
 					<div class="card-title">Cross-chain liquidity</div>
 				
-					<div class="arth-para arth-para-regular" id="arth-cross-border-para" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
-						ARTH is compatible with tokens and currencies from other blockchains to create a massive liquidity pool across the chains.
-						You can stake, lend, borrow, trade ARTH across chains. (coming soon)
+				<div class="arth-para arth-para-regular text-justify" id="arth-cross-border-para" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
+					ARTH is compatible with tokens and currencies from other blockchains to create a massive liquidity pool across the chains. You can stake, lend, borrow, trade ARTH across chains. (coming soon) 
+					</div>
+					</div>
+					
 					</div>
 				</div>
 			</section>
-			</div>
 		</div>
 	</div>
 </section>
@@ -263,24 +287,37 @@ function show_process_ring(){
 		 },300);		 
  }
   show_process_ring();
+
 </script>
+
 
  <script> 	
 	$(window).scroll(function() {
+	var offset = $(".cross-border-transactions").offset().top;	
+    if ($(window).scrollTop() >= offset) {	
+      $(".cross-border-transactions").addClass("jump-class");
+    }else{
+	$(".cross-border-transactions").removeClass("jump-class");
+	}	
+	});	
 
+	$(window).scroll(function() {
 	var offset = $(".cross-chain-liquidity").offset().top;
     if ($(window).scrollTop() >= offset) {
-      $(".cross-chain-liquidity").addClass("cross-chain-liquidity-ani");
-    }
+      $(".cross-chain-liquidity").addClass("jump-class-chain");
+    }else{
+	$(".cross-chain-liquidity").removeClass("jump-class-chain");
+	}	
+	});	
 
-	  var hT = $('.page-scroll').offset().top,
-			hH = $('.page-scroll').outerHeight(),
-			wH = $(window).height(),
-			wS = $(this).scrollTop();
-		if (wS > (hT+hH-wH)){
-			$('#arth-cross-border-title').addClass('jump-class');
-			$('.cross-chain-liquidity').addClass('jump-class');						
-		}
 
-	})    
-    </script>
+	$(window).scroll(function() {
+	var offset = $("#arth-tech").offset().top;	
+    if ($(window).scrollTop() >= offset) {	
+      $("#arth-tech").addClass("jump-class");
+    }else{
+	$("#arth-tech").removeClass("jump-class");
+	}	
+	});	
+
+    </script> 
