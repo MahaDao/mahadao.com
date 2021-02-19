@@ -1,14 +1,16 @@
 <section id="section-timer" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
  <div class="container-fluid">
 	<div class="main-title" id="timer-1"></div>
-	<div id="timer_row" class="timer_row" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
-		 <div class="timer_box"><div class="timer_number" id="timerDays">   </div> <span class="timer_text">Days   </span></div>
-		 <div class="timer_box"><div class="timer_number" id="timerHours">  </div> <span class="timer_text">Hours  </span></div>
-		 <div class="timer_box"><div class="timer_number" id="timerMinutes"></div> <span class="timer_text">Minutes</span></div>
-		 <div class="timer_box"><div class="timer_number" id="timerSeconds"></div> <span class="timer_text">Seconds</span></div>
-	</div>
+		<div id="timer_row" class="timer_row" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+			 <div class="timer_box"><div class="timer_number" id="timerDays">	</div> <span class="timer_text">Days   </span></div>
+			 <div class="timer_box"><div class="timer_number" id="timerHours">  </div> <span class="timer_text">Hours  </span></div>
+			 <div class="timer_box"><div class="timer_number" id="timerMinutes"></div> <span class="timer_text">Minutes</span></div>
+			 <div class="timer_box"><div class="timer_number" id="timerSeconds"></div> <span class="timer_text">Seconds</span></div>
+		</div>
 
-	<div  id="timer-1-button" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"></div>
+		<div  id="timer-1-button" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+			<a id="no-txt-decoration" target="_blank" class="theme-btn btn-md" href="https://arthcoin.com/#/stats">arthcoin.com</a>
+		</div>
 	</div>
 </section>
 
@@ -61,21 +63,14 @@ function settimer(days,months,years,hours,mins)
 		}
 
 		if (timesec == 1){
-			document.getElementById("timer-1").innerHTML = '<div class="main-heading">ARTH Valuecoin Mainnet Launch</div>';
-			document.getElementById("timer-1-button").innerHTML = '<a id="no-txt-decoration" class="theme-btn btn-md"><font class="text-change">arthcoin.com</font></a>';
+			document.getElementById("timer-1").innerHTML = '<div class="main-heading">ARTH Expansion in</div>';
 		}
 		else
 		{
-			document.getElementById("timer-1").innerHTML = '<div class="main-heading">ARTH Valuecoin is Now Live</div>';
-			document.getElementById("timer-1-button").innerHTML = '<a id="no-txt-decoration" target="_blank" class="theme-btn btn-md" href="https://arthcoin.com">arthcoin.com</a>';
+			document.getElementById("timer-1").innerHTML = '<div class="main-heading">ARTH Expansion is on</div>';
 		}
 	}
 	timer = setInterval(showtimer, 1000); // Display Timer In Every 1 Sec
 }
-settimer(20,02,2021,15,00);
-
-$(document).on('mouseenter', '.text-change', function() { 
-		$(this).text("Coming Soon");
-	});	
-	$(this).text("arthcoin.com");
+settimer(23,02,2021,15,00);
 </script>
