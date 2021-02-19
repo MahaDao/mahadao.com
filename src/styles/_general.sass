@@ -117,6 +117,11 @@ a:hover.link-underline
   padding-right: 10px
   padding-left: 10px
 
+a.opacity-link 
+  opacity: 0.64  
+
+a:hover.opacity-link 
+  opacity: 0.88
 
 .card
   margin-left: 0
@@ -203,13 +208,41 @@ a:hover.link-underline
   position: absolute
   left: 0
 
-.btn-orange
-  background: linear-gradient(38.44deg, #F47F57 15.81%, #FD5656 87.57%)
-  border-radius: 6px
-  text-align: center
-
 .btn-outline
   border: 1px solid rgba(255, 255, 255, 0.2)
+.bg-none
+  background: none  
+
+.theme-btn
+  background: linear-gradient(38.44deg, #F47F57 15.81%, #FD5656 87.57%)
+  display: inline-block
+  border-radius: 6px
+  text-align: center
+  padding: 12px 15px
+  font-size: 14px
+  color: $color-white!important
+  border: 1px solid #EB7254
+
+.theme-btn-outline
+  display: inline-block
+  font-size: 14px
+  border: 1px solid rgba(255, 255, 255, 0.2)
+  border-radius: 6px
+  text-align: center
+  padding: 12px 15px
+  color: $color-white!important
+
+.theme-btn:hover
+  text-decoration: none
+
+.btn-md
+  min-width: 160px
+
+.btn-sm
+  min-width: 120px  
+
+.btn-lg
+  min-width: 328px    
 
 .disabled-btn    
   background-color: #333
