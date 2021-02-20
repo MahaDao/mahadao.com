@@ -223,6 +223,14 @@ a:hover.opacity-link
   color: $color-white!important
   border: 1px solid #EB7254
 
+.theme-btn:hover 
+  background: #FF7F57
+  border: 1px solid #FF7F57
+
+.theme-btn:active 
+  background: linear-gradient(180deg, #F47F57 -11.33%, #FD5656 100%)
+  
+
 .theme-btn-outline
   display: inline-block
   font-size: 14px
@@ -231,6 +239,14 @@ a:hover.opacity-link
   text-align: center
   padding: 12px 15px
   color: $color-white!important
+
+.theme-btn-outline:hover 
+  background: #423B38
+  border: 1px solid #E8E7E7
+
+.theme-btn-outline:active 
+  background: #2A2827
+  border: 1px solid #6E6D6C  
 
 .theme-btn:hover
   text-decoration: none
@@ -245,13 +261,18 @@ a:hover.opacity-link
   min-width: 328px    
 
 .disabled-btn    
-  background-color: #333
-  color: #B6B6B6
-  border: 1px solid #747474!important
+  display: inline-block
+  background: #606060
+  font-size: 14px
+  border: 1px solid #606060
+  border-radius: 6px
+  text-align: center
+  padding: 12px 15px
+  color: #8D8D8D!important
+  pointer-events: none
 
 .disabled-btn:hover 
-  color: $color-white 
-  border: 1px solid #F47F57
+  border: 1px solid #606060
   
 button
   border: 0
