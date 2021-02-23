@@ -23,21 +23,27 @@
 			</a>
 		</div>
 		<div class="d-md-inline-block d-sm-block sm-center hero-link">
-			<a  id="no-txt-decoration" class="link-white imagine-link" data-toggle="modal" data-target="#myModal"  href="javascript:void(0)"  id="whitepaper-main">
+			<a  id="no-txt-decoration" class="link-white imagine-link" data-toggle="modal" data-target="#videoModal"  href="javascript:void(0)"  id="whitepaper-main">
 			<span class="mr-1"><img src="../../images/white-tringle.svg" alt="" /></span> Imagine. ARTH
 			</a>
 		</div>
 	</div>
 </section>
-<div id="myModal" class="modal fade" role="dialog">
+<div id="videoModal" class="modal fade" role="dialog">
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<div class="modal-header">
 				<span class="close-btn" data-dismiss="modal"></span>     
 			</div>
 			<div class="video-outer">
-				<iframe id="video" src="https://player.vimeo.com/video/411464106?portrait=0&amp;byline=0&amp;autoplay=1&amp;controls=0" allow="autoplay; fullscreen" data-ready="true"></iframe>
+				<iframe id="video" src="https://www.youtube.com/embed/lzk71jqSGf8?controls=0" allow="autoplay; fullscreen" data-ready="true"></iframe>
 			</div>
 		</div>
 	</div>
 </div>
+
+<script> 
+$('.close-btn').click(function(){
+   $('#video').attr('src', 'https://www.youtube.com/embed/lzk71jqSGf8?controls=0');
+});
+</script> 
