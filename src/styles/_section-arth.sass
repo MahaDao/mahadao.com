@@ -1,37 +1,11 @@
 /*** Generic/Common styles for Arth page ***/
-.padding-none
-  padding: 0
-
-.margin-none
-  margin: 0
+body 
+  background: #171717
 	
 .dis-flex-center
   display: flex
   justify-content: center  
 	
-.arth-section
-  // margin: 120px auto 0px
-  text-align: center
-  font-style: normal
-  font-family: $font-family-heading
-  display: flex
-  justify-content: center
-  min-height: 150px
-  width: 100%
-  height: 100%
-  margin-bottom: 20px
-  padding: 30px 
-
-.arth-heading
-  color: #FFFFFF
-  font-size: 46px
-  font-weight: 700
-  line-height: 55px
-  width: 100%
-
-  @media screen and (max-width: 500px)
-    font-size: 24px
-    line-height: 18px
 
   &.arth-heading-regular
     font-size: 33px
@@ -44,7 +18,7 @@
   color: #A2A2A2
   font-weight: normal
   line-height: 26px
-  padding: 15px 20%
+  padding: 15px 12%
 
   &.arth-para-regular
     font-size: 18px
@@ -79,8 +53,9 @@
     top: 0
 
 /*** Arth Maha Dao section ***/
-#arth-maha-dao
-  background: linear-gradient(180deg, #171717 0%, #161616 60.94%)
+#arth-maha-dao  
+  padding: 60px 0px
+  font-family: $font-family-heading
 
 #arth-maha-dao-para
   padding: 15px 15%
@@ -91,10 +66,11 @@
 /*** Arth Lead Revol section ***/
 .arth-gradient-orange-border
   position: absolute
-  width: 95.2%
-  height: 150px
-  left: 2.4%
+  width: 96%
+  height: 170px
+  left: 2%
   top: -1%
+  z-index: -1
   background: linear-gradient(180deg, #F48057 0%, rgba(0, 0, 0, 0) 100%)
   border-radius: 30px
   border: 1px solid
@@ -102,27 +78,24 @@
   display: flex
   flex-direction: column
   align-items: left
-  @media screen and (max-width: 500px)
-    width: 92.2%
+  @media screen and (max-width: 740px)
+    width: 95%
     height: 200px
-    left: 4%
+    left: 2.5%
 
 #arth-lead-rev
-  .product-content
-    max-width: $max-width
-    margin: 0 auto
-	
+  margin-top: 110px
+  
   .arth_lead_flex
     display: flex
-    margin: 60px 10%
+    margin-top: 60px
+    margin-bottom: 60px	
 
   .arth_lead_flex_card
     height: 100%
     min-height: 203px
     background: linear-gradient(180deg, #2D2D2D 0%, #171717 100%)
     border-radius: 28px
-    margin-left: 10px
-    margin-right: 10px
     display: flex
     flex-direction: column
     text-align: center
@@ -142,17 +115,13 @@
 	    
 /*** Arth Section above footer/partner ***/
 #arth-section-title
-  margin: 0 auto
-  padding: 0 30px
-  min-height: auto
+  margin-top: 142px
+  text-align: center
   
   .main-title
-    font-weight: bold
-    font-size: 33px
+    font-size: 46px
     line-height: 55px
     letter-spacing: 1px
-    color: #000
-    -webkit-text-stroke: 0.5px #fff
 	
 #arth-section-title-sub
   padding: 0px
@@ -210,8 +179,11 @@
 
 #arth-road-map
   display: inherit
-  padding: 0px
- 
+  padding-top: 88px
+
+  .main-heading
+    padding-bottom: 20px  
+
 #arth-red-text
   font-size: 22px
   padding: 0px
@@ -227,23 +199,48 @@
     padding: 15px 0
 	
 /*** Arth Technology section ***/	
+#arth-tech
+  padding-top: 20px
+  .main-heading
+    font-size: 33px
+
+#arth-tech
+  #arth-cross-border
+    background: none  
+
+  .card-bg  
+    background: linear-gradient(180deg, #2B2B2B 0%, #1F1F1F 60.94%)
+    border-radius: 55px  
+	  
+
+  #arth-cross-border-para
+    padding-left: 0
+    padding-right: 0
+	
+  .card-title
+    min-height: 76px
+    text-align: left
+	
+  .img-container
+    margin: 40px 40px 0px 40px
+    position: relative 
+
+#technology-sec
+  text-align: center
+  padding-bottom: 20px
+  
 .arth-tech-card
   margin-top: 60px
   display: flex
   justify-content: center
-  
-  .arth-tech-card-col
-    border-radius: 30px
-    background: -webkit-linear-gradient(180deg, #2D2D2D 0%, #1C1C1C 100%)
-	
+
 
 #arth-cross-border
-  background: linear-gradient(180deg, #2B2B2B 0%, #1F1F1F 60.94%)
-  border-radius: 55px
-  padding: 30px
-  margin-bottom: 0
   display: inline-flex
-  margin: 25px
+  vertical-align: top
+  margin-top: 40px 
+
+
   
   @media screen and (max-width: 500px)
     margin: 20px 0 
@@ -255,11 +252,9 @@
   width: 100%
   margin: auto
   display: flex
-  margin-bottom: 20px
   background-size: contain
   background-position: center top
-  @media screen and (max-width: 500px)
-    height: 325px
+
 	
 #arth-cross-border-img
     background-image: url(../images/technology/cross-border-transactions.png)
@@ -269,9 +264,12 @@
 
 #arth-cross-chain-img
     background-image: url(../images/technology/cross-chain-liquidity.png)
+.cross-chain-ring
+  background: none!important
+.cross-chain-ring svg
+  margin: auto  
 
 /*** Ring Animations Start ***/	
-
 .ring
   position: absolute
   width: 281px
@@ -318,13 +316,13 @@
   width: 207px
   height: 207px
 
-.path, path2, path3, path4
+.path1, path2, path3, path4
   display:none 
 
-.ring-start1.path
+.jump-class .ring-start1.path1
   stroke-dasharray: 1020
   stroke-dashoffset: 0
-  animation: line-1 3s linear infinite
+  animation: line-1 7s linear
   display: block
 
 @keyframes line-1 
@@ -333,10 +331,10 @@
   to 
     stroke-dashoffset: 0
 
-.ring-start2.path2 
+.jump-class .ring-start2.path2 
   stroke-dasharray: 1020
   stroke-dashoffset: 0 
-  animation: line-2 3s linear infinite
+  animation: line-2 7s linear 
   display: block
 
 @keyframes line-2 
@@ -345,10 +343,10 @@
   to 
     stroke-dashoffset: 0
 
-.ring-start3.path3
+.jump-class .ring-start3.path3
   stroke-dasharray: 1020
   stroke-dashoffset: 0
-  animation: line-3 3s linear infinite
+  animation: line-3 7s linear 
   display: block
 
 
@@ -358,10 +356,10 @@
   to 
     stroke-dashoffset: 0
   
-.ring-start4.path4
+.jump-class .ring-start4.path4
   stroke-dasharray: 1020
   stroke-dashoffset: 0
-  animation: line-4 3s linear infinite
+  animation: line-4 7s linear 
   display: block
 
 @keyframes line-4 
@@ -370,13 +368,79 @@
   to 
     stroke-dashoffset: 0
 
-@media screen and (max-width: 500px)
-  .ring-place
-    left: -16px
     
-
-
 /*** Ring Animations End ***/	
+
+/*** 	Cross-chain-liquidity Animations Start ***/	
+.cross-chain-animation
+  display: block
+
+.cross-chain-liquidity-ani .cross-chain-animation
+  animation: cross-line-stop 12s linear!important
+  stroke-dasharray: 1024
+  stroke-dashoffset: 0 !important
+
+@keyframes cross-line-stop 
+  0% 
+    stroke-dashoffset: 1024    
+  100% 
+    stroke-dashoffset: 1024
+
+@keyframes cross-line 
+  0% 
+    stroke-dashoffset: 0    
+  100% 
+    stroke-dashoffset: 1024   
+  
+.jump-class-chain .cross-chain-animation
+  stroke-dasharray: 1020
+  stroke-dashoffset: 1020
+    
+.jump-class-chain .cross-chain-1    
+  animation: cross-line-1 12s linear 
+  animation-delay: .5s 
+ 
+@keyframes cross-line-1 
+  0% 
+    stroke-dashoffset: 1024    
+  100% 
+    stroke-dashoffset: 0    
+
+.jump-class-chain .cross-chain-2  
+  animation: cross-line-2 12s linear  
+  animation-delay: 1.5s
+ 
+@keyframes cross-line-2 
+  0% 
+    stroke-dashoffset: 1024    
+  100% 
+    stroke-dashoffset: 0   
+
+.jump-class-chain .cross-chain-3  
+  animation: cross-line-3 12s linear  
+  animation-delay: 2.5s
+ 
+@keyframes cross-line-3 
+  0% 
+    stroke-dashoffset: 1024
+  100% 
+    stroke-dashoffset: 0 
+
+.jump-class-chain .cross-chain-4  
+  animation: cross-line-4 12s linear  
+  animation-delay: 3.5s
+ 
+@keyframes cross-line-4 
+  0% 
+    stroke-dashoffset: 1024
+  100% 
+    stroke-dashoffset: 0   
+
+
+
+
+
+/*** Cross-chain-liquidity Animations End ***/	
 
 #arth-cross-border-title
   font-size: 25px
@@ -415,11 +479,14 @@
 	 
 /*** Application & Usage ***/
 #arth-app-usage
+  text-align: center
+  margin-top: 0
+  
   #arth-red-text
     padding: 20px 0
     
 #arth-app-usage .app-usage-img-container
-  margin: 2% 8%
+  margin: 2% 0%
   justify-content: center
   display: block
 
@@ -434,6 +501,8 @@
   color: #A1A1A1
   text-transform: uppercase
   font-family: $font-family-heading
+  padding-top: 20px
+  padding-bottom: 10px  
   
   @media screen and (max-width: 500px)
     font-size: 20px
@@ -474,7 +543,7 @@
 	
 /** Arth Roadmap **/
 .arth-roadmap-q-container
-  margin: 30px 8%
+  margin: 60px 0
   
 .arth-roadmap-q
   text-align: left
@@ -486,7 +555,6 @@
   font-size: 24px
   line-height: 60px
   letter-spacing: 0.4px
-  color: #F47F57
   
 .arth-roadmap-q-border
   width: 100%
@@ -499,9 +567,10 @@
     width: 30px
    
   .arth-roadmap-line
-    background-image: url('../images/Line.png')
+    background-image: url('../images/line.svg')
     width: 100%
     margin-top: 12px
+    background-position: right top
 
 .arth-roadmap-q-border li
   background-repeat: no-repeat
@@ -542,3 +611,6 @@
   .col-xs-4 
     flex: 0 0 50%
     max-width: 50%
+
+#cross-border-transactions  
+  display: block

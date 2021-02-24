@@ -2,23 +2,25 @@
 .product-section
   background: linear-gradient(180deg, #212121 0%, rgba(33, 33, 33, 0) 60.94%)
   border-radius: 55px
-  margin: 0 0 30px 0
-  padding: 30px
-
-  .product-content
-    max-width: $max-width
-    margin: 0 auto
+  margin: 0 0 60px 0
+  padding-top: 60px
+  text-align: center
+  
+  .product_card_text  
+    min-height: 104px
+  
+  @media (max-width: 740px)
+    padding: 30px 0px  
+  
+  .card-title
+    margin: 48px 0px 8px 0px
+    font-size: 24px
+    line-height: 28px
+	
 
   .product_title
-    font-family: $font-family-heading
-    font-size: 46px
-    font-style: normal
-    font-weight: 700
-    line-height: 1.2
-    letter-spacing: 0px
     text-align: center
-    color: #ffffff
-    margin-top: 30px
+
     @media (max-width: 400px)
       font-size: 30px
       padding: 15px
@@ -38,22 +40,20 @@
         font-size: 14px
         padding: 15px
 
-  .product_section_flex_card
-    display: flex
-    margin: 60px 0
+  .card-deck
+    margin-top: 60px
+    margin-bottom: 60px	
+  .card-bg
+    background: linear-gradient(180deg, #2D2D2D 0%, #171717 100%)
+    
 
   .product_card
-    // width: 380px
-    min-height: 427px
-    background: linear-gradient(180deg, #2D2D2D 0%, #171717 100%)
     border-radius: 16px
-    margin-left: 10px
-    margin-right: 10px
     display: flex
     flex-direction: column
     text-align: center
     align-items: center
-    padding: 30px
+    padding: 64px 40px 32px 40px
 
     &_img
       width: 96px
@@ -73,15 +73,16 @@
       margin: 40px 0 20px
 
     &_text
-      // width: 300px
-      font-size: 14px
+      font-size: 16px
       font-style: normal
       flex: 1
-      font-weight: 400
-      line-height: 26px
+      font-weight: 500
+      line-height: 25px
       letter-spacing: 0em
       text-align: center
       color: rgba(150, 150, 150, 1)
+  .theme-btn-outline
+    padding: 11px 15px 
 
   .product_section_learnmore_link
     // width: 130px
@@ -94,10 +95,12 @@
     text-align: center
     color: #F47F57
     text-decoration: none
-    margin: 24px 0
+    margin-top: 24px
 
     &.soon
-      color: rgb(66, 63, 63)
+      color: rgb(66, 63, 63)!important
+      border: none
+      background: none
 
   a
     text-decoration: none

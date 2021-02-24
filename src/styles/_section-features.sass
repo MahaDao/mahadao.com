@@ -1,15 +1,11 @@
 #section-three-features
-  max-width: $max-width
-  margin: 245px auto 0
+  margin-top: 0
 
-  @media (max-width: 400px)
-    margin: 145px auto 0
-
-  .feature_title
+  .main-heading
     margin-bottom: 5px
+    text-align: center
 
   .product_title_text
-    // width: 753px
     font-family: $font-family-body
     font-size: 16px
     font-style: normal
@@ -17,64 +13,51 @@
     letter-spacing: 0px
     text-align: center
     color: rgba(161, 161, 161, 1)
-    margin: 0 auto 60px
+    margin: 0 auto 40px
 
-    @media (max-width: 400px)
-      font-size: 14px
-      padding: 15px
 
   .card-deck
     display: flex
-    // align-items: center
     justify-content: center
-    // margin-left: 110px
-    margin: 0
 
   .col-12
-    padding: 10px
+    justify-content: space-between
+    display: flex
 
   .card
-    max-width: 380px
-    min-height: 495px
-    margin: 0 auto 20px
-    background: linear-gradient(180deg, #2D2D2D 0%, #1C1C1C 100%)
     border-radius: 16px
     border: 0
 
+  .card-text
+    color: #969696
+  
   .img-container
     max-width: 50%
-    height: 66.87px
-    margin: 60px 40px 0
+    height: 80px
+    margin: 60px 0px 0px 40px
 
-    img
-      height: 100%
 
   .img-container-head
     height: 120px
 
   .card-title
-    // width: 300px
-    margin: 30px 20px 0px
-    font-family: $font-family-heading
-    font-style: normal
-    font-weight: bold
-    font-size: 32px
-    line-height: 38px
-    color: #FFFFFF
+    min-height: 76px
 
   .pitch
     font-family: $font-family-heading
     font-weight: bold
-    color: #777
-    margin: 20px
+    color: #A1A1A1
 
   .card-text
-    // width: 300px
     font-family: $font-family-body
     font-style: normal
     font-weight: normal
     font-size: 16px
-    line-height: 160%
+    line-height: 25px
     color: #969696
-    margin: 20px 20px 40px
-    min-height: 150px
+    min-height: 110px
+
+@media (min-width: 768px) and (max-width: 1024px)
+  #section-three-features .card-title
+    font-size: 24px!important
+    min-height: 114px !important

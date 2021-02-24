@@ -1,21 +1,15 @@
 #section-token-logos
   $token-width: 450px
   $token-inner-width: 190px
+  margin-top: 230px
 
-  max-width: $max-width
-  margin: 80px auto
-  padding: 0 60px
-
-  @media screen and (max-width: 500px)
-    padding: 0 30px
+  .card-title
+    font-size: 30px  
 
   .row
     margin-bottom: 50px
 
   .pitch
-    // margin-left: 124px
-    // margin-top: 238px
-    // width: 493px
     font-family: $font-family-heading
     color: #ffffff
     font-size: 30px
@@ -24,9 +18,13 @@
 
   .side-text
     color: #ababab
-    font-size: 17px
-    font-weight: 400
-    margin-top: 30px
+    font-size: 18px
+    font-weight: 500
+    margin-top: 24px
+    line-height: 25px
+
+  .side-text-bullet
+    font-size: 16px  
 
   .gradiant-link
     background: linear-gradient(81.26deg, #F47F57 14.65%, #FD5656 83.88%)
@@ -38,8 +36,6 @@
     text-decoration: none
     margin-left: 20px
 
-  .para-text .button1
-    width: 174px
 
   .yes-txt-decoration:after  
     content: ''
@@ -750,3 +746,17 @@
   .leftpara-rightfig
     display: flex
     justify-content: center
+
+@media (max-width: 740px)
+  #section-token-logos
+    margin-top: 100px
+    .token  
+      margin-top: 100px
+
+@media (max-width: 1024px)  
+  #section-token-logos .card-title  
+    font-size: 30px    
+
+@media (min-width: 768px) and (max-width: 1270px)
+  #section-token-logos .card-title
+    min-height: 114px !important

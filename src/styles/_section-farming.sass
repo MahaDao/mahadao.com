@@ -1,5 +1,6 @@
 #section-liquidity
-  margin: 55px 0 0 0
+  margin: 128px 0 0 0
+  text-align: center
 
   .img-container
     text-align: center
@@ -7,31 +8,33 @@
     img
       max-width: 100%
 
+  .img-container-icon 
+    padding-top: 40px     
+
+  .img-container-icon .icon-space
+    padding: 0 88px  
+
+  @media (max-width: 640px)   
+    .img-container-icon .icon-space
+      padding: 0 16px    
+          
+
   .f-text-title
-    // width: 754px
-    font-family: $font-family-heading
-    font-style: normal
-    font-weight: bold
-    font-size: 46px
-    line-height: 1.2
-    text-align: center
-    color: #FFFFFF
-    margin: 30px auto
+    margin-bottom: 0px
+	
     @media (max-width: 400px)
       font-size: 30px
       padding: 15px
       margin: 30px auto 0
 
   .f-text-text
-    // width: 753px
     font-family: $font-family-body
-    font-size: 16px
-    max-width: 760px
-    line-height: 1.5
+    font-size: 18px
+    max-width: 900px
+    line-height: 25px
     background: linear-gradient(360deg, #161616 29.94%, rgba(22, 22, 22, 0.638309) 72.76%, rgba(22, 22, 22, 0) 102.62%)   
     text-align: center
     color: #A2A2A2
-    padding: 10px
     margin: 0 auto
     @media (max-width: 400px)
       font-size: 14px
@@ -46,14 +49,13 @@
     margin: 0 auto
 
   .main-section-image
-    margin: -80px auto 0
+    margin-top: 40px
     // width: 1208.54px
     // height: 698.12px
     @media (max-width: 400px)
       margin: 0 auto
 
   .main-section-bottom
-    font-family: $font-family-heading
     font-size: 18px
     font-style: normal
     font-weight: 700
@@ -61,9 +63,4 @@
     line-height: 25px
     margin: -40px auto 0
     padding: 30px
-    text-align: center
     max-width: 981px
-    background: linear-gradient(81.26deg, #F47F57 14.65%, #FD5656 83.88%)
-    -webkit-background-clip: text
-    -webkit-text-fill-color: transparent
-

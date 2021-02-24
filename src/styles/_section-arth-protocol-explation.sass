@@ -3,13 +3,16 @@
   height: 1181px
   margin: 0 auto
 
+#arth-maha-dao-overview.arth-section
+  padding: 30px
+  
 .arth-vault
   width: 630px
   height: 709px
 
 @media screen and (min-width: 1200px)
   .container
-    max-width: 1042px 
+    max-width: 1042px!important 
   
   
 .arth-maha-dao-ring
@@ -19,7 +22,7 @@
   background-position: center top
   width: 100%
   height: 100%   
-  margin: -165px auto 0 auto
+  margin: -195px auto 0 auto
   position: relative
   color: #fff
 
@@ -309,7 +312,7 @@
     height: 34px
 
   .count:after 
-    content: counter(count)
+    content: '0'
     animation: counter 30s linear infinite 
     position: absolute
     top: 50%
@@ -328,67 +331,68 @@
 
   @keyframes counter 
     0% 
-      counter-increment: count 0		
+      content: '0'	
     1% 
-      counter-increment: count 1		
+      content: '1'			
     5% 
-      counter-increment: count 2		
+      content: '2'			
     10% 
-      counter-increment: count 3		
+      content: '3'			
     15% 
-      counter-increment: count 4		
+      content: '4'		
     20% 
-      counter-increment: count 5		
+      content: '5'		
     25% 
-      counter-increment: count 6		
+      content: '6'		
     30% 
-      counter-increment: count 7		
+      content: '7'		
     35% 
-      counter-increment: count 8		
+      content: '8'		
     40% 
-      counter-increment: count 9		
+      content: '9'		
     45% 
-      counter-increment: count 10	
+      content: '10'	
     48% 
-      counter-increment: count 11	      	
+      content: '11'	      	
     50% 
-      counter-increment: count 12    
+      content: '12'    
     100% 
-      counter-increment: count 12           
+      content: '12'          
 
   .count-reverse:after
+    content: '12'
     animation: count-reverse 30s linear infinite
-    animation-delay: 15s
+    animation-delay: 15s    
 
   @keyframes count-reverse 
     100% 
-      counter-increment: count 0		
+      content: '0'		
     51% 
-      counter-increment: count 0     		
+      content: '0'	    		
     50%     
-      counter-increment: count 1		
+      content: '1'			
     45% 
-      counter-increment: count 2		
+      content: '2'			
     40% 
-      counter-increment: count 3		
+      content: '3'			
     35% 
-      counter-increment: count 4		
+      content: '4'			
     30% 
-      counter-increment: count 5		
+      content: '5'			
     25% 
-      counter-increment: count 6		
+      content: '6'			
     20% 
-      counter-increment: count 7		
+      content: '7'			
     15% 
-      counter-increment: count 8		
+      content: '8'			
     10% 
-      counter-increment: count 9		
+      content: '9'			
     7% 
-      counter-increment: count 10		
+      content: '10'			
     3% 
-      counter-increment: count 11
+      content: '11'	
     0% 
-      counter-increment: count 12      
+      content: '12'	      
 
   .timer 
     width: 120px
@@ -400,16 +404,6 @@
   .revers-timer .timer 
     background: linear-gradient(180deg, #1B1B1B 0%, #191919 100%)
 
-  .timer:after
-    content: ''
-    background: #404040
-    width: 1px
-    height: 99%
-    position: absolute
-    top: 50%
-    left: 49%
-    z-index: 1
-    transform: translate(-50%, -50%)
 
   .timer, .timer * 
     -moz-box-sizing: border-box
@@ -446,7 +440,7 @@
     position: absolute
     display: block
     z-index: 100
-    left: 0px
+    left: -11px
     top: -8px
     width: 0
     height: 0
@@ -473,15 +467,17 @@
     left: 50%
     opacity: 0
     -webkit-animation: opa-filler 30s steps(7, end) infinite
-    border-left: none
+    border-left: 1px solid #404040
+
 
   .timer .filler-rev 
     border-radius: 100% 0 0 100% / 50% 0 0 50%
     left: 0%
     opacity: 1
     -webkit-animation: opa-filler 30s steps(7, end) infinite
-    animation-delay: 15s
-    border-right: none    
+    animation-delay: 15s    
+    border-right: 1px solid #404040
+      
 
   .timer .mask 
     width: 52%
@@ -492,11 +488,14 @@
     left: -1px
     -webkit-animation: opa 30s steps(7, end) infinite
 
+
   .timer .mask-rev 
     opacity: 0
     left: 60px
     -webkit-animation: opa 30s steps(7, end) infinite
     animation-delay: 15s
+    border-left: 1px solid #404040
+    border-right: none!important
 	
   @-webkit-keyframes rota 
     0% 
@@ -521,6 +520,7 @@
   @-webkit-keyframes opa 
     0%, 10%, 20%, 23% 
       opacity: 1
+      border-right: 1px solid #404040 
     27%, 75%, 100% 
       opacity: 0
 
@@ -528,7 +528,7 @@
     0%, 10%, 25% 
       opacity: 0
     26%, 40%, 70%, 100% 
-      opacity: 1         
+      opacity: 1       
 	
   .timer-sml-text 
     position: absolute
@@ -755,7 +755,7 @@
     border-bottom: 4px solid transparent
 
   .line-timer .timer .spinner-rev:before
-    left: -1px
+    left: -3px
     top: -4px
     border-top: 4px solid transparent
     border-left: 4px solid #fff

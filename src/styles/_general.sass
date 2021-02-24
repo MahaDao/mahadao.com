@@ -1,6 +1,8 @@
 /*** Generic/Common styles ***/
 li
   list-style: none
+a
+  outline: none
 
 #no-txt-decoration
   text-decoration: none
@@ -8,25 +10,76 @@ li
 #learn-more
   color: rgb(66, 63, 63)
 
+.padding-none
+  padding: 0!important
+
+.margin-none
+  margin: 0!important
+
+.font-12
+  font-size: 12px!important
+
+.font-14
+  font-size: 14px!important
+
+.font-16
+  font-size: 16px!important 
+
 #margin-27px-less
   margin-top: -27px
 
 #padding-top-30
   padding-top: 30px
 
+.padding-top-24
+  padding-top: 24px 
+
+.padding-top-12
+  padding-top: 12px    
+
+a.link-white
+  color: $color-white
+  font-family: $font-family-heading
+
+a.link-underline
+  text-decoration: underline!important
+
+a:hover.link-underline
+  text-decoration: none!important  
+  
+.gradiant-link
+  background: linear-gradient(81.26deg, #F47F57 14.65%, #FD5656 83.88%)
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+
+.yes-txt-decoration  
+  position: relative
+  text-decoration: none  
+
+.yes-txt-decoration:after  
+  content: ''
+  height: 1px
+  width: 100%
+  position: absolute
+  left: 0
+  bottom: 0
+  background: linear-gradient(81.26deg, #F47F57 14.65%, #FD5656 83.88%)
+
+.yes-txt-decoration:hover:after
+  background: none
+
+  
 .padding-bottom-30
   padding-bottom: 30px
-
-.txt-center
-  text-align: center  
-
+.container
+  position: relative
 .button-small
   width: 184px
   height: 47px
   font-size: 16px
   border-radius: 45px
   background-color: #333333
-  color: #ffffff
+  color: $color-white
   border: 1px solid #f95921
   @media (max-width:600px)
     text-align: center
@@ -37,72 +90,210 @@ li
 .button-small:focus
   outline: none
 
-.tokenadd
-  display: block
-  background: #1F1E1E
-  text-align: center
-  line-height: 45px
-  padding: 0px 10px
-  color: #fff
-  box-shadow: 0px 8px 16px -2px rgba(0, 0, 0, 0.12)
-
-
-.tokenadd a
-  color: #DD5C38   
-  text-decoration: underline
-
 .tokenadd a:hover 
   text-decoration: none 
 
 .showclass
   display: block!important
+
 .hideclass
   display: none!important
 
-
-.outline-title
+.main-heading
   font-weight: 700
-  font-size: 33px
+  font-style: normal
+  font-size: 46px
+  font-family: $font-family-heading
+  color: $color-white
+  
+.sub-heading-text
+  font-family: $font-family-heading
+  color: #A2A2A2
+  font-size: 22px
+  line-height: 25px
+  margin: 0 auto
+
+  
+.outline-title
+  font-family: $font-family-heading
+  font-weight: 700
+  font-size: 46px
   line-height: 55px
   letter-spacing: 1px
-  color: #000
-  -webkit-text-stroke: 0.5px #fff 
+  color: $color-black
+  -webkit-text-stroke: 0.5px $color-white 
   padding-bottom: 20px 
+
+.card-deck, .row
+  margin-right: -10px
+  margin-left: -10px 
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto  
+  padding-right: 10px
+  padding-left: 10px
+
+a.opacity-link 
+  opacity: 0.64  
+
+a:hover.opacity-link 
+  opacity: 0.88
+
+.card
+  margin-left: 0
+  margin-right: 0
+.card-header
+  padding: 40px 40px 0px 40px
+  border: none
+.card-body
+  padding: 40px  
+
+.card-deck .card
+  margin-left: 0
+  margin-right: 0
+
+.card-deck .card
+  margin-bottom: 15px
+
+.card-bg
+  background: linear-gradient(180deg, #2D2D2D 0%, #1C1C1C 100%)
+  border: none
+
+.card-title
+  font-family: $font-family-heading
+  font-style: normal
+  font-weight: bold
+  font-size: 30px
+  line-height: 38px
+  color: $color-white
+  margin-left: 0px
+  margin-right: 0px
+  margin-bottom: 20px
 
 .text-gradient
   background: linear-gradient(81.26deg, #F47F57 14.65%, #FD5656 83.88%)
   -webkit-background-clip: text
   -webkit-text-fill-color: transparent 
+  font-family: $font-family-heading
 
 .main-section
   max-width: $max-width
   margin: 0 auto
   padding: 0 30px
 
-@media (max-width: 600px)
-  .tokenadd
-    font-size: 9px
-    line-height: 35px
-
-  .main-title
+@media (max-width: 740px)
+  .main-title, .main-heading, .card-title
     font-size: 24px!important
     line-height: 28px  
 
   .inner-title
     font-size: 24px!important
     line-height: 28px !important
+    
+  .sub-heading-text  
+    font-size: 16px
+    line-height: 20px
+
 
   .sm-padding-top-55
     padding-top: 54px!important
 
+.arth-section
+  text-align: center
+  font-style: normal
+  font-family: $font-family-heading
+  display: flex
+  -webkit-box-pack: center
+  -ms-flex-pack: center
+  justify-content: center
+
+
+
+.bullet-text
+  position: relative
+  padding-left: 20px
+
+.bullet-text:before
+  content: ''
+  background: linear-gradient(135deg, #FF8B71 14.65%, #C33F50 64.43%, #A81E41 85.37%)
+  width: 11px
+  height: 10px
+  display: inline-block
+  border-radius: 11px
+  margin-top: 7px
+  position: absolute
+  left: 0
+
+.btn-outline
+  border: 1px solid rgba(255, 255, 255, 0.2)
+.bg-none
+  background: none  
+
+.theme-btn
+  background: linear-gradient(38.44deg, #F47F57 15.81%, #FD5656 87.57%)
+  display: inline-block
+  border-radius: 6px
+  text-align: center
+  padding: 11px 15px
+  font-size: 14px
+  color: $color-white!important
+  border: 1px solid #EB7254
+
+.theme-btn:hover 
+  background: #FF7F57
+  border: 1px solid #FF7F57
+  text-decoration: none
+
+.theme-btn:active 
+  background: linear-gradient(180deg, #F47F57 -11.33%, #FD5656 100%)
+  
+
+.theme-btn-outline
+  display: inline-block
+  font-size: 14px
+  border: 1px solid rgba(255, 255, 255, 0.2)
+  border-radius: 6px
+  text-align: center
+  padding: 11px 15px
+  color: $color-white!important
+
+.theme-btn-outline:hover 
+  background: #423B38
+  border: 1px solid #E8E7E7
+  text-decoration: none  
+
+.theme-btn-outline:active 
+  background: #2A2827
+  border: 1px solid #6E6D6C  
+
+.theme-btn:hover
+  text-decoration: none
+
+.btn-md
+  min-width: 160px
+
+.btn-sm
+  min-width: 120px  
+
+.btn-lg
+  min-width: 328px    
+
 .disabled-btn    
-  background-color: #333
-  color: #B6B6B6
-  border: 1px solid #747474!important
+  display: inline-block
+  background: #606060
+  font-size: 14px
+  border: 1px solid #606060
+  border-radius: 6px
+  text-align: center
+  padding: 12px 15px
+  color: #8D8D8D!important
+  pointer-events: none
 
 .disabled-btn:hover 
-  color: #fff 
-  border: 1px solid #F47F57
+  border: 1px solid #606060
+  
+button
+  border: 0
+  outline: none
 
 .button1   
   width: 184px
@@ -112,7 +303,7 @@ li
   font-size: 18px
   border-radius: 45px
   background-color: #333
-  color: #ffffff
+  color: $color-white
   border: 1px solid #F47F57
   display: inline-block
   cursor: pointer
@@ -120,9 +311,9 @@ li
 .button1:hover
   background: linear-gradient(38.44deg, #F47F57 15.81%, #FD5656 87.57%)  
   border: 1px solid #F47F57
-  color: #fff
+  color: $color-white
   text-decoration: none
-
+  
 .button-flexible   
   height: 47px
   line-height: 45px
@@ -131,7 +322,7 @@ li
   font-size: 18px
   border-radius: 45px
   background-color: #333
-  color: #fff
+  color: $color-white
   border: 1px solid #F47F57
   display: inline-block
   cursor: pointer
@@ -139,12 +330,24 @@ li
 .button-flexible:hover
   background: linear-gradient(38.44deg, #F47F57 15.81%, #FD5656 87.57%)  
   border: 1px solid #F47F57
-  color: #fff
+  color: $color-white
   text-decoration: none
 
-.text-change  
-  display: block
+.btn-medium
+  padding: 11px 46px
+  font-size: 16px
+  height: inherit
+  line-height: inherit
 
+.tringle-shap
+  width: 0 
+  height: 0
+  border-top: 8px solid transparent
+  border-bottom: 8px solid transparent
+  border-left: 12px solid $color-white 
+  display: inline-block
+  border-radius: 3px
+  vertical-align: middle
 
 .content-center
   display: flex

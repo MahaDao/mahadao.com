@@ -1,207 +1,209 @@
-@media (max-width: 500px)
-  .fixed_header .header  
-    background: rgba(0, 0, 0, 0.8)
-    top: 0
-    z-index: 100
-    position: fixed
-    width: 100%
-    height: 100px
+#header  
+  background: rgba(0, 0, 0, 0.08)
+  width: 100%
+  height: 80px
+  padding: 18px 0px
+  font-size: 14px
+  font-weight: 600
+  position: fixed
+  left: 0
+  top: 0
+  z-index: 100
+  backdrop-filter: blur(70px)  
 
-.header
-  position: relative
-  z-index: 1
-  padding: 30px
-  display: flex
-  flex-direction: row
-  // max-width: 1180
+  a
+    color: #fff  
+  nav
+    padding: 0      
 
-  .mahadao-logo
+  .nav-link  
+    padding: 10px 16px
+    margin: 0px 4px
+
+  .nav-link.btn-orange  
+    margin-left: 8px
+    padding-left: 0px
+    padding-right: 0px  
+    min-width: 110px     
+
+  .navbar-nav li:last-child a
+    margin-right: 0    
+
+  .nav-item.dropdown
+    height: 42px  
+    
+  .nav-item.dropdown:hover #navbardrop
+    color: #fff 
+    opacity: 0.88 
+
+  .nav-item.dropdown:hover .dropdown-menu
+    top: 53px
+    //transform: rotateX(15deg)//
+    visibility: visible
+    opacity: 1
+    visibility: visible  
+      
+
+  .dropdown-menu
+    font-size: 14px
+    background: linear-gradient(180deg, #48423E 0%, #373030 100%)
+    box-shadow: 0px 8px 16px -2px rgba(0, 0, 0, 0.12)
+    border-radius: 6px
+    padding: 15px 15px
+    min-width: 146px
+    border: none
+    display: block
+    left: 50%
+    top: 100px
+    opacity: 0
+    visibility: hidden
+    transform: translate(-50%, 0%)
+    transition: all 0.4s ease
+    //transform: rotateX(90deg)//
+
+  .dropdown-menu:after
+    content: ''
+    display: block
+    background: #47413D
+    position: absolute
+    top: -7px
+    left: 45%
+    width: 16px
+    height: 16px
+    border-radius: 2px        
+    transform: rotate(45deg)
+
+  
+    
+  .dropdown-item  
+    opacity: 0.65
+    padding: .25rem 15px
+
+  .dropdown-item:hover 
+    opacity: 1   
+
+  .dropdown-item:focus, .dropdown-item:hover  
+    background: none
+
+  .dropdown-menu-outer
+    display: flex
+
+  .dropdown-toggle::after  
+    border: none  
+    
+  .nav-icon  
+    width: 20px
+    height: 13px
+    border-top: 1px solid #fff
+    border-bottom: 1px solid #fff    
+    display: inline-block  
+    position: relative   
+    position: absolute
+    right: 15px
+    top: 36px
+    transition: all .25s ease-in-out 
     z-index: 1
 
-    @media (min-width: 400px)
-      flex: 1
-      height: 54.4px
-      z-index: 1
-
-    // @media (max-width: 400px)
-      text-align: center
-
-      img
-        margin-top: 10px
-        max-width: 100%
-
-  .two_buttons
-    float: right
-
-  button
-    font-family: $font-family-heading
-    outline: none
-    cursor: pointer
-    
-  .text-change
+  .nav-icon:after, .nav-icon:before
+    content: ''
     display: block
-    width: 184px
-    height: 47px
-    line-height: 47px
- 
+    width: 100%
+    height: 1px
+    position: absolute
+    top: 5px
+    left: 50%
+    background: #fff
+    -webkit-transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%)
+    transition: -webkit-transform .25s ease-in-out
+    transition: transform .25s ease-in-out
+    transition: -webkit-transform .25s ease-in-out   
 
-  .disabled-btn
-    background-color: #333
-    color: #B6B6B6
-    border: 1px solid #747474   
+  .nav-icon.toggler:after 
+    -webkit-transform: translate(-50%, -50%) rotate(-45deg)
+    transform: translate(-50%, -50%) rotate(-45deg)
 
-  .disabled-btn:hover    
-    color: #fff 
-    border: 1px solid #F47F57   
+  .nav-icon.toggler:before 
+    -webkit-transform: translate(-50%, -50%) rotate(45deg)
+    transform: translate(-50%, -50%) rotate(45deg)
 
+  .nav-icon.toggler 
+    border-color: transparent
 
-    @media (max-width:600px)
-      text-align: center
+  @media (max-width: 930px) 
+    background: #1E1D1D 
+    height: auto
 
-  #two_buttons
-    margin: auto
+    .mahadao-logo
+      padding-left: 15px
 
-    &:hover
-      background-color: #444
+    .navbar-nav
+      max-height: 400px
+      height: 390px
+      overflow-y: auto
 
-  .two_buttons
-    display: flex
-    flex-direction: row   
+    .nav-item.dropdown
+      height: inherit
+      
+    .navbar-toggler
+      outline: none  
 
-    li
-      // display: inline-block
-      margin: 0 10px 10px
-      list-style: none
-  .two_buttons li:last-child
-    margin: 0       
-
-  .button2
-    width: 47px
-    height: 47px
-    font-family: $font-family-heading
-    font-style: normal
-    font-weight: bold
-    font-size: 20px
-    margin-left: 10px
-    border-radius: 45px
-    color: #ffffff
-    background: linear-gradient(#f47f57, #fd5656)
-    justify-content: center
-    align-items: center
-
-  .icon-btn
-    background: #E5E5E5
-    color: #000
-  .icon-btn:hover
-    background: #fff       
-
-  @media (max-width: 500px)
-    flex-direction: column
-
-    nav
-      .nav-icon  
-        width: 20px
-        height: 12px
-        border-top: 2px solid #fff
-        border-bottom: 2px solid #fff    
-        display: inline-block  
-        position: relative   
-        position: absolute
-        right: 30px
-        top: 46px
-        transition: all .25s ease-in-out 
-        z-index: 1
-
-      .nav-icon:after, .nav-icon:before
-        content: ''
-        display: block
-        width: 100%
-        height: 2px
-        position: absolute
-        top: 4px
-        left: 50%
-        background: #fff
-        -webkit-transform: translate(-50%, -50%)
-        transform: translate(-50%, -50%)
-        transition: -webkit-transform .25s ease-in-out
-        transition: transform .25s ease-in-out
-        transition: -webkit-transform .25s ease-in-out
-
-      .nav-icon.toggler:after 
-        -webkit-transform: translate(-50%, -50%) rotate(-45deg)
-        transform: translate(-50%, -50%) rotate(-45deg)
-
-      .nav-icon.toggler:before 
-        -webkit-transform: translate(-50%, -50%) rotate(45deg)
-        transform: translate(-50%, -50%) rotate(45deg)
-
-      .nav-icon.toggler 
-        border-color: transparent
-                           
-      .mainMenu
-        /* height: 100vh        
-        padding-top: 130px
-        padding-bottom: 10px
-        margin-bottom: 0      
-        list-style: none
-        text-decoration: none
-        font-size: 16px
-        flex-direction: column
-        justify-content: center
-        align-items: center 
-        background: #1E1D1D
-        position: relative
-        border-radius: 16px
-        margin-top: -37%
-        cursor: text
-        left: -10%            
-        width: 119.6%
-        overflow: hidden            
-        transition: top 1s ease
-        display: none
-
-      .mainMenu a.button1
-        color: #fff
-        display: inline-block
-        line-height: 47px
-        font-size: 16px
-        margin: 0px 0px 16px 0px
-        min-width: 170px        
-
-        .closeMenu
-          display: none
-          position: absolute
-          top: 0px
-          margin-top: -50px
-          right: 20px
-
-        li:nth-child(2n)
-          background-color: #111
-
-    .menulist
-      text-decoration: none
-      color: #fff
-      margin-left: 20px
-      font-weight: 400
-
-    ul, nav .openMenu
+    .dropdown-menu-outer
+      justify-content: space-between
+      
+    .dropdown-menu
       display: block
+      background: none
+      box-shadow: none
+      transform: inherit
+      opacity: 1
+      padding: 0 
+      visibility: visible
 
-    .icons i
-      display: inline-block
-      padding: 12px
+    .dropdown-menu:after
+      height: 0
 
-    a:hover
-      font-weight: 600
-      text-decoration: none
-      color: red
-
-  @media (max-width: 700px)
-    .button1
+    .nav-link
       font-size: 16px
-      width: auto
-      padding: 0px 15px
-    .text-change
-      width: auto
-    .two_buttons li
-      margin: 0 10px 10px
+
+    .nav-link.btn-orange  
+      margin-left: 0px      
+      display: block    
+
+    .nav-item  
+      border-top: 1px solid rgba(255, 255, 255, 0.08)
+      padding-bottom: 15px
+      padding-top: 15px
+
+    .navbar-nav li:first-child
+      margin-top: 18px
+
+    .navbar-nav li:last-child
+      border: none   
+      margin-left: 18px
+      margin-right: 18px
+      padding-bottom: 0   
+
+    .nav-item-gray-btn
+      margin-left: 18px
+      margin-right: 18px
+      padding-bottom: 0
+      border: none
+      
+    .nav-link, .dropdown-item
+      padding-left: 18px  
+      padding-right: 18px 
+      margin: 0      
+
+    .dropdown-item 
+      opacity: 0.64
+      color: #f5f5f5 
+
+
+@media (min-width: 1200px)
+  .container-fluid
+    padding-left: 130px
+    padding-right: 130px
+
+  .container
+    max-width: 1200px!important

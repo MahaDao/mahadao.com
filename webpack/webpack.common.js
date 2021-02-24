@@ -32,9 +32,19 @@ module.exports = {
       filename: "arth.html",
       // template: "!!ejs-compiled-loader!./src/index.ejs"
     }),
-	new HtmlWebpackPlugin({
+	  new HtmlWebpackPlugin({
       template: Path.resolve(__dirname, '../src/html/pages/arthFerrum/index.hbs'),
       filename: "staking.html",
+      // template: "!!ejs-compiled-loader!./src/index.ejs"
+    }),
+    new HtmlWebpackPlugin({
+      template: Path.resolve(__dirname, '../src/html/pages/team/index.hbs'),
+      filename: "about.html",
+      // template: "!!ejs-compiled-loader!./src/index.ejs"
+    }),
+	new HtmlWebpackPlugin({
+      template: Path.resolve(__dirname, '../src/html/pages/brand/index.hbs'),
+      filename: "brandkit.html",
       // template: "!!ejs-compiled-loader!./src/index.ejs"
     }),
   ],
