@@ -47,6 +47,11 @@ module.exports = {
       filename: "brandkit.html",
       // template: "!!ejs-compiled-loader!./src/index.ejs"
     }),
+	new HtmlWebpackPlugin({
+      template: Path.resolve(__dirname, '../src/html/pages/privacy-policy/index.hbs'),
+      filename: "privacy-policy.html",
+      // template: "!!ejs-compiled-loader!./src/index.ejs"
+    }),
   ],
   resolve: {
     alias: {
