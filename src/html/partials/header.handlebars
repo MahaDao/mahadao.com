@@ -1,4 +1,13 @@
 {{! Header }}
+<div class="tokenadd">
+	MAHA Token is live : 
+	<a href="https://etherscan.io/token/0xb4d930279552397bba2ee473229f89ec245bc365" target="_blank">0xb4d930279552397bba2ee473229f89ec245bc365</a>
+</div>
+
+<div class="tokenadd">ARTH Token is live : 
+  <a href="https://etherscan.io/token/0x0E3cC2c4FB9252d17d07C67135E48536071735D9" target="_blank">0x0E3cC2c4FB9252d17d07C67135E48536071735D9</a>
+</div>
+
 <header id="header"  class="navbar navbar-expand-lg">
 	<div class="container-fluid">
 		<a class="mahadao-logo" href="/"><img src="../../images/mainlogo.svg" alt="mahadao-logo" /></a>
@@ -96,3 +105,13 @@
 	</div>	 
 </header>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>$(document).on("scroll", function () {
+	if
+		($(document).scrollTop() > 50) {
+		$("body").addClass("fixed_header");
+	}
+	else {
+		$("body").removeClass("fixed_header");
+	}
+	});
+</script>
