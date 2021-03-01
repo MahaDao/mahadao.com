@@ -3,15 +3,19 @@
   color: #fff
   padding: 190px 0
 
-  .main-section
+  .card-bg
     background: linear-gradient(180deg, #2D2D2D 0%, #242424 100%)
     border-radius: 16px
     padding: 64px
 
-  .main-title
+  .main-heading 
     font-size: 36px
     padding-bottom: 32px
-    font-weight: 700
+
+  .gradiant-link 
+    font-size: 16px
+    position: relative
+    top: -5px
 
   .percent-box-left
     .small-text
@@ -62,9 +66,11 @@
       border-radius: 30px
       width: 18%    
       text-align: center
-      padding: 5px 16px 
+      padding: 0px 15px 
       font-size: 24px
       margin-left: 29px
+      height: 50px
+      line-height: 50px
     
   .progress-bars   
     background: #121212
@@ -85,11 +91,12 @@
       font-family: Inter
       padding-right: 10px
              
-  @media (max-width: 600px) 
-    .main-section
+  @media (max-width: 740px) 
+    .card-bg
       padding: 18px 15px  
-
-    .main-title
+    .gradiant-link
+      display: block
+    .main-heading
       padding-bottom: 15px
       
     .percent-box-left .big-text
@@ -98,7 +105,7 @@
 
     .box
       margin: 0px 5px
-      width: 80px
+      width: 25%
       height: 54px
 
       .parcent
@@ -131,3 +138,21 @@
 @media (max-width: 600px) 
   #section-diamond-stak  
     padding: 50px 0                    
+
+@media (min-width: 768px) and (max-width: 1300px) 
+  #section-diamond-stak .box
+    width: 24%   
+
+  #section-diamond-stak .card-bg  
+    padding: 25px  
+
+  #section-diamond-stak .box .parcent 
+    font-size: 30px
+
+  #section-diamond-stak .progress-bars
+    width: 75%
+
+  #section-diamond-stak .progress-bars-outer .status
+    padding: 0px 10px
+    font-size: 18px  
+    width: 20%
