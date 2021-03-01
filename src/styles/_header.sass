@@ -29,8 +29,6 @@
   .navbar-nav li:last-child a
     margin-right: 0    
 
-  .nav-item.dropdown
-    height: 42px  
     
   .nav-item.dropdown:hover #navbardrop
     color: #fff 
@@ -137,13 +135,26 @@
     .mahadao-logo
       padding-left: 15px
 
-    .navbar-nav
-      max-height: 400px
-      height: 390px
-      overflow-y: auto
+    a#navbardrop
+      position: relative
 
-    .nav-item.dropdown
-      height: inherit
+    a#navbardrop:after
+      content: ''
+      background: url("../img/dropmenu-tringle.svg") 0 no-repeat
+      width: 18px
+      height: 11px
+      position: absolute
+      right: 17px
+      top: 17px
+
+    .dropdown.show a#navbardrop:after 
+      transform: rotate(-180deg)    
+
+    .navbar-nav
+      height: 100vh
+
+    .nav-item.dropdown.show  
+      height: auto
       
     .navbar-toggler
       outline: none  
@@ -152,13 +163,16 @@
       justify-content: space-between
       
     .dropdown-menu
-      display: block
+      display: none
       background: none
       box-shadow: none
       transform: inherit
       opacity: 1
       padding: 0 
       visibility: visible
+
+    .dropdown-menu.show
+      display: block      
 
     .dropdown-menu:after
       height: 0
@@ -171,12 +185,13 @@
       display: block    
 
     .nav-item  
-      border-top: 1px solid rgba(255, 255, 255, 0.08)
-      padding-bottom: 15px
-      padding-top: 15px
+      padding-bottom: 2px
+      padding-top: 2px
 
     .navbar-nav li:first-child
+      border-top: 1px solid rgba(255, 255, 255, 0.08)
       margin-top: 18px
+      padding-top: 15px
 
     .navbar-nav li:last-child
       border: none   
@@ -187,7 +202,8 @@
     .nav-item-gray-btn
       margin-left: 18px
       margin-right: 18px
-      padding-bottom: 0
+      padding-bottom: 22px
+      padding-top: 5px
       border: none
       
     .nav-link, .dropdown-item
