@@ -372,13 +372,14 @@ body
 /*** Ring Animations End ***/	
 
 /*** 	Cross-chain-liquidity Animations Start ***/	
+
 .cross-chain-animation
   display: block
 
-.cross-chain-liquidity-ani .cross-chain-animation
-  animation: cross-line-stop 12s linear!important
+.cross-chain-animation
   stroke-dasharray: 1024
-  stroke-dashoffset: 0 !important
+  stroke-dashoffset: 1024
+  animation: cross-line-stop 6s linear!important
 
 @keyframes cross-line-stop 
   0% 
@@ -386,54 +387,56 @@ body
   100% 
     stroke-dashoffset: 1024
 
-@keyframes cross-line 
-  0% 
-    stroke-dashoffset: 0    
-  100% 
-    stroke-dashoffset: 1024   
-  
-.jump-class-chain .cross-chain-animation
-  stroke-dasharray: 1020
-  stroke-dashoffset: 1020
     
 .jump-class-chain .cross-chain-1    
-  animation: cross-line-1 12s linear 
-  animation-delay: .5s 
+  stroke-dasharray: 1024
+  stroke-dashoffset: 0  
+  animation: cross-line-1 20s linear!important 
  
 @keyframes cross-line-1 
-  0% 
+  from 
     stroke-dashoffset: 1024    
-  100% 
+  to 
     stroke-dashoffset: 0    
 
 .jump-class-chain .cross-chain-2  
-  animation: cross-line-2 12s linear  
-  animation-delay: 1.5s
+  stroke-dasharray: 1024
+  stroke-dashoffset: 0 
+  animation: cross-line-2 20s linear!important  
+
  
 @keyframes cross-line-2 
   0% 
     stroke-dashoffset: 1024    
+  5% 
+    stroke-dashoffset: 1024      
   100% 
     stroke-dashoffset: 0   
 
 .jump-class-chain .cross-chain-3  
-  animation: cross-line-3 12s linear  
-  animation-delay: 2.5s
+  stroke-dasharray: 1024
+  stroke-dashoffset: 0
+  animation: cross-line-3 20s linear!important  
+ 
  
 @keyframes cross-line-3 
   0% 
     stroke-dashoffset: 1024
+  5% 
+    stroke-dashoffset: 1024      
   100% 
     stroke-dashoffset: 0 
 
 .jump-class-chain .cross-chain-4  
-  animation: cross-line-4 12s linear  
+  stroke-dasharray: 1024
+  stroke-dashoffset: 0   
+  animation: cross-line-4 20s linear!important  
   animation-delay: 3.5s
  
 @keyframes cross-line-4 
-  0% 
+  from 
     stroke-dashoffset: 1024
-  100% 
+  to 
     stroke-dashoffset: 0   
 
 
@@ -542,8 +545,15 @@ body
 
 	
 /** Arth Roadmap **/
+#arth-road-map
+  .row
+    margin-left: 5px
+    margin-right: 5px
+
 .arth-roadmap-q-container
-  margin: 60px 0
+  margin-top: 60px
+.arth-roadmap-q-container-btm
+  margin-bottom: 44px
   
 .arth-roadmap-q
   text-align: left
@@ -593,6 +603,7 @@ body
     line-height: 45px
     color: #969696
     max-width: 285px
+    text-align: left
 
      
     span

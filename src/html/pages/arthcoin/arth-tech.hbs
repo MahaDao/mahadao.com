@@ -315,8 +315,10 @@ function show_process_ring(){
 	var offset = $("#arth-tech").offset().top;	
     if ($(window).scrollTop() >= offset) {	
       $("#arth-tech").addClass("jump-class");
+	  $("#arth-tech").addClass("jump-class-chain");
     }else{
 	$("#arth-tech").removeClass("jump-class");
+	$("#arth-tech").removeClass("jump-class-chain");
 	}	
 	});	
 
