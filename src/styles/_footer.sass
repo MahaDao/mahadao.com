@@ -9,7 +9,7 @@ footer
   .button3
     border-radius: 45px
     color: $color-white
-    margin: 11px 8px
+    margin: 11px 0px
     text-align: left
     justify-content: left
     position: relative
@@ -87,10 +87,17 @@ footer
     letter-spacing: 0em       
 
   .social-items
-    color: $color-white
-    margin-top: 0px
+    color: $color-white    
     text-align:left 
+    width: 100%
 
+  .social-items a    
+    width: 59px
+    display: inline-block
+
+  @media (min-width: 640px) and (max-width: 1200px)
+    .social-items a
+      width: 36px    
   .fab
     color: #262626
     font-size: 18px
@@ -120,6 +127,7 @@ footer
       margin: 0 auto
       width: 67%
       text-align: center
+
     .white-line
       margin-top: 20px  
 
@@ -137,8 +145,7 @@ footer
       display: flex  
 
     .social-items
-      justify-content: space-between
-      display: flex 
+      width: 100%
 
       .button3
         margin: 0px 0px 20px 0px  
@@ -154,7 +161,3 @@ footer
     height: 900px
     width: 900px
     z-index: -1
-
-  @media  (min-width: 1000px) and (max-width: 1300px)
-    .button3
-      margin: 11px 4px
