@@ -52,6 +52,11 @@ module.exports = {
       filename: "privacy-policy.html",
       // template: "!!ejs-compiled-loader!./src/index.ejs"
     }),
+	new HtmlWebpackPlugin({
+      template: Path.resolve(__dirname, '../src/html/pages/tokenomics/index.hbs'),
+      filename: "tokenomics.html",
+      // template: "!!ejs-compiled-loader!./src/index.ejs"
+    }),	
   ],
   resolve: {
     alias: {
