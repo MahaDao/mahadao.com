@@ -25,6 +25,55 @@ a
 .font-16
   font-size: 16px!important 
 
+.font-18
+  font-size:18px!important  
+
+.font-20
+  font-size: 20px!important   
+
+.font-22
+  font-size: 22px!important  
+
+.font-24
+  font-size: 24px!important 
+
+.font-32
+  font-size: 32px!important  
+
+.font-weight-normal
+  font-weight: 300 !important   
+
+.red-color
+  color: #FD5656
+
+.aqua-color
+  color: #4ED8DA
+
+.gold-color
+  color: #F0C757
+
+.purpule-color
+  color: #D758FF
+
+.orange-color
+  color: #FDA871
+
+.blue-color
+  color: #5C80F2  
+
+.bullet-text-after.red-color:after    
+  background: #FD5656
+.bullet-text-after.aqua-color:after    
+  background: #4ED8DA
+.bullet-text-after.gold-color:after    
+  background: #F0C757
+.bullet-text-after.purpule-color:after    
+  background: #D758FF
+.bullet-text-after.orange-color:after    
+  background: #FDA871   
+.bullet-text-after.blue-color:after    
+  background: #5C80F2    
+
 #margin-27px-less
   margin-top: -27px
 
@@ -127,6 +176,11 @@ a:hover.link-underline
   line-height: 25px
   margin: 0 auto
 
+.sub-heading
+  font-family: $font-family-heading
+  color: $color-white
+  font-size: 32px
+
   
 .outline-title
   font-family: $font-family-heading
@@ -201,7 +255,10 @@ a:hover.opacity-link
     
   .main-title, .main-heading, .card-title
     font-size: 24px!important
-    line-height: 28px  
+    line-height: 28px 
+
+  .sub-heading
+    font-size: 20px!important  
 
   .inner-title
     font-size: 24px!important
@@ -224,7 +281,8 @@ a:hover.opacity-link
   -ms-flex-pack: center
   justify-content: center
 
-
+.gradient-bg 
+  background: linear-gradient(128.31deg, #FF8B71 5.12%, #A81E41 83.33%)
 
 .bullet-text
   position: relative
@@ -244,8 +302,8 @@ a:hover.opacity-link
 .btn-outline
   border: 1px solid rgba(255, 255, 255, 0.2)
 .bg-none
-  background: none  
-
+  background: none 
+  
 .theme-btn
   background: linear-gradient(38.44deg, #F47F57 15.81%, #FD5656 87.57%)
   display: inline-block
@@ -367,6 +425,55 @@ button
   border-radius: 3px
   vertical-align: middle
 
+.dark-table
+  color: $color-white
+  font-family: $font-family-body
+  font-size: 22px
+  font-weight: 300
+  font-style: normal
+  text-align: left
+  letter-spacing: 0.4px
+
+.dark-table th
+  color: #969696
+
+.dark-table  th, .dark-table td  
+  border: none!important
+  padding: 20px 32px
+  font-weight: normal
+  font-size: 22px
+  vertical-align: middle!important
+
+.dark-table th  
+  font-family: $font-family-heading
+  background: #151414
+
+.dark-table  td  
+  font-weight: 300
+
+
+.dark-table tbody tr
+  background: #2A2827
+
+.dark-table  tbody tr:nth-of-type(2n+1) 
+  background: #1F1E1E 
+.totel td
+  font-weight: 700  
+  
+.bullet-text-after 
+  position: relative
+  padding-left: 34px 
+
+.bullet-text-after:after
+  background: #fff
+  width: 14px
+  height: 14px
+  content: ''
+  display: inline-block
+  position: absolute
+  left: 0
+  top: 5px
+
 .content-center
   display: flex
   justify-content: center
@@ -375,3 +482,10 @@ button
 .space-between
   justify-content: space-between
   display: flex
+
+@media (max-width:600px)  
+  .dark-table, .dark-table th, .dark-table td
+    font-size: 14px
+
+  .dark-table .font-32
+    font-size: 18px!important   
