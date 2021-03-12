@@ -1,6 +1,6 @@
 {
   "name": "webpack-starter",
-  "version": "1.2.5",
+  "version": "3.0.0",
   "description": "A light foundation for your next frontend project based on webpack.",
   "scripts": {
     "lint": "npm run lint:styles; npm run lint:scripts",
