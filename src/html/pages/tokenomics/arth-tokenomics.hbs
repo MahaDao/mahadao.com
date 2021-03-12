@@ -3,15 +3,13 @@
 		<div class="main-heading">
 			ARTH Tokenomics
 		</div>
-	
 		<div class="maha-tokenomics-box">
 			<div class="maha-tokenomics-left card-bg">
 				<img src="../../images/tokenomics/arthframe.svg" alt="">
 				<h3>ARTH</h3>
 				<p>Circulating Supply</p>
-				<p class="text-orange">$99,873,118</p>
+				<p id="circulating-supply-arth" class="text-orange"></p>
 			</div>
-
 			<div class="maha-tokenomics-left maha-tokenomics-right card-bg">
 				<div class="text-row">				
 					<div class="text-row-text">
@@ -23,7 +21,6 @@
 						<span>ARTH</span>
 					</div>				
 				</div>
-
 				<div class="text-row">				
 					<div class="text-row-text">
 						<p>Token Type</p>	
@@ -34,40 +31,50 @@
 						<span>Algorithmic stablecoin</span>
 					</div>				
 				</div>		
-
-
 				<div class="text-row">				
 					<div class="text-row-text">
 						<p>Platform</p>	
 						<span>Standard token on Ethereum</span>
 					</div>					
 				</div>	
-
 				<div class="text-row">				
 					<div class="text-row-text">
 						<p>Total Token Supply</p>	
 						<span>Elastic<font class="font-weight-normal"> (expands and contracts with demand & supply)</font></span>
 					</div>					
 				</div>	
-
 				<div class="text-row">				
 					<div class="text-row-text">
 						<p>Token Generation Event</p>	
 						<span>17 December 2020</span>
 					</div>					
 				</div>	
-
 				<div class="text-center center-btn">				
-					<a href="#" class="theme-btn-outline btn-md">Etherscan</a>	
-					<a href="#" class="theme-btn-outline btn-md">CoinGecko</a>					
-				</div>											
-				
-					
+					<a target = "_blank" href="https://etherscan.io/token/0x0e3cc2c4fb9252d17d07c67135e48536071735d9" class="theme-btn-outline btn-md">Etherscan</a>	
+					<a target = "_blank" href="https://www.coingecko.com/en/coins/arth" class="theme-btn-outline btn-md">CoinGecko</a>					
+				</div>												
 			</div>				
 		</div>
-		
 		<div class="center-btn">
 			<a  target="_blank" class="theme-btn btn-md" href="/download.zip">Download Tokenomics PDF</a>
 		</div>
 	</div>
 </section>
+<script type="text/javascript">
+$(document).ready(function(){
+	const Url = 'https://api.coingecko.com/api/v3/coins/arth';
+	let arth_coingecko_data = null;
+	$.ajax({
+		url: Url,
+		type: "GET",
+		success: function(res) {
+			arth_coingecko_data = res;
+			console.log(arth_coingecko_data);
+			$("#circulating-supply-arth").html("$ " + arth_coingecko_data.market_data.circulating_supply.toFixed(3));
+		},
+		error: function(error) {
+			console.log('Érror ${error}');
+		}
+	});
+});
+</script>
