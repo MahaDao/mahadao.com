@@ -14,7 +14,7 @@
 				<img src="../../images/tokenomics/mahaframe.svg" alt="">
 				<h3>MAHA</h3>
 				<p>Circulating Supply</p>
-				<p class="text-orange">$99,873,118</p>
+				<p id="circulating-supply-price" class="text-orange"> </p>
 			</div>
 
 			<div class="maha-tokenomics-left maha-tokenomics-right card-bg">
@@ -63,8 +63,8 @@
 				</div>	
 
 				<div class="text-center center-btn">				
-					<a href="#" class="theme-btn-outline btn-md">Etherscan</a>	
-					<a href="#" class="theme-btn-outline btn-md">CoinGecko</a>					
+					<a target = "_blank" href="https://etherscan.io/token/0xb4d930279552397bba2ee473229f89ec245bc365#balances" class="theme-btn-outline btn-md">Etherscan</a>	
+					<a target = "_blank" href="https://www.coingecko.com/en/coins/mahadao" class="theme-btn-outline btn-md">CoinGecko</a>					
 				</div>											
 				
 					
@@ -73,3 +73,22 @@
 		
 	</div>
 </section>
+<script type="text/javascript">
+
+$(document).ready(function(){
+	const Url = 'https://api.coingecko.com/api/v3/coins/mahadao';
+	let maha_coingecko_data = null;
+	$.ajax({
+		url: Url,
+		type: "GET",
+		success: function(res) {
+			maha_coingecko_data = res;
+			console.log(maha_coingecko_data);
+			$("#circulating-supply-price").html("$ " + maha_coingecko_data.market_data.circulating_supply.toFixed(3));
+		},
+		error: function(error) {
+			console.log('Érror ${error}');
+		}
+	});
+});
+</script>
