@@ -70,7 +70,7 @@ $(document).ready(function(){
 		success: function(res) {
 			arth_coingecko_data = res;
 			console.log(arth_coingecko_data);
-			$("#circulating-supply-arth").html("$ " + arth_coingecko_data.market_data.circulating_supply.toFixed(3));
+			$("#circulating-supply-arth").html(arth_coingecko_data.market_data.circulating_supply.toFixed(0).toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,') + " ARTH ");
 		},
 		error: function(error) {
 			console.log('Érror ${error}');
