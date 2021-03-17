@@ -67,6 +67,11 @@ module.exports = {
       filename: "careers.html",
       // template: "!!ejs-compiled-loader!./src/index.ejs"
     }),
+	new HtmlWebpackPlugin({
+      template: Path.resolve(__dirname, '../src/html/pages/ecosystem/index.hbs'),
+      filename: "ecosystem.html",
+      // template: "!!ejs-compiled-loader!./src/index.ejs"
+    }),	
   ],
   resolve: {
     alias: {
