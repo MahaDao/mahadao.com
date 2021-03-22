@@ -1,5 +1,5 @@
 #section-three-features
-  margin-top: 0
+  padding-top: 160px
 
   .main-heading
     margin-bottom: 5px
@@ -36,7 +36,6 @@
     height: 80px
     margin: 60px 0px 0px 40px
 
-
   .img-container-head
     height: 120px
 
@@ -56,6 +55,185 @@
     line-height: 25px
     color: #969696
     min-height: 110px
+
+//Preserve-Buying-icon-animation//
+.preserve-ani
+  position: relative  
+  top: 46px
+
+.curve-1
+  margin-left: -16px
+
+.curve-2
+  left: 94px
+  top: -50px
+  position: absolute
+
+.ball-1
+  top: 24px
+  left: 5px
+  position: relative  
+
+.ball-2
+  position: absolute
+  left: 74px
+  top: -3px	
+  transform: scale(1.2)
+
+.ball-3
+  position: absolute
+  left: 150px
+  top: -55px	
+  transform: scale(1.6)  
+
+
+.three-features-jump .curve-1
+  stroke-dasharray: 1020
+  stroke-dashoffset: 0 
+  animation: curve-1 10s linear
+
+@keyframes curve-1 
+  from 
+    stroke-dashoffset: 1024
+  to 
+    stroke-dashoffset: 0
+
+.three-features-jump .curve-2
+  stroke-dasharray: 1020
+  stroke-dashoffset: 0 
+  animation: curve-2 10s linear
+
+@keyframes curve-2 
+  0% 
+    stroke-dashoffset: 1024
+  15% 
+    stroke-dashoffset: 1024
+  100% 
+    stroke-dashoffset: 0 
+
+.three-features-jump .ball-2
+    animation: ball-2 4s linear
+
+@keyframes ball-2 
+  0% 
+    transform: scale(0)
+  30% 
+    transform: scale(0)
+  40% 
+    transform: scale(1.2)
+  100% 
+    transform: scale(1.2)
+
+.three-features-jump .ball-3
+    animation: ball-3 3s linear
+
+@keyframes ball-3 
+  0% 
+    transform: scale(0)
+  78% 
+    transform: scale(0)
+  100% 
+    transform: scale(1.6)
+
+
+//elastic-supply-icon-animation//
+.elastic-supply
+  overflow : hidden
+  height: 114px
+  position: relative
+
+.elastic-triangle
+  display: inline-block
+  position: absolute
+  vertical-align: top
+
+.triangle-1
+  background: url("../img/feature-icon/triangle-1.png")  no-repeat
+  width: 52px
+  height: 45px
+  left: 0
+  bottom: 0
+
+.triangle-2
+  background: url("../img/feature-icon/triangle-2.png")  no-repeat
+  width: 92px
+  height: 81px
+  margin-left: -55px
+  left: 56px
+  bottom: 0
+
+.triangle-3
+  background: url("../img/feature-icon/triangle-3.png")  no-repeat
+  width: 133px
+  height: 114px
+  margin-left: -97px
+  left: 97px
+  bottom: 0
+
+.three-features-jump .triangle-1
+  animation: triangle-1 1s linear
+
+@keyframes triangle-1 
+  0% 
+    height: 0px
+  100% 
+    height: 45px
+
+.three-features-jump .triangle-2
+  animation: triangle-2 2s linear
+
+@keyframes triangle-2 
+  0% 
+    height: 0px  
+  50% 
+    height: 0px        
+  100% 
+    height: 81px   
+
+.three-features-jump .tringle-3
+  animation: tringle-3 3s linear
+
+@keyframes tringle-3 
+  0% 
+    height: 0px  
+  50% 
+    height: 0px        
+  100% 
+    height: 114px  
+
+.value-stability-ani
+  background: url("../img/feature-icon/value-stability-img.svg")  no-repeat  	
+  position: relative
+  width: 123px
+  height: 123px
+  text-align: center
+  padding-top: 22px
+  display: inline-block
+
+.flip-s
+  transform: perspective(400px) rotateX(0deg)
+
+.flip-s-2
+  transform: perspective(400px) rotateY(0deg)
+  margin-left: -82px
+
+.three-features-jump .flip-s
+  animation: flip-s 2s linear
+
+.three-features-jump .flip-s-2
+  animation: flip-s-2 2s linear
+
+@keyframes flip-s
+  0%
+    transform: perspective(400px) rotateY(180deg)
+  100%
+    transform: perspective(400px) rotateY(0deg)
+
+@keyframes flip-s-2
+  0%
+    transform: perspective(400px) rotateX(180deg)
+  100%
+    transform: perspective(400px) rotateX(0deg)
 
 @media (min-width: 768px) and (max-width: 1024px)
   #section-three-features .card-title
