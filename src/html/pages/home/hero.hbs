@@ -1,71 +1,80 @@
 <section id="section-title">
-	<div class="container-fluid">
-		<div class="title-head main-heading" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
-			<span class="main-title">
-			<font class="outline-title">Timeless Value Locked</font> (TVL)
-			</span>
-			<span class="counter-count">$ <font class="count" data-number="108455"></font></span>
-			<br/>
-			<span class="main-title">World's first non-depreciating currency</span>
-		</div>
-		<div class="title-down-text">
-			<div class="line"></div>
-			<div class="text-slide-right">
-				<p>
-					Introducing ARTH coin. A new kind of money
-					that maintains it's buying power
-					irrespective of which direction the market moves.
-				</p>
-			</div>
-		</div>
-		<div class="d-md-inline-block d-sm-block sm-center hero-link">
-			<a id="no-txt-decoration" class="theme-btn btn-md" target="_blank" href="https://arthcoin.com/#/"  id="whitepaper-main">
-			Use Arth
-			</a>
-		</div>
-		<div class="d-md-inline-block d-sm-block sm-center hero-link">
-			<a  id="no-txt-decoration" class="link-white imagine-link" data-toggle="modal" data-target="#videoModal"  href="javascript:void(0)"  id="whitepaper-main">
-			<span class="mr-1"><img src="../../images/white-tringle.svg" alt="" /></span> Imagine. ARTH
-			</a>
-		</div>
-	</div>
+  <div class="container-fluid">
+    <div class="title-head main-heading" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
+      {{!-- <span class="main-title">
+        <font class="outline-title">Timeless Value Locked</font> (TVL)
+        <font class="outline-title">Timeless Value Locked</font> (TVL)
+      </span>
+      <span class="counter-count">$ <font class="count" data-number="108455"></font></span>
+      <br /> --}}
+      <span class="main-title">
+        <font class="outline-title">Timeless Value</font>
+      </span>
+      {{!-- <span class="counter-count">$ <font class="count" data-number="108455"></font></span> --}}
+      <br />
+      <span class="main-title">World's first non-depreciating currency</span>
+    </div>
+    <div class="title-down-text">
+      <div class="line"></div>
+      <div class="text-slide-right">
+        <p>
+          Introducing ARTH coin. A new kind of money
+          that maintains it's buying power
+          irrespective of which direction the market moves.
+        </p>
+      </div>
+    </div>
+    <div class="d-md-inline-block d-sm-block sm-center hero-link">
+      <a id="no-txt-decoration" class="theme-btn btn-md" target="_blank" href="https://arthcoin.com/#/"
+        id="whitepaper-main">
+        Use Arth
+      </a>
+    </div>
+    <div class="d-md-inline-block d-sm-block sm-center hero-link">
+      <a id="no-txt-decoration" class="link-white imagine-link" data-toggle="modal" data-target="#videoModal"
+        href="javascript:void(0)" id="whitepaper-main">
+        <span class="mr-1"><img src="../../images/white-tringle.svg" alt="" /></span> Imagine. ARTH
+      </a>
+    </div>
+  </div>
 </section>
 <div id="videoModal" class="modal fade" role="dialog">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<div class="modal-header">
-				<span class="close-btn" data-dismiss="modal"></span>     
-			</div>
-			<div class="video-outer">
-				<iframe id="video" src="https://www.youtube.com/embed/H94S32HXqmU" frameborder="0" allow="accelerometer; autoplay;" allowfullscreen></iframe>				
-			</div>
-		</div>
-	</div>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close-btn" data-dismiss="modal"></span>
+      </div>
+      <div class="video-outer">
+        <iframe id="video" src="https://www.youtube.com/embed/H94S32HXqmU" frameborder="0"
+          allow="accelerometer; autoplay;" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
 </div>
 
-<script> 
+<script>
 
-$('.count').each(function() {
-  var speed = 1500;
+  $('.count').each(function () {
+    var speed = 1500;
 
-  function change() {
-    speed = 2000;
-  }
-  setTimeout(change, 2000);
-  $(this).prop('Counter', 0).animate({
-    Counter: $(this).data('number')
-  }, {
-    duration: speed,
-    easing: 'swing',
-    step: function(now) {
-      $(this).text(Math.ceil(now).toLocaleString('en'));
+    function change() {
+      speed = 2000;
     }
+    setTimeout(change, 2000);
+    $(this).prop('Counter', 0).animate({
+      Counter: $(this).data('number')
+    }, {
+      duration: speed,
+      easing: 'swing',
+      step: function (now) {
+        $(this).text(Math.ceil(now).toLocaleString('en'));
+      }
+    });
   });
-});
 </script>
 
-<script> 
-$('.close-btn').click(function(){
-   $('#video').attr('src', 'https://www.youtube.com/embed/H94S32HXqmU');
-});
+<script>
+  $('.close-btn').click(function () {
+    $('#video').attr('src', 'https://www.youtube.com/embed/H94S32HXqmU');
+  });
 </script>
