@@ -61,7 +61,17 @@ module.exports = {
       template: Path.resolve(__dirname, '../src/html/pages/ambassadors/index.hbs'),
       filename: "ambassadors.html",
       // template: "!!ejs-compiled-loader!./src/index.ejs"
-    }),		
+    }),
+	new HtmlWebpackPlugin({
+      template: Path.resolve(__dirname, '../src/html/pages/careers/index.hbs'),
+      filename: "careers.html",
+      // template: "!!ejs-compiled-loader!./src/index.ejs"
+    }),
+	new HtmlWebpackPlugin({
+      template: Path.resolve(__dirname, '../src/html/pages/ecosystem/index.hbs'),
+      filename: "ecosystem.html",
+      // template: "!!ejs-compiled-loader!./src/index.ejs"
+    }),	
   ],
   resolve: {
     alias: {

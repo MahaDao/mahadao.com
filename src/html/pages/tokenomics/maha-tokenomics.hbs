@@ -36,7 +36,7 @@
 					</div>
 					<div class="text-row-text equal-with">
 						<p>Token Utility</p>	
-						<span>Governnace</span>
+						<span>Governance</span>
 					</div>				
 				</div>		
 
@@ -74,7 +74,6 @@
 	</div>
 </section>
 <script type="text/javascript">
-
 $(document).ready(function(){
 	const Url = 'https://api.coingecko.com/api/v3/coins/mahadao';
 	let maha_coingecko_data = null;
@@ -84,7 +83,7 @@ $(document).ready(function(){
 		success: function(res) {
 			maha_coingecko_data = res;
 			console.log(maha_coingecko_data);
-			$("#circulating-supply-price").html("$ " + maha_coingecko_data.market_data.circulating_supply.toFixed(3));
+			$("#circulating-supply-price").html(maha_coingecko_data.market_data.circulating_supply.toFixed(0).toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,') + " MAHA ");
 		},
 		error: function(error) {
 			console.log('Érror ${error}');
