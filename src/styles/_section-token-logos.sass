@@ -3,33 +3,38 @@
   $token-inner-width: 190px
   margin-top: 230px
 
-  .card-title
-    font-size: 30px  
+  .para-text #padding-top-30
+    padding-top: 27px  
+
+  .card-title    
+    margin-bottom: 48px
+    line-height: 40px
 
   .row
     margin-bottom: 50px
 
   .pitch
     font-family: $font-family-heading
-    color: #ffffff
+    color: $color-white
     font-size: 30px
     font-weight: 800
     line-height: 1.2
 
   .side-text
-    color: #ababab
-    font-size: 18px
-    font-weight: 500
-    margin-top: 24px
-    line-height: 25px
+    color: rgba(255, 255, 255, 0.64)
+    font-weight: 300
+    margin-top: 48px
+    line-height: 24px
 
-  .side-text-bullet
-    font-size: 16px  
+  .Learn-more-link
+    color: #FF7F57
+    font-weight: 600
+    line-height: 24px
+    padding-top: 16px
+    display: inline-block  
 
-  .gradiant-link
-    background: linear-gradient(81.26deg, #F47F57 14.65%, #FD5656 83.88%)
-    -webkit-background-clip: text
-    -webkit-text-fill-color: transparent
+  .Learn-more-link:hover
+    color: $color-white    
 
   .yes-txt-decoration  
     position: relative
@@ -730,15 +735,16 @@
 
     .token-title
       font-family: $font-family-heading
-      color: #ffffff
-      font-size: 30px
-      font-weight: bold
+      color: $color-white
+      font-size: 28px
+      font-weight: 700
       text-align: center
-      margin-top: -80px
-      letter-spacing: 6px
+      margin-top: -98px
+      letter-spacing: 9.5px
+      line-height: 36px
 
   .right-side-title
-    color: #ffffff
+    color: $color-white
     font-size: 36px
     font-weight: 800
     line-height: 1.2
@@ -749,17 +755,17 @@
 
 @media (max-width: 740px)
   #section-token-logos
-    margin-top: 100px
-    .token  
-      margin-top: 100px
+    margin-top: 50px
 
   #section-token-logos .icon-section .token-title    
     margin-top: -60px
     font-size: 20px
 
-@media (max-width: 1024px)  
+@media (max-width: 575px)  
   #section-token-logos .card-title  
-    font-size: 30px    
+    line-height: 28px  
+  #section-token-logos .Learn-more-link 
+    margin-bottom: 50px   
 
 @media (min-width: 768px) and (max-width: 1270px)
   #section-token-logos .card-title
