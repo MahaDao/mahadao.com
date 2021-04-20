@@ -18,34 +18,6 @@ a
 .margin-top-35
   margin-top: 35px  
 
-.font-12
-  font-size: 12px!important
-
-.font-14
-  font-size: 14px!important
-
-.font-16
-  font-size: 16px!important 
-
-.font-18
-  font-size:18px!important  
-
-.font-20
-  font-size: 20px!important   
-
-.font-22
-  font-size: 22px!important  
-
-.font-24
-  font-size: 24px!important 
-
-.font-32
-  font-size: 32px!important  
-
-.font-42
-  font-size: 42px!important   
-
-
 .font-weight-normal
   font-weight: 300 !important   
 .font-weight-500
@@ -174,7 +146,7 @@ a:hover.link-underline
 .main-heading
   font-weight: 700
   font-style: normal    
-  color: $color-white
+  color: rgba(255, 255, 255, 0.88)
     
 .sub-heading-text  
   color: #A2A2A2  
@@ -206,6 +178,10 @@ a.opacity-link
 a:hover.opacity-link 
   opacity: 0.88
 
+.typo-body-small, .typo-body-medium, .typo-body-large
+  font-style: normal
+  font-weight: 300
+
 .card
   margin-left: 0
   margin-right: 0
@@ -227,7 +203,6 @@ a:hover.opacity-link
   border: none
 
 .card-title
-  font-family: $font-family-heading
   font-style: normal
   font-weight: 700  
   line-height: 40px
@@ -235,6 +210,14 @@ a:hover.opacity-link
   margin-left: 0px
   margin-right: 0px
   margin-bottom: 8px
+
+.card-text 
+  font-style: normal
+  font-weight: 300
+  color: rgba(255, 255, 255, 0.64)
+
+.text-orange
+  color: #FF7F57
 
 .text-gradient
   background: linear-gradient(81.26deg, #F47F57 14.65%, #FD5656 83.88%)
@@ -324,6 +307,7 @@ a:hover.opacity-link
 
 .theme-btn-outline
   display: inline-block
+  font-family: $font-family-body
   font-size: 14px
   border: 1px solid rgba(255, 255, 255, 0.2)
   border-radius: 6px
@@ -411,7 +395,6 @@ button
 
 .btn-medium
   padding: 11px 46px
-  font-size: 16px
   height: inherit
   line-height: inherit
 
