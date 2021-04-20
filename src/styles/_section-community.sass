@@ -2,7 +2,7 @@
   text-align: center
 
   #community-outer
-      padding: 158px 0 0
+      padding: 128px 0 0
     
   .imagine-link  
     margin-left: 24px  
@@ -10,7 +10,7 @@
 
   .community
     position:  relative
-    margin: 20px 0px
+    margin: 25px 0px
 
   .community-img
     position: relative
@@ -292,8 +292,8 @@
       stroke-dashoffset: 0           
       
   .main-section-bottom
-    margin: 20px auto 0
-    max-width: 920px
+    margin: 35px auto 0
+    max-width: 970px
     font-family: $font-family-heading
 
     font-style: normal
@@ -304,36 +304,32 @@
     color: #fff
 
     .main-section-bottom-bg
-      border-radius: 15px
-      border-bottom-right-radius: 0
-      border-bottom-left-radius: 0
-
-      padding: 36px 60px
+      border-top-right-radius: 25px
+      border-top-left-radius: 25px
+      padding: 40px 64px
       background: #F47F57
-      font-size: 22px
-      line-height: 30px
-      // background: linear-gradient(45deg, #000000 14.64%, #515151 85.36%)
-      // background: linear-gradient(45deg, #FF8B71 0%, #A81E41 100%)
-      background: linear-gradient(128.31deg, #FF8B71 5.12%, #C33F50 51.15%, #A81E41 83.33%)
-
-      @media (max-width: 400px)
-        font-size: 14px
-        padding: 15px
+      line-height: 32px      
+      background: linear-gradient(128.31deg, #FF8B71 5.12%, #C33F50 51.15%, #A81E41 83.33%)        
 
   .main-heading
-    margin: 30px auto
-
-    @media (max-width: 400px)
-      font-size: 30px
+    margin-bottom: 8px
 
   .f-text-text
-    font-family: $font-family-body
-    font-size: 16px
-    max-width: 760px
-    line-height: 1.5
+    max-width: 986px
+    line-height: 24px
     text-align: center
-    color: #A2A2A2
-    margin: 10px auto
-    padding: 0 15px
-    @media (max-width: 400px)
-      font-size: 14px
+    color: rgba(255, 255, 255, 0.64)
+    margin: 0 auto
+    padding: 0 15px 44px 15px
+    font-weight: bold
+
+  @media screen and (max-width: 575px)  
+    #community-outer
+      padding-top: 50px
+
+    .f-text-text 
+      line-height: 20px
+
+    .main-section-bottom .main-section-bottom-bg  
+      padding: 15px
+      line-height: 20px
