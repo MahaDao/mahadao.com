@@ -1,6 +1,19 @@
 #section-three-features
   padding-top: 128px
 
+  .main-heading-built  
+    padding-bottom: 8px
+
+  .product_title_text  
+    font-weight: 700
+    color: rgba(255, 255, 255, 0.64)
+    line-height: 24px
+    margin-bottom: 48px
+
+  .pitch  
+    color: rgba(255, 255, 255, 0.64)
+    padding-bottom: 26px
+
   .card-deck
     display: flex
     justify-content: center
@@ -28,6 +41,11 @@
   .card-text    
     line-height: 24px
     min-height: 110px
+
+  .card-text-built    
+    margin-bottom: 0
+    padding-bottom: 38px
+    min-height: 135px
 
 //Preserve-Buying-icon-animation//
 .preserve-ani
@@ -219,10 +237,12 @@
   border-radius: 28px     
 
 @media (min-width: 768px) and (max-width: 1024px)
-  #section-three-features .card-title
-    font-size: 24px!important
+  #section-three-features .card-title    
     min-height: 114px !important
 
 @media screen and (max-width: 575px)  
   #section-three-features
     padding-top: 50px 
+
+  #section-three-features .product_title_text     
+    line-height: 20px 
