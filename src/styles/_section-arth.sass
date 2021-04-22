@@ -179,10 +179,10 @@ body
 
 #arth-road-map
   display: inherit
-  padding-top: 88px
+  padding-top: 113px
 
   .main-heading
-    padding-bottom: 20px  
+    padding-bottom: 31px  
 
 #arth-red-text
   font-size: 22px
@@ -536,9 +536,21 @@ body
 	
 /** Arth Roadmap **/
 #arth-road-map
+  .roadmap-scroll
+    overflow-x: auto
   .row
     margin-left: 5px
     margin-right: 5px
+
+  @media screen and (max-width: 1279px) 
+    .row   
+      width: 1200px
+
+    .roadmap-scroll
+      margin-bottom: 25px
+      
+    .arth-roadmap-q-container-btm
+      margin-bottom: 0px 
 
 .arth-roadmap-q-container
   margin-top: 60px
@@ -549,16 +561,18 @@ body
   text-align: left
   
 .arth-roadmap-q-title
-  font-family: 'Inter'
+  font-family: $font-family-body
   font-style: normal
-  font-weight: bold
+  font-weight: 700
   font-size: 24px
-  line-height: 60px
+  line-height: 33px
+  padding-bottom: 6px
   letter-spacing: 0.4px
   
 .arth-roadmap-q-border
   width: 100%
-  height: 28px
+  height: 27px
+  margin-bottom: 8px
   list-style: none
   display: inline-flex
   
@@ -586,12 +600,10 @@ body
     max-width: 260px
   
   li
-    font-family: Syne
     font-style: normal
-    font-weight: normal
-    font-size: 20px
+    font-weight: bold
     line-height: 45px
-    color: #969696
+    color: rgba(255, 255, 255, 0.64)
     max-width: 285px
     text-align: left
 
@@ -606,7 +618,13 @@ body
   background-color: #555
   display: block
   width: 100%
-  margin: 30px auto     
+  margin: 30px auto 
+
+@media (max-width: 575px)  
+  #arth-road-map
+    padding-top: 50px 
+  .arth-roadmap-q-lists li  
+    line-height: 30px 
 
 @media only screen and ( min-width:1000px) and ( max-width:1200px ) 
   .col-xs-4 
