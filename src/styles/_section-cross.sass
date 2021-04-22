@@ -1,7 +1,6 @@
 #section-crose-chain
-  margin-top: 100px
-  text-align: center
-  font-family: $font-family-heading  
+  padding-top: 130px
+  text-align: center  
 
   .card-deck
     display: flex
@@ -11,28 +10,27 @@
   .card
     border-radius: 26px
     border: none
-    margin-bottom: 0
 
   .card-title
-    font-size: 24px
     margin-top: 20px 
-    margin-bottom: 20px	
+    margin-bottom: 16px	
 
   .card-body
     padding-top: 0px   
 
   .card-text   
-    font-size: 18px
-    font-weight: 500
-    line-height: 1.5    
-    color: #969696
+    line-height: 24px    
+    color: rgba(255, 255, 255, 0.64)    
+
   .card-text-maha
     padding-top: 64px
-  .text-gradient
-    padding-top: 20px
+
+  .text-orange
+    padding-top: 16px
+    color: #FF7F57
 
   .img-container        
-    padding: 48px 40px 30px 40px
+    padding: 40px 40px 30px 40px
     height: 365px
 
     img
@@ -41,16 +39,10 @@
 
     @media (max-width: 740px)
       height: 250px
-       
-  .f-text-text    
-    font-size: 18px
-    font-weight: 500
-    max-width: 760px
-    line-height: 1.5    
-    color: #969696
-    padding: 50px 10px 0px 10px
-    margin: 0 auto
 
-    @media (max-width: 600px)
-      font-size: 14px
-      padding: 15px
+@media screen and (max-width: 575px) 
+  #section-crose-chain
+    padding-top: 100px
+           
+  #section-crose-chain .card-text
+    line-height: 20px
