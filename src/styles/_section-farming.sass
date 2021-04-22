@@ -1,6 +1,8 @@
 #section-liquidity
-  margin: 128px 0 88px 0
+  padding-top: 113px
   text-align: center
+  .main-heading
+    padding-bottom: 16px
 
   .img-container
     text-align: center
@@ -17,40 +19,24 @@
       margin: 30px auto 0
 
   .f-text-text
-    font-family: $font-family-body
-    font-size: 18px
     max-width: 800px
-    line-height: 25px
+    line-height: 24px
+    font-weight: bold
     text-align: center
-    color: #A2A2A2
-    margin: 0 auto
-    @media (max-width: 400px)
-      font-size: 14px
-      padding: 15px
-    
-
-
-  .main-section
-    max-width: $max-width
-    text-align: center
-    // height: 962px
-    margin: 0 auto
+    color: rgba(255, 255, 255, 0.64)
+    margin: 0 auto    
 
   .main-section-image
-    margin-top: 60px
-    // width: 1208.54px
-    // height: 698.12px
-    @media (max-width: 600px)
+    margin-top: 60px     
+
+@media (max-width: 575px)
+  #section-liquidity
+    padding-top: 50px 
+
+    .main-section-image
       margin: 0 auto
       position: relative
       top: 40px
 
-  .main-section-bottom
-    font-size: 18px
-    font-style: normal
-    font-weight: 700
-    letter-spacing: 0.4000000059604645px
-    line-height: 25px
-    margin: -40px auto 0
-    padding: 30px
-    max-width: 981px
+    .f-text-text  
+      line-height: 20px
