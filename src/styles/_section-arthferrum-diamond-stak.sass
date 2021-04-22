@@ -1,7 +1,6 @@
-#section-diamond-stak
-  font-family: $font-family-heading
-  color: #fff
-  padding: 190px 0
+#section-diamond-stak 
+  color: $color-white
+  padding-top: 128px
 
   .card-bg
     background: linear-gradient(180deg, #2D2D2D 0%, #242424 100%)
@@ -9,21 +8,18 @@
     padding: 64px
 
   .main-heading 
-    font-size: 36px
-    padding-bottom: 32px
+    padding-bottom: 24px
 
   .gradiant-link 
-    font-size: 16px
     position: relative
     top: -5px
 
   .percent-box-left
     .small-text
       color: #969696
-      font-size: 16px
-    .big-text
-      font-size: 30px  
-      font-family: Inter
+
+    .big-text 
+      font-family: $font-family-body 
       font-weight: 700    
 
   .percent-box
@@ -43,52 +39,52 @@
     margin-top: 30px
   
     .parcent
-      font-size: 36px
-      font-weight: 600
-      line-height: 55px
-      font-family: Inter
+      font-size: 24px
+      color: rgba(255, 255, 255, 0.88)      
+      font-weight: 700
+      padding-bottom: 8px
 
     .parcent-text
-      font-size: 16px
-      color: #969696
-      line-height: 19px 
-      font-weight: 700 
+      color: rgba(255, 255, 255, 0.64)
       text-align: center
 
   .progress-bars-outer
     width: 100%
-    margin-top: 30px
+    margin-top: 24px
+    font-weight: 600
+    font-family: $font-family-body
    
 
     .status
       display: inline-block
-      background: #121212
-      border-radius: 30px
-      width: 18%    
+      background: rgba(32, 201, 116, 0.2)
+      border-radius: 100px
+      color: #20C974
+      width: 20%    
       text-align: center
       padding: 0px 15px 
-      font-size: 24px
+      font-size: 14px
       margin-left: 29px
-      height: 50px
-      line-height: 50px
+      height: 44px
+      line-height: 44px
+      vertical-align: top
     
   .progress-bars   
-    background: #121212
+    background: #151414
     border-radius: 30px
-    height: 46px
-    padding: 2px
-    width: 78%
+    height: 44px
+    width: 76%    
     display: inline-block 
 
 
+
     .progress-meter 
-      background: linear-gradient(135deg, #FF8B71 14.65%, #C33F50 64.42%, #A81E41 85.36%)
+      background: linear-gradient(135deg, #FF8B71 14.65%, #C33F50 64.42%, #A81E41 85.36%)      
       border-radius: 30px
-      height: 42px
+      height: 44px
       text-align: right
       font-size: 16px
-      line-height: 42px
-      font-family: Inter
+      line-height: 44px             
       padding-right: 10px
              
   @media (max-width: 740px) 
@@ -135,9 +131,9 @@
       line-height: 30px
       padding: 0
 
-@media (max-width: 600px) 
+@media (max-width: 575px)   
   #section-diamond-stak  
-    padding: 50px 0                    
+    padding-top: 50px                    
 
 @media (min-width: 768px) and (max-width: 1300px) 
   #section-diamond-stak .box
@@ -156,3 +152,14 @@
     padding: 0px 10px
     font-size: 18px  
     width: 20%
+
+#section-diamond-stak.maha-dec-staking
+  padding-top: 80px 
+
+#section-diamond-stak.maha-dec-staking .progress-bars-outer .status 
+  background: rgba(250, 76, 105, 0.2)
+  color: #FA4C69 
+
+@media (max-width: 575px)   
+  #section-diamond-stak.maha-dec-staking
+    padding-top: 50px

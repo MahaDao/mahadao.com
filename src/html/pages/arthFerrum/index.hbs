@@ -1,11 +1,11 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-  {{> ./header-tags.hbs }}
-  {{> ../../partials/head }}
+	<head>
+		{{> ./header-tags.hbs }}
+		{{> ../../partials/head }}
 
-  <!--<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+		<!--<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
 		<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
 		<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
 		<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
@@ -23,38 +23,34 @@
 		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 		<meta name="theme-color" content="#ffffff">-->
 
-  <link rel="icon" type="image/png" href="/Favicon.png">
-  <link rel="icon" type="image/svg" href="/Favicon.svg">
-</head>
+		<link rel="icon" type="image/png" href="/Favicon.png">
+		<link rel="icon" type="image/svg" href="/Favicon.svg">
+	</head>
 
-<body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-56V6VF9" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+	<body>
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-56V6VF9"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
 
-  {{> ../../partials/header }}
+		{{> ../../partials/header }}
 
-  {{!-- Background and chakras --}}
-  <div id="header-gradient"></div>
-  <div class="gradient-red-1"></div>
-  <div class="gradient-red-2"></div>
-  <div class="gradient-black-1"></div>
+		{{!-- Background and chakras  --}}
+		<div id="header-gradient"></div>
+		<div class="gradient-red-1"></div>
+		<div class="gradient-red-2"></div>
+		<div class="gradient-black-1"></div>
+	
+		{{> ./arthFerrum-stak-intro.hbs }}
+		{{!-- > /home/timer.hbs --}}		
+		{{> ./arthFerrum-rewards.hbs }}
+		{{> ./arthFerrum-april-stak.hbs }}
+		{{> ./arthFerrum-dec-stak.hbs }}
+	
+		{{> ../../partials/footer }}
 
-  {{> ./arthFerrum-stak-intro.hbs }}
-  {{!-- > /home/timer.hbs --}}
-  {{> ./arthFerrum-rewards.hbs }}
-  {{> ./arthFerrum-april-stak.hbs }}
-  {{> ./arthFerrum-dec-stak.hbs }}
-
-
-  {{> ../../partials/footer }}
-
-  <script src="http://localhost:35729/livereload.js"></script>
-  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
-    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
-    crossorigin="anonymous"></script>
-</body>
-
+		<script src="http://localhost:35729/livereload.js"></script>
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous"></script>
+	</body>
 </html>
