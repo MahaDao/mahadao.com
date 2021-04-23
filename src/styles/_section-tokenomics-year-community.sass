@@ -4,21 +4,26 @@
   padding-top: 48px
 
   .main-heading  
-    padding-bottom: 8px
+    padding-bottom: 20px
+    color: $color-white
      
   .sub-heading-text  
-    font-family: $font-family-body
+    color: rgba(150, 150, 153, 0.88)
     max-width: 1180px
-    font-weight: 500
+    font-weight: 700
+    line-height: 24px
+
+  .sub-heading-text.typo-inter-h3
+    font-weight: 600
     color: #969696
-    line-height: 25px
+    margin-top: -8px
 
   .gradient-bg
     padding: 20px 32px
     color: $color-white
-    font-family: $font-family-heading
+    font-weight: bold
     text-align: left
-    margin-top: 56px      
+    margin-top: 66px      
 
   .content-center 
     width: 1035px
@@ -29,13 +34,12 @@
     text-align: left 
 
   .circle-chart-img
-    padding: 56px 0
+    padding: 48px 0 56px 0
 
   .bullet-text-after   
-    font-size: 22px
-    font-weight: 500
-    margin: 0px 24px
-    padding-bottom: 20px
+    font-weight: 700
+    margin: 0px 11px
+    padding-bottom: 31px
 
   .bullet-text-after:after
     border-radius: 14px
@@ -47,4 +51,12 @@
     .bullet-text-after 
       font-size: 16px
       margin: 0px 10px  
+      padding-bottom: 20px
       width: 100%
+
+  @media (max-width:575px) 
+    .main-heading
+      padding-bottom: 25px
+
+    .sub-heading-text
+      line-height: 20px
