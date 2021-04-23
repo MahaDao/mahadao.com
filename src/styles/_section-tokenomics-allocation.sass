@@ -4,27 +4,25 @@
   padding: 64px 0
 
   .main-heading  
-    padding-bottom: 8px
+    padding-bottom: 28px
+    color: $color-white
      
-
-  .sub-heading-text  
-    font-family: $font-family-body
+  .sub-heading-text      
     max-width: 1180px
-    font-weight: 500
-    color: #969696
-    line-height: 25px
+    font-weight: 700
+    color: rgba(150, 150, 153, 0.88)
+    line-height: 24px
 
   .circle-chart   
     text-align: left 
     padding-bottom: 48px
 
   .circle-chart-img
-    padding: 56px 0
+    padding: 48px 0 56px 0
 
-  .bullet-text-after   
-    font-size: 22px
-    font-weight: 500
-    margin: 0px 24px
+  .bullet-text-after       
+    font-weight: 700
+    margin: 0px 20px
 
     @media (max-width:600px) 
       width: 40% !important   
@@ -41,3 +39,9 @@
       font-size: 16px
       margin: 0px 10px  
       width: 100%
+
+  @media (max-width:575px) 
+    .main-heading
+      padding-bottom: 25px 
+    .sub-heading-text
+      line-height: 20px
