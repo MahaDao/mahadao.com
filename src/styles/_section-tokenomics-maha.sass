@@ -13,17 +13,16 @@
   text-align: center
 
   p
-    font-family: $font-family-heading
-    font-size: 20px
     color: #969696  
     margin: 0  
     font-weight: 700
+    padding-bottom: 4px
 
   .main-heading  
-    padding-bottom: 104px
+    padding-bottom: 124px
         
   .sub-heading
-    padding-bottom: 56px 
+    padding-bottom: 54px 
     font-weight: 700 
 
   .maha-tokenomics-box
@@ -31,32 +30,29 @@
     color: $color-white
 
     .maha-tokenomics-left
-      padding: 90px 0px   
+      padding: 110px 0   
       width: 380px 
       border-right : 1px solid rgba(255, 255, 255, 0.12)
       border-radius: 16px 0px 0px 16px
 
       h3  
-        padding-top: 7px
-        padding-bottom: 75px
+        padding-top: 12px
+        padding-bottom: 88px
+        margin-bottom: 0
         font-size: 28px
         letter-spacing: 9.5px
         font-family: $font-family-heading
         font-weight: 700
 
       .text-orange 
-        font-family: $font-family-body
-        font-size: 24px 
-        color: #FF7F57
-        font-weight: 500
-        padding-top: 4px
+        color: #FF7F57    
+
 
     .maha-tokenomics-right
       flex: 1
       border: none
       padding: 32px
       text-align: left
-      font-size: 24px
       border-radius: 0px 16px 16px 0px
 
       .center-btn .theme-btn-outline    
@@ -65,17 +61,14 @@
       .text-row  
         display: flex
         justify-content: space-between
-        padding-bottom: 24px
+        padding-bottom: 30px
 
       .equal-with     
         width: 25%        
   
     .maha-tokenomics-right span 
-      color: #fff
-      font-family: $font-family-body
-      font-size: 24px
-      letter-spacing: 0.5px
-      font-weight: 500
+      color: $color-white      
+      font-weight: bold
 
 
 @media (max-width: 800px)
@@ -84,8 +77,9 @@
 
     .main-heading
       padding-bottom: 25px 
-    p
-      font-size: 14px
+
+    .sub-heading
+      padding-bottom: 25px       
 
     .maha-tokenomics-box
       display: block
@@ -93,6 +87,11 @@
         width: 100%
         border: none
         border-radius: 16px 16px 0px 0px  
+        padding-top: 50px
+        padding-bottom: 50px
+        h3
+          padding-bottom: 50px
+
       .maha-tokenomics-right  
         border-radius: 0px 0px 16px 16px  
         .equal-with
@@ -105,9 +104,6 @@
 
 @media (min-width: 400px)and (max-width: 1300px)  
   #section-maha-tokenomics 
-    p
-      font-size: 14px 
-
     .maha-tokenomics-box
       .maha-tokenomics-right span
         font-size: 16px

@@ -1,10 +1,10 @@
 <section id="section-maha-tokenomics" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
 	<div class="container-fluid">
-		<div class="main-heading">
+		<div class="main-heading typo-syne-h1">
 			Tokenomics
 		</div>
 	
-		<div class="sub-heading">
+		<div class="sub-heading typo-syne-h2">
 			MAHA Tokenomics	
 		</div>
 
@@ -13,52 +13,52 @@
 			<div class="maha-tokenomics-left card-bg">
 				<img src="../../images/tokenomics/mahaframe.svg" alt="">
 				<h3>MAHA</h3>
-				<p>Circulating Supply</p>
-				<p id="circulating-supply-price" class="text-orange"> </p>
+				<p class="typo-syne-h4">Circulating Supply</p>
+				<p id="circulating-supply-price" class="text-orange typo-inter-h2"> </p>
 			</div>
 
 			<div class="maha-tokenomics-left maha-tokenomics-right card-bg">
 				<div class="text-row">				
 					<div class="text-row-text">
-						<p>Token Name</p>	
-						<span>MAHA</span>
+						<p class="typo-syne-h4">Token Name</p>	
+						<span class="typo-inter-h2">MAHA</span>
 					</div>
 					<div class="text-row-text equal-with">
-						<p>Token Sybmol</p>	
-						<span>MAHA</span>
+						<p class="typo-syne-h4">Token Sybmol</p>	
+						<span  class="typo-inter-h2">MAHA</span>
 					</div>				
 				</div>
 
 				<div class="text-row">				
 					<div class="text-row-text">
-						<p>Token Type</p>	
-						<span>ERC-20</span>
+						<p class="typo-syne-h4">Token Type</p>	
+						<span class="typo-inter-h2">ERC-20</span>
 					</div>
 					<div class="text-row-text equal-with">
-						<p>Token Utility</p>	
-						<span>Governance</span>
+						<p class="typo-syne-h4">Token Utility</p>	
+						<span class="typo-inter-h2">Governance</span>
 					</div>				
 				</div>		
 
 
 				<div class="text-row">				
 					<div class="text-row-text">
-						<p>Platform</p>	
-						<span>Standard token on Ethereum</span>
+						<p class="typo-syne-h4">Platform</p>	
+						<span class="typo-inter-h2">Standard token on Ethereum</span>
 					</div>					
 				</div>	
 
 				<div class="text-row">				
 					<div class="text-row-text">
-						<p>Total Token Supply</p>	
-						<span>10,000,000 till the end of 10 years <font class="font-weight-normal">(2% inflation after 10 years)</font></span>
+						<p class="typo-syne-h4">Total Token Supply</p>	
+						<span class="typo-inter-h2">10,000,000 till the end of 10 years (2% inflation after 10 years)</span>
 					</div>					
 				</div>	
 
 				<div class="text-row">				
 					<div class="text-row-text">
-						<p>Token Generation Event</p>	
-						<span>17 December 2020</span>
+						<p class="typo-syne-h4">Token Generation Event</p>	
+						<span class="typo-inter-h2">17 December 2020</span>
 					</div>					
 				</div>	
 
@@ -83,7 +83,7 @@ $(document).ready(function(){
 		success: function(res) {
 			maha_coingecko_data = res;
 			console.log(maha_coingecko_data);
-			$("#circulating-supply-price").html(maha_coingecko_data.market_data.circulating_supply.toFixed(0).toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,') + " MAHA ");
+			$("#circulating-supply-price").html(maha_coingecko_data.market_data.circulating_supply.toFixed(0).toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,') + " <font class='text-white'> MAHA </font>");
 		},
 		error: function(error) {
 			console.log('Érror ${error}');
