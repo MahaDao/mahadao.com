@@ -3,6 +3,8 @@ $font-family-body: 'Inter', sans-serif
 $max-width: 1200px
 $color-white: #fff
 $color-black: #000
+$color-white64: rgba(255, 255, 255, 0.64)
+$color-white88: rgba(255, 255, 255, 0.88)
 
 *
   margin: 0%
@@ -38,8 +40,12 @@ body
   background: rgba(#000, 0.1)
 ::-webkit-scrollbar-thumb
   background: #FF8B71
+  border-radius: 20px
 ::-webkit-scrollbar-thumb:hover
-  background: #A81E41
+  background: #ff5e3c
+  cursor: pointer
+.scrollbar-hidden::-webkit-scrollbar
+  display: none
 
 @import './_background'
 @import './_header'
