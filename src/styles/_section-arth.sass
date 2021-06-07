@@ -894,11 +894,21 @@ body
 
 /** Arth Roadmap **/
 #arth-road-map
+  position: relative
+
+  .inactive
+    color: rgba(255, 255, 255, 0.64)
+
   .roadmap-scroll
     overflow-x: auto
+
+    &::-webkit-scrollbar
+      height: 0
+
   .row
     margin-left: 5px
     margin-right: 5px
+    flex-wrap: nowrap
 
   @media screen and (max-width: 1279px)
     .row
@@ -912,25 +922,36 @@ body
 
 .arth-roadmap-q-container
   margin-top: 60px
+
+.top-line
+  position: absolute
+  width: 100%
+  height: 2.44px
+  background: linear-gradient(90deg, rgba(247, 101, 59, 0), #F7653B 20%, rgba(247, 101, 59, 0) 100%)
+  top: 326px
+  left: 0
+
 .arth-roadmap-q-container-btm
   margin-bottom: 44px
 
 .arth-roadmap-q
   text-align: left
+  min-width: 324px
 
 .arth-roadmap-q-title
-  font-family: $font-family-body
+  font-family: Syne
   font-style: normal
-  font-weight: 700
-  font-size: 24px
-  line-height: 33px
+  font-weight: bold
+  font-size: 32px
+  line-height: 40px
+  color: #F7653B
   padding-bottom: 6px
   letter-spacing: 0.4px
 
 .arth-roadmap-q-border
   width: 100%
   height: 27px
-  margin-bottom: 8px
+  margin-bottom: 10px
   list-style: none
   display: inline-flex
 
@@ -939,9 +960,9 @@ body
     width: 30px
 
   .arth-roadmap-line
-    background-image: url('../images/line.svg')
+    //background-image: url('../images/line.svg')
     width: 100%
-    margin-top: 12px
+    //margin-top: 12px
     background-position: right top
 
 .arth-roadmap-q-border li
@@ -950,6 +971,7 @@ body
 
 .arth-roadmap-q-lists
   list-style: none
+  padding-left: 25px
 
   .last-link
     font-weight: normal
@@ -958,13 +980,16 @@ body
     max-width: 260px
 
   li
+    font-family: Syne
     font-style: normal
     font-weight: bold
-    line-height: 45px
-    color: rgba(255, 255, 255, 0.64)
-    max-width: 285px
+    font-size: 18px
+    line-height: 24px
+    color: rgba(255, 255, 255, 0.88)
     text-align: left
-
+    margin-bottom: 40px
+    list-style: square
+    padding-right: 30px
 
     span
       line-height: 20px
