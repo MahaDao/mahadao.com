@@ -536,10 +536,366 @@ body
 
 /** Arth Roadmap **/
 #arth-road-map
+  display: inherit
+  padding-top: 113px
+
+  .main-heading
+    padding-bottom: 31px
+
+#arth-red-text
+  font-size: 22px
+  padding: 0px
+  font-weight: 700
+  line-height: 31px
+  letter-spacing: 0.45px
+  background: -webkit-linear-gradient(81.26deg, #F47F57 14.65%, #FD5656 83.88%)
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+
+  @media screen and (max-width: 500px)
+    font-size: 15px
+    padding: 15px 0
+
+/*** Arth Technology section ***/
+#arth-tech
+  padding-top: 20px
+  .main-heading
+    font-size: 33px
+
+#arth-tech
+  #arth-cross-border
+    background: none
+
+  .card-bg
+    background: linear-gradient(180deg, #2B2B2B 0%, #1F1F1F 60.94%)
+    border-radius: 55px
+
+
+  #arth-cross-border-para
+    padding-left: 0
+    padding-right: 0
+
+  .card-title
+    min-height: 76px
+    text-align: left
+
+  .img-container
+    margin: 40px 40px 0px 40px
+    position: relative
+
+#technology-sec
+  text-align: center
+  padding-bottom: 20px
+
+.arth-tech-card
+  margin-top: 60px
+  display: flex
+  justify-content: center
+
+
+#arth-cross-border
+  display: inline-flex
+  vertical-align: top
+  margin-top: 40px
+
+
+
+  @media screen and (max-width: 500px)
+    margin: 20px 0
+
+#arth-cross-border-img,
+#arth-cross-chain-img
+  height: 270px
+  background-repeat: no-repeat
+  width: 100%
+  margin: auto
+  display: flex
+  background-size: contain
+  background-position: center top
+
+
+#arth-cross-border-img
+  background-image: url(../images/technology/cross-border-transactions.png)
+
+#arth-cross-border-img.arth-cross-border-img-none
+  background: none
+
+#arth-cross-chain-img
+  background-image: url(../images/technology/cross-chain-liquidity.png)
+.cross-chain-ring
+  background: none!important
+.cross-chain-ring svg
+  margin: auto
+
+/*** Ring Animations Start ***/
+.ring
+  position: absolute
+  width: 281px
+  height: 270px
+  margin: 0 auto
+
+.ring-place
+  left: 0
+  right: 0
+  top: 0
+  bottom: 0
+
+.ring-center
+  width: 150px
+  height: 151px
+  position: absolute
+  left: 0
+  top: 0
+  margin: auto
+  right: 0
+  bottom: 0
+
+.ring-pos
+  position: absolute
+  left: 0
+  top: 0
+  margin: auto
+  right: 0
+  bottom: 0
+
+.ring-1
+  width: 80px
+  height: 261px
+
+.ring-2
+  width: 223px
+  height: 223px
+
+.ring-3
+  width: 281px
+  height: 74px
+
+.ring-4
+  width: 207px
+  height: 207px
+
+.path1, path2, path3, path4
+  display:none
+
+.jump-class .ring-start1.path1
+  stroke-dasharray: 1020
+  stroke-dashoffset: 0
+  animation: line-1 7s linear
+  display: block
+
+@keyframes line-1
+  from
+    stroke-dashoffset: 1024
+  to
+    stroke-dashoffset: 0
+
+.jump-class .ring-start2.path2
+  stroke-dasharray: 1020
+  stroke-dashoffset: 0
+  animation: line-2 7s linear
+  display: block
+
+@keyframes line-2
+  from
+    stroke-dashoffset: 1024
+  to
+    stroke-dashoffset: 0
+
+.jump-class .ring-start3.path3
+  stroke-dasharray: 1020
+  stroke-dashoffset: 0
+  animation: line-3 7s linear
+  display: block
+
+
+@keyframes line-3
+  from
+    stroke-dashoffset: 1024
+  to
+    stroke-dashoffset: 0
+
+.jump-class .ring-start4.path4
+  stroke-dasharray: 1020
+  stroke-dashoffset: 0
+  animation: line-4 7s linear
+  display: block
+
+@keyframes line-4
+  from
+    stroke-dashoffset: 1024
+  to
+    stroke-dashoffset: 0
+
+
+/*** Ring Animations End ***/
+
+/*** 	Cross-chain-liquidity Animations Start ***/
+
+.cross-chain-animation
+  display: block
+
+
+
+.jump-class-chain .cross-chain-1
+  stroke-dasharray: 1024
+  stroke-dashoffset: 0
+  animation: cross-line-1 20s linear!important
+
+@keyframes cross-line-1
+  from
+    stroke-dashoffset: 1024
+  to
+    stroke-dashoffset: 0
+
+.jump-class-chain .cross-chain-2
+  stroke-dasharray: 1024
+  stroke-dashoffset: 0
+  animation: cross-line-2 20s linear!important
+
+
+@keyframes cross-line-2
+  0%
+    stroke-dashoffset: 1024
+  5%
+    stroke-dashoffset: 1024
+  100%
+    stroke-dashoffset: 0
+
+.jump-class-chain .cross-chain-3
+  stroke-dasharray: 1024
+  stroke-dashoffset: 0
+  animation: cross-line-3 20s linear!important
+
+
+@keyframes cross-line-3
+  0%
+    stroke-dashoffset: 1024
+  5%
+    stroke-dashoffset: 1024
+  100%
+    stroke-dashoffset: 0
+
+.jump-class-chain .cross-chain-4
+  stroke-dasharray: 1024
+  stroke-dashoffset: 0
+  animation: cross-line-4 20s linear!important
+  animation-delay: 3.5s
+
+@keyframes cross-line-4
+  from
+    stroke-dashoffset: 1024
+  to
+    stroke-dashoffset: 0
+
+
+
+
+
+/*** Cross-chain-liquidity Animations End ***/
+
+#arth-cross-border-title
+  font-size: 25px
+
+#arth-cross-border-para
+  padding: 15px 10%
+  min-height: 200px
+
+#arth-technology-image
+  height: 620px
+  width: 1157px
+  display: inline-flex
+  background-size: 100%
+  margin: 20px 0
+  background-position: center
+
+  @media screen and (max-width: 767px)
+    display: none
+
+#arth-supported-token
+  margin-top: -200px
+
+  @media screen and (max-width: 767px)
+    margin-top: 0
+
+#arth-technology-image-mb
+  height: 265px
+  width: 100%
+  display: inline-flex
+  background-size: 80%
+  margin: 20px 0
+  background-position: center
+
+  @media screen and (min-width: 767px)
+    display: none
+
+/*** Application & Usage ***/
+#arth-app-usage
+  text-align: center
+  margin-top: 0
+
+  #arth-red-text
+    padding: 20px 0
+
+#arth-app-usage .app-usage-img-container
+  margin: 2% 0%
+  justify-content: center
+  display: block
+
+.center-box
+  justify-content: center
+  @media screen and (max-width: 500px)
+    display: block
+
+.app-usage-title
+  font-size: 23px
+  font-weight: 700
+  color: #A1A1A1
+  text-transform: uppercase
+  font-family: $font-family-heading
+  padding-top: 20px
+  padding-bottom: 10px
+
+  @media screen and (max-width: 500px)
+    font-size: 20px
+
+.app-usage-image
+  width: 100%
+  height: 300px
+  display: inline-flex
+  justify-content: center
+  align-items: center
+  background-size: 100%
+  background-position: center
+  background-image: url('../images/Vector.png')
+  background-repeat: no-repeat
+  background-size: contain
+
+  @media screen and (max-width: 500px)
+    background-size: 100%
+    width: 100%
+    margin-left: 0
+
+.app-usage-image-title
+  font-size: 22px
+  line-height: 36px
+  margin-top: 0
+  color: #FE5D73
+  display: flex
+  width: 100%
+  height: auto
+  justify-content: center
+  font-weight: 400
+  text-transform: uppercase
+
+
+  @media screen and (max-width: 500px)
+    font-size: 12px
+
+
+/** Arth Roadmap **/
+#arth-road-map
   .roadmap-scroll
     overflow-x: auto
-    padding-bottom: 50px
-    cursor: grab
   .row
     margin-left: 5px
     margin-right: 5px
@@ -556,68 +912,11 @@ body
 
 .arth-roadmap-q-container
   margin-top: 60px
-  flex-wrap: nowrap
-
-
 .arth-roadmap-q-container-btm
   margin-bottom: 44px
 
-.arth-roadmap-end-pointer
-  background: linear-gradient(38.44deg, #F47F57 15.81%, #FD5656 87.57%)
-  width: 27px
-  height: 27px
-  position: absolute
-  bottom: -9px
-  left: -14px
-  border-radius: 50%
-
 .arth-roadmap-q
   text-align: left
-  padding: 0 32px 44px 32px !important
-  &::before
-    content: ""
-    height: 100%
-    width: 1px
-    position: absolute
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 1.2%, #FF8506 50%)
-    top: 0
-    left: 0
-
-  &::after
-    content: "To Date"
-    position: absolute
-    bottom: -16px
-    left: 32px
-    font-family: $font-family-heading
-    font-style: normal
-    font-weight: bold
-    font-size: 32px
-    line-height: 38px
-    color: #F47F57
-
-.arth-roadmap-q-q2-21
-  &::after
-    content: "Q2 2021"
-    color: $color-white64
-
-  .arth-roadmap-end-pointer
-    background: #767676
-
-.arth-roadmap-q-q3-21
-  &::after
-    content: "Q3 2021"
-    color: $color-white64
-
-  .arth-roadmap-end-pointer
-    background: #767676
-
-.arth-roadmap-q-q4-21
-  &::after
-    content: "Q3 2021"
-    color: $color-white64
-
-  .arth-roadmap-end-pointer
-    background: #767676
 
 .arth-roadmap-q-title
   font-family: $font-family-body
@@ -628,7 +927,7 @@ body
   padding-bottom: 6px
   letter-spacing: 0.4px
 
-/*.arth-roadmap-q-border
+.arth-roadmap-q-border
   width: 100%
   height: 27px
   margin-bottom: 8px
@@ -643,10 +942,7 @@ body
     background-image: url('../images/line.svg')
     width: 100%
     margin-top: 12px
-    background-position: right top */
-
-
-
+    background-position: right top
 
 .arth-roadmap-q-border li
   background-repeat: no-repeat
@@ -671,8 +967,8 @@ body
 
 
     span
-     line-height: 20px
-     display: inline-block
+      line-height: 20px
+      display: inline-block
 
 
 .white-line
@@ -689,9 +985,9 @@ body
     line-height: 30px
 
 @media only screen and ( min-width:1000px) and ( max-width:1200px )
-  .col-xs-4
-    flex: 0 0 50%
-    max-width: 50%
+.col-xs-4
+  flex: 0 0 50%
+  max-width: 50%
 
 #cross-border-transactions
   display: block
