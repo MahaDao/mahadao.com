@@ -8,7 +8,7 @@
 
   <div class="container-fluid roadmap-scroll">
     <div class="row arth-roadmap-q-container no-gutters">
-      <div class="col-4 col-md-3 arth-roadmap-q" data-aos="fade-right" data-aos-duration="500" data-aos-once="true">
+      <div class="col-4 col-md-3 arth-roadmap-q arth-roadmap-q-1" data-aos="fade-right" data-aos-duration="500" data-aos-once="true" onclick="onDateClick(this)">
         <div class="arth-roadmap-q-title text-gradient">To Date</div>
         <ul class="arth-roadmap-q-border typo-syne-h4">
           <li class="arth-roadmap-circle"></li>
@@ -25,7 +25,7 @@
       </div>
 
 
-      <div class="col-4 col-md-4 arth-roadmap-q"  data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
+      <div class="col-4 col-md-4 arth-roadmap-q arth-roadmap-q-2"  data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
         <div class="arth-roadmap-q-title text-gradient inactive">Q2 2021</div>
         <ul class="arth-roadmap-q-border typo-syne-h4">
           <li class="arth-roadmap-circle"></li>
@@ -43,7 +43,7 @@
       </div>
 
 
-      <div class="col-4 col-md-4 arth-roadmap-q" data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">
+      <div class="col-4 col-md-4 arth-roadmap-q arth-roadmap-q-3" data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">
         <div class="arth-roadmap-q-title text-gradient inactive">Q3 2021</div>
         <ul class="arth-roadmap-q-border typo-syne-h4">
           <li class="arth-roadmap-circle"></li>
@@ -59,7 +59,7 @@
       </div>
 
 
-      <div class="col-4 col-md-4 arth-roadmap-q inactive" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
+      <div class="col-4 col-md-4 arth-roadmap-q arth-roadmap-q-4" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
         <div class="arth-roadmap-q-title text-gradient inactive">Q4 2021</div>
         <ul class="arth-roadmap-q-border typo-syne-h2">
           <li class="arth-roadmap-circle"></li>
@@ -75,4 +75,24 @@
   </div>
 <!--  <span class="arth-hr"></span>-->
 </section>
+
+<script>
+  function onDateClick (event){
+    allCLickedClasses = $(event).attr("class");
+    // var elementNo = 0;
+    // if(allCLickedClasses.includes("arth-roadmap-q-1")) {
+    //   elementNo = 1;
+    // } else if (allCLickedClasses.includes("arth-roadmap-q-2")) {
+    //   elementNo = 2;
+    // } else if (allCLickedClasses.includes("arth-roadmap-q-3")) {
+    //   elementNo = 3;
+    // } else if (allCLickedClasses.includes("arth-roadmap-q-4")) {
+    //   elementNo = 4;
+    // }
+    $($(event).find('.arth-roadmap-q-title')).attr('class');
+    console.log('onDateClick', $($(event).find('.arth-roadmap-q-title')).class('color'));
+
+  }
+
+</script>
 
