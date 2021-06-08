@@ -8,13 +8,13 @@
 
   <div class="container-fluid roadmap-scroll">
     <div class="row arth-roadmap-q-container no-gutters">
-      <div class="col-4 col-md-3 arth-roadmap-q arth-roadmap-q-1" data-aos="fade-right" data-aos-duration="500" data-aos-once="true" onclick="onDateClick(this)">
-        <div class="arth-roadmap-q-title text-gradient">To Date</div>
+      <div class="col-4 col-md-3 arth-roadmap-q" data-aos="fade-right" data-aos-duration="500" data-aos-once="true" >
+        <div class="arth-roadmap-q-title roadmap-title-1" onclick="onDateClick(this)">To Date</div>
         <ul class="arth-roadmap-q-border typo-syne-h4">
-          <li class="arth-roadmap-circle"></li>
+          <li class="arth-roadmap-circle roadmap-circle-1"></li>
           <li class="arth-roadmap-line"></li>
         </ul>
-        <ul class="arth-roadmap-q-lists typo-syne-h4">
+        <ul class="arth-roadmap-q-lists typo-syne-h4 roadmap-lists-1">
           <li>Concept, Whitepaper</li>
           <li>GMU Research</li>
           <li>Private Sale, TGE & IDO</li>
@@ -26,12 +26,12 @@
 
 
       <div class="col-4 col-md-4 arth-roadmap-q arth-roadmap-q-2"  data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
-        <div class="arth-roadmap-q-title text-gradient inactive">Q2 2021</div>
+        <div class="arth-roadmap-q-title roadmap-title-2 inactive" onclick="onDateClick(this)">Q2 2021</div>
         <ul class="arth-roadmap-q-border typo-syne-h4">
-          <li class="arth-roadmap-circle"></li>
+          <li class="arth-roadmap-circle roadmap-circle-2 inactive-c"></li>
           <li class="arth-roadmap-line"></li>
         </ul>
-        <ul class="arth-roadmap-q-lists typo-syne-h4 inactive">
+        <ul class="arth-roadmap-q-lists typo-syne-h4 roadmap-lists-2 inactive">
           <li>Private Funding Round</li>
           <li>MahaLoans Launching</li>
           <li>Team Expansion</li>
@@ -44,12 +44,12 @@
 
 
       <div class="col-4 col-md-4 arth-roadmap-q arth-roadmap-q-3" data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">
-        <div class="arth-roadmap-q-title text-gradient inactive">Q3 2021</div>
+        <div class="arth-roadmap-q-title roadmap-title-3 inactive" onclick="onDateClick(this)">Q3 2021</div>
         <ul class="arth-roadmap-q-border typo-syne-h4">
-          <li class="arth-roadmap-circle"></li>
+          <li class="arth-roadmap-circle roadmap-circle-3 inactive-c"></li>
           <li class="arth-roadmap-line"></li>
         </ul>
-        <ul class="arth-roadmap-q-lists typo-syne-h4 inactive">
+        <ul class="arth-roadmap-q-lists typo-syne-h4 roadmap-lists-3 inactive">
           <li>MahaLend Launching </li>
           <li>MahaLabs Announced</li>
           <li>Cross Chain Deployments</li>
@@ -60,12 +60,12 @@
 
 
       <div class="col-4 col-md-4 arth-roadmap-q arth-roadmap-q-4" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
-        <div class="arth-roadmap-q-title text-gradient inactive">Q4 2021</div>
+        <div class="arth-roadmap-q-title roadmap-title-4 inactive" onclick="onDateClick(this)">Q4 2021</div>
         <ul class="arth-roadmap-q-border typo-syne-h2">
-          <li class="arth-roadmap-circle"></li>
+          <li class="arth-roadmap-circle roadmap-circle-4 inactive-c"></li>
           <li class="arth-roadmap-line"></li>
         </ul>
-        <ul class="arth-roadmap-q-lists typo-syne-h4 inactive">
+        <ul class="arth-roadmap-q-lists typo-syne-h4 roadmap-lists-4 inactive">
           <li>Adoption by DeFi platforms & DEXs</li>
           <li>Developer, influencer &
             community growth programs</li>
@@ -77,21 +77,34 @@
 </section>
 
 <script>
-  function onDateClick (event){
+  function onDateClick (event) {
     allCLickedClasses = $(event).attr("class");
-    // var elementNo = 0;
-    // if(allCLickedClasses.includes("arth-roadmap-q-1")) {
-    //   elementNo = 1;
-    // } else if (allCLickedClasses.includes("arth-roadmap-q-2")) {
-    //   elementNo = 2;
-    // } else if (allCLickedClasses.includes("arth-roadmap-q-3")) {
-    //   elementNo = 3;
-    // } else if (allCLickedClasses.includes("arth-roadmap-q-4")) {
-    //   elementNo = 4;
-    // }
-    $($(event).find('.arth-roadmap-q-title')).attr('class');
-    console.log('onDateClick', $($(event).find('.arth-roadmap-q-title')).class('color'));
-
+    var elementNo = 0;
+    if(allCLickedClasses.includes("roadmap-title-1")) {
+      elementNo = 1;
+    } else if (allCLickedClasses.includes("roadmap-title-2")) {
+      elementNo = 2;
+    } else if (allCLickedClasses.includes("roadmap-title-3")) {
+      elementNo = 3;
+    } else if (allCLickedClasses.includes("roadmap-title-4")) {
+      elementNo = 4;
+    }
+    for (i=1; i<5; i++ ) {
+      var title = '.roadmap-title-' + i;
+      var lists = '.roadmap-lists-' + i;
+      var circle = '.roadmap-circle-' + i;
+      if (elementNo === i) {
+        console.log('if element no', elementNo, i);
+        $(title).removeClass("inactive");
+        $(lists).removeClass("inactive");
+        $(circle).removeClass("inactive-c");
+      } else {
+        console.log('else element no', elementNo, i);
+        $(title).addClass("inactive");
+        $(lists).addClass("inactive");
+        $(circle).addClass("inactive-c");
+      }
+    }
   }
 
 </script>
