@@ -23,15 +23,20 @@
     <div class="action-btn">
       <div  id="timer-1-button" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
           <a id="no-txt-decoration" target="_blank" class="theme-btn btn-md" href="https://arthcoin.com/#/stats">arthcoin.com</a>
-        </div>
+      </div>
 
-      <div title="Add to Calendar" class="addeventatc">
+      <div id="google_add_calendar" onclick="window.open('https://calendar.google.com/calendar/u/0/r/eventedit?dates=20210622T150000Z/20210622T160000Z&location=https://arthcoin.com/&text=ARTH-v2+Genesis&details=The+ARTH+v2+Geneis,+which+will+be+live+on+the+Polygon+network.+Visit+https://arthcoin.com/+to+be+a+part+of+genesis.')">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Calendar_icon_%282020%29.svg/1200px-Google_Calendar_icon_%282020%29.svg.png" alt="calendar" height="24">
+        <span style="margin-left: 8px;">Add to Calendar</span>
+      </div>
+
+     <!-- <div title="Add to Calendar" class="addeventatc">
         Add to Calendar
-        <span class="start">06/22/2021 12:00 PM</span>
+        <span class="start">06/22/2021 03:00 PM</span>
         <span class="title">ARTH-v2 Genesis</span>
         <span class="description">Launch of Arth-v2</span>
         <span class="location">https://arthcoin.com/</span>
-      </div>
+      </div>-->
 <!--    </div>-->
 	</div>
 </section>
@@ -94,5 +99,5 @@ function settimer(days,months,years,hours,mins)
 	}
 	timer = setInterval(showtimer, 1000); // Display Timer In Every 1 Sec
 }
-settimer(22,06,2021,20,30);
+settimer(22,06,2021,15,00);
 </script>
