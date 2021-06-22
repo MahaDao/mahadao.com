@@ -20,19 +20,11 @@
          });
        };
      </script>
-<!--    <div class="action-btn">-->
-<!--      <div  id="timer-1-button" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">-->
-<!--          <a id="no-txt-decoration" target="_blank" class="theme-btn btn-md" href="https://arthcoin.com/#/stats">arthcoin.com</a>-->
-<!--        </div>-->
-
-      <div title="Add to Calendar" class="addeventatc">
-        Add to Calendar
-        <span class="start">06/22/2021 12:00 PM</span>
-        <span class="title">ARTH-v2 Genesis</span>
-        <span class="description">Launch of Arth-v2</span>
-        <span class="location">https://arthcoin.com/</span>
-      </div>
-<!--    </div>-->
+    <div class="action-btn">
+      <div  id="timer-1-button" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+          <a id="no-txt-decoration" target="_blank" class="theme-btn btn-md" href="https://arthcoin.com/#/genesis">Join the Genesis</a>
+        </div>
+    </div>
 	</div>
 </section>
 
@@ -54,8 +46,8 @@ function settimer(days,months,years,hours,mins)
 	var timer_min=mins;
 	if(timer_min=="")timer_min=0;
 
-	var timer_date=timer_year+"/"+timer_month+"/"+timer_day+" "+timer_hour+":"+timer_min+":00 UTC";
-	var end = new Date(timer_date); // Arrange values in Date Time Format
+
+	var end = new Date("Tue, 22 Jun 2021 15:00:12 GMT"); // Arrange values in Date Time Format
 	var now = new Date().toLocaleString(); // Get Current date time
 	var second = 1000; // Total Millisecond In One Sec
 	var minute = second * 60; // Total Sec In One Min
