@@ -27,11 +27,11 @@ module.exports = {
       filename: "index.html",
       // template: "!!ejs-compiled-loader!./src/index.ejs"
     }),
-    new HtmlWebpackPlugin({
-      template: Path.resolve(__dirname, '../src/html/pages/arthcoin/index.hbs'),
-      filename: "arth.html",
-      // template: "!!ejs-compiled-loader!./src/index.ejs"
-    }),
+    // new HtmlWebpackPlugin({
+    //   template: Path.resolve(__dirname, '../src/html/pages/arthcoin/index.hbs'),
+    //   filename: "arth.html",
+    //   // template: "!!ejs-compiled-loader!./src/index.ejs"
+    // }),
 	  new HtmlWebpackPlugin({
       template: Path.resolve(__dirname, '../src/html/pages/arthFerrum/index.hbs'),
       filename: "staking.html",
